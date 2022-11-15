@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #222;
+  color: #fff;
+  padding: 0.7rem;
+}
+.navbar .menuItems {
+  list-style: none;
+}
+
+.navItems {
+  display: flex;
+}
+.navItems .menuItems {
+  list-style: none;
+  margin-right: 3rem;
+}
