@@ -4,30 +4,39 @@
   box-sizing: border-box;
 }
 
-.headerr {
-  background: url("../../assets/home1.jpg") center center/cover no-repeat;
-  height: 100vh;
+.nav-container {
+  position: relative;
 }
-
 .navbar {
+  z-index: 1;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-color: #222;
-  color: #fff;
-  padding: 0.7rem;
-  opacity: 0.6;
-  position: fixed;
-  top: 0px;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: 'Rubik', sans-serif;
+  color: white;
+  font-size: 1.4rem;
+  margin-top: 1rem;
 }
-.navbar .menuItems {
-  list-style: none;
+.navbar .logo {
+  display: inline-block;
+  font-size: 3rem;
+}
+.navbar .navItems {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
 }
 
-.navItems {
-  display: flex;
+.menuItems {
+  margin-right: 2rem;
 }
-.navItems .menuItems {
-  list-style: none;
-  margin-right: 3rem;
+.navItems .menuItems:hover{
+  color:darkred;
+}
+
+.logo{
+  margin-left: 2rem;
 }
