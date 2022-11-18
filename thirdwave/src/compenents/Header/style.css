@@ -3,6 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.headerr {
+  background: url("../../assets/home1.jpg") center center/cover no-repeat;
+  height: 100vh;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -10,6 +16,9 @@
   background-color: #222;
   color: #fff;
   padding: 0.7rem;
+  opacity: 0.6;
+  position: fixed;
+  top: 0px;
 }
 .navbar .menuItems {
   list-style: none;

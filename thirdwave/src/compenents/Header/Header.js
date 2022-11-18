@@ -8,23 +8,25 @@ import "./style.css";
 
 export default function Header() {
   return (
-    <div className="navbar">
-      <Nav.Link as={NavLink} to="/">
-        3rd Wave
-      </Nav.Link>
-
-      <div className="navItems">
-        <Nav.Link as={NavLink} to="/" className="menuItems">
-          Home
+    <div className="headerr">
+      <div className="navbar">
+        <Nav.Link as={NavLink} to="/">
+          3rd Wave
         </Nav.Link>
 
-        <Nav.Link as={NavLink} to="/about" className="menuItems">
-          About
-        </Nav.Link>
+        <div className="navItems">
+          <Nav.Link as={NavLink} to="/" className="menuItems">
+            Home
+          </Nav.Link>
 
-        <Nav.Link as={NavLink} to="/contact" className="menuItems">
-          Contact
-        </Nav.Link>
+          <Nav.Link as={NavLink} to="/about" className="menuItems">
+            About
+          </Nav.Link>
+
+          <Nav.Link as={NavLink} to="/contact" className="menuItems">
+            Contact
+          </Nav.Link>
+        </div>
       </div>
     </div>
   );
