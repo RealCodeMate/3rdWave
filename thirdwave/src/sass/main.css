@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-container {
+  position: relative;
+}
+.nav-container .navbar {
+  color: #fff;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  margin: 1rem;
+}
+.nav-container .navbar .logo {
+  font-size: 3rem;
+  margin-left: 1rem;
+}
+.nav-container .navbar .navItems {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-container .navbar .navItems .menuItems {
+  margin-right: 1.3rem;
+  transition: all 0.3s ease-in-out;
+}
+.nav-container .navbar .navItems .menuItems:hover {
+  color: #2c3e50;
+}
+
+.left-bg {
+  height: 100vh;
+  width: 50%;
+  background: url("../../assets/home.jpg") bottom center/cover no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.right-bg {
+  height: 100vh;
+  width: 50%;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.right-bg .main-info {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 3rem;
+  color: #fff;
+}
+.right-bg .main-info h1 {
+  font-size: 5rem;
+  line-height: 5rem;
+}
+.right-bg .main-info .life-header {
+  color: #4ca1af;
+}
+.right-bg .main-info .wave-header {
+  font-size: 2rem;
+  display: inline-block;
+  padding: 0.1rem 0.5rem;
+  background: linear-gradient(to right, #353434, #5a5a5a);
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  transition: all 1s ease-in;
+  margin-left: 0.3rem;
+}
+.right-bg .main-info .wave-header:hover {
+  padding-right: 4rem;
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+  color: #fff;
+}/*# sourceMappingURL=main.css.map */

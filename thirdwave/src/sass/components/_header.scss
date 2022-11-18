@@ -1,0 +1,34 @@
+@import "../abstracts/variables";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav-container {
+  position: relative;
+  .navbar {
+    color: #fff;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    margin: 1rem;
+    .logo {
+      font-size: 3rem;
+      margin-left: 1rem;
+    }
+    .navItems {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .menuItems {
+        margin-right: 1.3rem;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          color: $hover-primary;
+        }
+      }
+    }
+  }
+}
