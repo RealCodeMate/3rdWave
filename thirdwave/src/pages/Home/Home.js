@@ -2,8 +2,7 @@ import React from "react";
 import "../../sass/pages/_home.scss";
 import "../../sass/components/_accordion.scss";
 import Header from "../../compenents/Header/Header";
-import { accordionData } from "../../utils/content";
-import Accordion from "../../compenents/Accordion/Accordion";
+import MyAccordion from "../../compenents/Accordion/MyAccordion";
 
 export default function Home() {
   const clickMe = () => {
@@ -39,11 +38,8 @@ export default function Home() {
           you are in right place.
         </h1>
 
-        <div className="accordion">
-          {accordionData.map(({ title, content }) => (
-            <Accordion title={title} content={content} />
-          ))}
-        </div>
+       <MyAccordion/>
+       
       </div>
       <div className="section-b">
         <h1>
