@@ -16,7 +16,7 @@ export default function Home() {
   };
 
   return (
-    <div>
+    <div id="parent">
       <Header />
 
       <div id="home">
@@ -97,6 +97,122 @@ export default function Home() {
           </p>
           <CarouselHome />
         </div>
+      </div>
+      <div className="section-e">
+        <Container>
+          <Row>
+            <Col sm>
+              <div className="section-e-head">
+                <h3>Even more great stuff</h3>
+                <h1>Some words from our 1400+ customers.</h1>
+              </div>
+              <hr />
+            </Col>
+          </Row>
+          <Row>
+            <Col sm={4} className="section-e-rate">
+              <div>
+                <h1>5.0</h1>
+                <p>out of 5</p>
+              </div>
+              <p className="section-e-star">⭐⭐⭐⭐⭐</p>
+            </Col>
+            <Col sm={8}>
+              <p className="section-e-paragraph">
+                "Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Modi
+                ullam in distinctio placeat, repellendus similique quod illo
+                alias enim, asperiores veritatis, repudiandae."{" "}
+              </p>
+            </Col>
+          </Row>
+          <hr />
+          <Row>
+            <Col sm={4} className="section-e-rate">
+              <div>
+                <h1>4.0</h1>
+                <p>out of 5</p>
+              </div>
+              <p className="section-e-star">⭐⭐⭐⭐</p>
+            </Col>
+            <Col sm={8}>
+              <p className="section-e-paragraph">
+                "Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Modi
+                ullam in distinctio placeat, repellendus similique quod illo
+                alias enim, asperiores veritatis, repudiandae."{" "}
+              </p>
+            </Col>
+          </Row>
+          <hr />
+          <Row>
+            <Col sm={4} className="section-e-rate">
+              <div>
+                <h1>3.0</h1>
+                <p>out of 5</p>
+              </div>
+              <p className="section-e-star">⭐⭐⭐</p>
+            </Col>
+            <Col sm={8}>
+              <p className="section-e-paragraph">
+                "Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Modi
+                ullam in distinctio placeat, repellendus similique quod illo
+                alias enim, asperiores veritatis, repudiandae."{" "}
+              </p>
+            </Col>
+          </Row>
+          <hr />
+        </Container>
+      </div>
+      <div className="section-f">
+        <Container className="section-f-container">
+          <Row>
+            <Col sm={4}>
+              <h1 className="section-f-container-price"><span>$</span>9.99</h1>
+            </Col>
+            <Col sm={8}>
+              <h1>
+                One year access to all designs listed on this page and all our
+                templates.
+              </h1>
+            </Col>
+            <Col sm={{ span: 8, offset: 4 }}>
+              <Row>
+                <Col sm={{ span: 12 }}>
+                  <Row className="price-content-1">
+                    <Col>
+                    <div className="price-content-tick">
+                      <h5>✔</h5>
+                      <h4> Variable and OpenType fonts</h4>
+                      </div>
+                    </Col>
+                    <Col>
+                    <div className="price-content-tick">
+                      <h5>✔</h5>
+                      <h4> Pixel-level precision</h4>
+                      </div>
+                    </Col>
+                  </Row>
+                  <Row className="price-content-1">
+                    <Col>
+                    <div className="price-content-tick">
+                      <h5>✔</h5>
+                      <h4> Multi-team management</h4>
+                      </div>
+                    </Col>
+                    <Col>
+                    <div className="price-content-tick">
+                      <h5>✔</h5>
+                      <h4> Reusable components</h4>
+                      </div>
+                    </Col>
+                  </Row>
+                </Col>
+              </Row>
+               <div className="btn-display">
+                 <a className="section-f-btn">Buy Now</a>
+               </div>
+            </Col>
+          </Row>
+        </Container>
       </div>
     </div>
   );

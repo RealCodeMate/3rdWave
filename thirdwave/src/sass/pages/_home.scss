@@ -1,5 +1,9 @@
 @import "../abstracts/variables";
 
+#parent{
+  font-family: 'Alexandria', sans-serif;
+}
+
 .left-bg {
   height: 100vh;
   width: 50%;
@@ -140,6 +144,118 @@
     }
     }
   }
+  .section-e{
+    max-width: 90vw;
+    margin: auto;
+    color: #000;
+    
+    &-head{
+      max-width: 50%;
+      margin: auto;
+      text-align: center;
+      margin-bottom: 3rem;
+      h1{
+        font-size: 3.8rem;
+      }
+      h3{
+        color:rgb(84, 83, 83);
+      }
+    }
+ 
+    &-rate div{
+      display: flex;
+      align-items: center;
+      h1{
+        padding-right: 2rem ;
+        font-size: 4rem;
+      }
+      p{
+        font-size: 2rem;
+        margin-bottom:-1.2rem;
+      }
+
+    }
+    &-star{
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+    &-paragraph{
+      font-size: 1.3rem;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      line-height: 1.35;
+    }
+  }
+
+  .section-f {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    max-width: 96vw;
+    margin: auto;
+    color: #fff;
+    background: url("../../assets/home3.jpg") bottom center no-repeat;
+    &-container{
+      margin-top:7.5rem;
+      span{
+        color: $hover-secondary;
+        padding:.4rem;
+      }
+    }
+    &-container-price{
+      font-size: 5rem;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+    }
+  }
+  .price-content-1{
+    padding-top:2rem;
+    h4{
+      color:#fff;;
+    }
+    .price-content-tick{
+      display: flex;
+      align-items: center;
+      h5{
+        padding-right: .5rem;
+        color:$hover-secondary;
+      font-weight: bold;
+        font-size: 2rem;
+      }
+    }
+    
+  }
+  .section-f-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.5rem 3rem;
+    margin-right: 3rem;
+    background-color: #c6c6c6;
+    color:#000;
+    border-radius: 3rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: all 1s ease;
+    &:hover{
+      color:#fff;
+      background-color: $hover-primary;
+    }
+  }
+.btn-display{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
 
