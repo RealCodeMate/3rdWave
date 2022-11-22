@@ -1,23 +1,13 @@
-
-.container-carousel{
-    display: flex;
-    align-items: center;
-
+.d-block {
+  height: 45%;
+  width: 100%;
+  margin: auto;
+  cursor: pointer;
+  transition: all 1s;
+  &:hover {
+    transform: scale(2);
+  }
 }
-// .d-block{
-//     height: 45%;
-//     width: 100%;
-//     margin: auto;
-//     cursor: pointer;
-//     transition: all 1s;
-//     &:hover{
-//         transform: scale(2);
-        
-//     }
-// }
-.carosuel-content h3{
-    color:#000;
+.carosuel-content h3 {
+  color: #000;
 }
-
-
-
