@@ -9,6 +9,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import messi from "../../assets/home2.jpg";
+import Footer from "../../compenents/Footer/Footer";
 
 export default function Home() {
   const clickMe = () => {
@@ -214,6 +215,7 @@ export default function Home() {
           </Row>
         </Container>
       </div>
+      <Footer/>
     </div>
   );
 }
