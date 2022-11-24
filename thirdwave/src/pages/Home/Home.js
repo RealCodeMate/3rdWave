@@ -8,7 +8,7 @@ import CarouselHome from "../../compenents/Carousel/CarouselHome";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import messi from "../../assets/home2.jpg";
+import messi from "../../assets/tooth3.jpg";
 import Footer from "../../compenents/Footer/Footer";
 
 export default function Home() {
@@ -41,7 +41,7 @@ export default function Home() {
       <div className="section-a">
         <h1>
           If you want to enjoy moments
-          <br /> with passion and persistence, <br />
+          <br /> with <span>passion</span> and <span>persistence</span>, <br />
           you are in right place.
         </h1>
 
@@ -76,7 +76,7 @@ export default function Home() {
               <Col sm>
                 <img src={messi} alt="img" className="section-c-main-img"></img>
               </Col>
-              <Col sm>
+              <Col sm className="section-c-main-content">
                 <h1>Even more great stuff</h1>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -167,7 +167,9 @@ export default function Home() {
         <Container className="section-f-container">
           <Row>
             <Col sm={4}>
-              <h1 className="section-f-container-price"><span>$</span>9.99</h1>
+              <h1 className="section-f-container-price">
+                <span>$</span>9.99
+              </h1>
             </Col>
             <Col sm={8}>
               <h1>
@@ -180,42 +182,42 @@ export default function Home() {
                 <Col sm={{ span: 12 }}>
                   <Row className="price-content-1">
                     <Col>
-                    <div className="price-content-tick">
-                      <h5>✔</h5>
-                      <h4> Variable and OpenType fonts</h4>
+                      <div className="price-content-tick">
+                        <h5>✔</h5>
+                        <h4> Variable and OpenType fonts</h4>
                       </div>
                     </Col>
                     <Col>
-                    <div className="price-content-tick">
-                      <h5>✔</h5>
-                      <h4> Pixel-level precision</h4>
+                      <div className="price-content-tick">
+                        <h5>✔</h5>
+                        <h4> Pixel-level precision</h4>
                       </div>
                     </Col>
                   </Row>
                   <Row className="price-content-1">
                     <Col>
-                    <div className="price-content-tick">
-                      <h5>✔</h5>
-                      <h4> Multi-team management</h4>
+                      <div className="price-content-tick">
+                        <h5>✔</h5>
+                        <h4> Multi-team management</h4>
                       </div>
                     </Col>
                     <Col>
-                    <div className="price-content-tick">
-                      <h5>✔</h5>
-                      <h4> Reusable components</h4>
+                      <div className="price-content-tick">
+                        <h5>✔</h5>
+                        <h4> Reusable components</h4>
                       </div>
                     </Col>
                   </Row>
                 </Col>
               </Row>
-               <div className="btn-display">
-                 <a className="section-f-btn">Buy Now</a>
-               </div>
+              <div className="btn-display">
+                <a className="section-f-btn">Buy Now</a>
+              </div>
             </Col>
           </Row>
         </Container>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

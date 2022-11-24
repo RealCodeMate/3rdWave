@@ -1,15 +1,18 @@
-import Accordion from 'react-bootstrap/Accordion';
+import Accordion from "react-bootstrap/Accordion";
 import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
 
 function MyAccordion() {
   return (
-    <Accordion defaultActiveKey="0">
+    <Accordion defaultActiveKey="0" flush>
       <Accordion.Item eventKey="0">
-        <Accordion.Header> <FaBeer /> </Accordion.Header>
+        <Accordion.Header>
+          {" "}
+          <FaBeer />{" "}
+        </Accordion.Header>
         <Accordion.Body>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi u        
+          minim veniam, quis nostrud exercitation ullamco laboris nisi u
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">

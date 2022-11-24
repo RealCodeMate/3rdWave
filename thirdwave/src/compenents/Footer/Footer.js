@@ -29,7 +29,7 @@ export default function Footer() {
           </ul>
         </div>
         <div className="footer-top-map">
-          <Map
+          {/* <Map
             mapboxAccessToken="pk.eyJ1IjoidHQzMyIsImEiOiJjbGF1MWloZm4wMjZrM3BuMGZ1d2g1Z2p1In0.BKizdKlGEIXhMxYo-dbYWA"
             center
             initialViewState={{
@@ -41,7 +41,7 @@ export default function Footer() {
             mapStyle="mapbox://styles/mapbox/streets-v9"
           >
             <Marker latitude={lat} longitude={lng} />
-          </Map>
+          </Map> */}
         </div>
       </div>
       <div className="footer-bottom">

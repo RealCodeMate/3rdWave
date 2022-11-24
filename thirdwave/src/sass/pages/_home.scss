@@ -1,13 +1,12 @@
 @import "../abstracts/variables";
 
-#parent{
-  font-family: 'Alexandria', sans-serif;
+#parent {
+  font-family: "Alexandria", sans-serif;
 }
-
 .left-bg {
   height: 100vh;
   width: 50%;
-  background: url("../../assets/home.jpg") bottom center/cover no-repeat;
+  background: url("../../assets/tooth.jpg") center center/cover no-repeat;
   position: absolute;
   top: 0;
   left: 0;
@@ -15,7 +14,7 @@
 .right-bg {
   height: 100vh;
   width: 50%;
-  background-color: #000;
+  background-color: #efefef;
   position: absolute;
   top: 0;
   right: 0;
@@ -27,14 +26,14 @@
     align-items: flex-start;
     justify-content: center;
     padding-left: 3rem;
-    color: $color-primary;
+    color: #000;
 
     h1 {
       font-size: 5rem;
       line-height: 5rem;
     }
     .life-header {
-      color: $hover-secondary;
+      color: $hover-third;
     }
     .wave-header {
       font-size: 2rem;
@@ -50,25 +49,33 @@
 
       &:hover {
         padding-right: 4rem;
-        background: linear-gradient(to right, $hover-primary, $hover-secondary);
+        background: linear-gradient(to right, $hover-secondary, $hover-third);
         color: #fff;
       }
     }
   }
 }
 .section-a {
-  color: #fff;
-  background-color: #000;
-  height: 85vh;
+  color: #000;
+  background-color: #efefef;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   line-height: 2.3;
+
+  h1 {
+    padding-bottom: 2rem;
+    color: #000;
+  }
+  span {
+    color: $hover-third;
+  }
 }
 
-.section-b{
+.section-b {
   max-width: 90vw;
   margin: auto;
   display: flex;
@@ -76,188 +83,193 @@
   justify-content: center;
   height: 100vh;
   background-color: #fff;
-  color:#000;
+  color: #fff;
 
-  &-main{
-    background: url(../../assets/home2.jpg) center center/cover no-repeat;
+  &-main {
+    background: url(../../assets/tooth2.jpg) center center/cover no-repeat;
     display: flex;
     align-items: center;
     height: 90%;
     width: 100%;
     text-align: center;
   }
-
 }
-.section-c{
+.section-c {
   max-width: 100vw;
   margin: auto;
   height: 100vh;
-  background-color: #000;
-  color:#fff;
+  background-color: $hover-primary;
+  color: #fff;
 
-
-  &-main{
+  &-main {
     height: inherit;
     display: flex;
     align-items: center;
     justify-content: center;
-    .container-c{
+    &-content {
+      height: 100%;
+    }
+    .container-c {
       height: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
     }
 
-    &-img{
-
-      height: 20rem;
-      width: 30rem;
+    &-img {
+      height: 35rem;
+      width: 40rem;
     }
   }
 }
 
-.section-d{
-  height:100vh;
-  color:#000;
+.section-d {
+  height: 100vh;
+  color: #000;
 
- 
-  &-slide{
+  &-slide {
     height: 100%;
     line-height: normal;
-    h1{
+    h1 {
       text-align: center;
       font-size: 1rem;
-      color:rgb(84, 83, 83);
+      color: rgb(84, 83, 83);
       margin-top: 1rem;
-
     }
-    p{
+    p {
       text-align: center;
       font-size: 3rem;
-      .life-header{
-        color:$hover-secondary;
+      .life-header {
+        color: $hover-secondary;
         cursor: pointer;
-        &:hover{
-          color:$hover-primary;
+        &:hover {
+          color: $hover-primary;
         }
       }
     }
-    }
   }
-  .section-e{
-    max-width: 90vw;
-    margin: auto;
-    color: #000;
-    
-    &-head{
-      max-width: 50%;
-      margin: auto;
-      text-align: center;
-      margin-bottom: 3rem;
-      h1{
-        font-size: 3.8rem;
-      }
-      h3{
-        color:rgb(84, 83, 83);
-      }
-    }
- 
-    &-rate div{
-      display: flex;
-      align-items: center;
-      h1{
-        padding-right: 2rem ;
-        font-size: 4rem;
-      }
-      p{
-        font-size: 2rem;
-        margin-bottom:-1.2rem;
-      }
+}
+.section-e {
+  max-width: 90vw;
+  margin: auto;
+  color: #000;
 
+  &-head {
+    max-width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 3rem;
+    h1 {
+      font-size: 3.8rem;
     }
-    &-star{
-      font-size: 1.5rem;
-      cursor: pointer;
-    }
-    &-paragraph{
-      font-size: 1.3rem;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      line-height: 1.35;
+    h3 {
+      color: rgb(84, 83, 83);
     }
   }
 
-  .section-f {
+  &-rate div {
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
-    max-width: 96vw;
-    margin: auto;
-    color: #fff;
-    background: url("../../assets/home3.jpg") bottom center no-repeat;
-    &-container{
-      margin-top:7.5rem;
-      span{
-        color: $hover-secondary;
-        padding:.4rem;
-      }
+    h1 {
+      padding-right: 2rem;
+      font-size: 4rem;
     }
-    &-container-price{
-      font-size: 5rem;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      
+    p {
+      font-size: 2rem;
+      margin-bottom: -1.2rem;
     }
   }
-  .price-content-1{
-    padding-top:2rem;
-    h4{
-      color:#fff;;
-    }
-    .price-content-tick{
-      display: flex;
-      align-items: center;
-      h5{
-        padding-right: .5rem;
-        color:$hover-secondary;
-      font-weight: bold;
-        font-size: 2rem;
-      }
-    }
-    
-  }
-  .section-f-btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.4rem;
-    font-weight: bold;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 1.5rem 3rem;
-    margin-right: 3rem;
-    background-color: #c6c6c6;
-    color:#000;
-    border-radius: 3rem;
-    margin-top: 2rem;
+  &-star {
+    font-size: 1.5rem;
     cursor: pointer;
-    transition: all 1s ease;
-    &:hover{
-      color:#fff;
-      background-color: $hover-primary;
+  }
+  &-paragraph {
+    font-size: 1.3rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    line-height: 1.35;
+  }
+}
+
+.section-f {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  max-width: 96vw;
+  margin: auto;
+  color: #fff;
+  background: url("../../assets/tooth4.jpg") center center no-repeat;
+  position: relative;
+  & > * {
+    z-index: 100;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.6;
+    z-index: 1;
+  }
+  &-container {
+    margin-top: 7.5rem;
+    span {
+      color: $hover-third;
+      padding: 0.4rem;
     }
   }
-.btn-display{
+  &-container-price {
+    font-size: 5rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.price-content-1 {
+  padding-top: 2rem;
+  h4 {
+    color: #fff;
+  }
+  .price-content-tick {
+    display: flex;
+    align-items: center;
+    h5 {
+      padding-right: 0.5rem;
+      color: $hover-third;
+      font-weight: bold;
+      font-size: 2rem;
+    }
+  }
+}
+.section-f-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1.5rem 3rem;
+  margin-right: 3rem;
+  background-color: #fff;
+  color: #000;
+  border-radius: 3rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: all 1s ease;
+  &:hover {
+    color: #fff;
+    background-color: $hover-secondary;
+  }
+}
+.btn-display {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-
-
-
-
