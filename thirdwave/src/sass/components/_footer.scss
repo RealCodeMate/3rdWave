@@ -24,6 +24,7 @@
                 a{
                     text-decoration: none;
                     font-size: 1.5rem;
+                    color: #fff;
                 }
             }
         }
@@ -48,23 +49,50 @@
         padding-right: 3rem;
     }
     &-section{
-        // &-1{
-            
-        // }
-        &-2{
+        &-1{
             height: 100%;
+            font-size: 1.5rem;
+            display: flex;
+            text-align: center;
+            align-items: flex-end;
+        }
+        &-2{
             width: 30%;
-            
+            font-size: 2rem;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: space-between;
+            cursor: pointer;
+            .twitterLogo  {
+                :hover {
+                    color: #1DA1F2;
+                }
+            }
+        
+            .facebookLogo {
+                :hover {
+                    color: #3B5998;
+                }
+            }
+        
+            .instagramLogo {
+                :hover {
+                    color: #C32AA3;
+                }
+            }
+
+            }
+        &-3 {
+            p {
+                font-size: 1.2rem;
             }
         }
-        &-3{
-            background-color: chartreuse;
+        
         }
+        
     }
 
-    .twitterLogo {
-        font-size: 5rem;
-    }
 
 
 

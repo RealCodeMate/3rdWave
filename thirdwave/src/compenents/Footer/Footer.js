@@ -24,7 +24,7 @@ export default function Footer() {
     <div className="footer">
       <div className="footer-top">
         <div className="footer-top-section-1">
-          <h1>3rdWave</h1>
+          <h1>Mustafa Akyılmaz</h1>
         </div>
         <div className="footer-top-section-2">
           <ul>
@@ -70,17 +70,18 @@ export default function Footer() {
           </Map>
         </div>
       </div>
+
       <div className="footer-bottom">
         <div className="footer-bottom-section-1">
           <p>Copyrights © 2021</p>
         </div>
         <div className="footer-bottom-section-2"> 
           <FontAwesomeIcon icon={faTwitter} className="twitterLogo" onClick={() => window.open("https://github.com/bayogluteoman", "_blank")}/>
-          <FontAwesomeIcon icon={faFacebook} className="twitterLogo" onClick={() => window.open("https://github.com/bayogluteoman", "_blank")}/>
-          <FontAwesomeIcon icon={faInstagram} className="twitterLogo" onClick={() => window.open("https://github.com/bayogluteoman", "_blank")}/>
+          <FontAwesomeIcon icon={faFacebook} className="facebookLogo" onClick={() => window.open("https://tr-tr.facebook.com/mustafa.akyilmaz", "_blank")}/>
+          <FontAwesomeIcon icon={faInstagram} className="instagramLogo" onClick={() => window.open("https://www.instagram.com/makyilmaz33/", "_blank")}/>
         </div>
         <div className="footer-bottom-section-3">
-          <p>Merkez Mahallesi, Kamil Başaran Sokak, <br/> M.Celikel Apt, A blok, No:2, D:7, 33730 Erdemli/Mersin</p>
+          <p>Merkez Mahallesi, Kamil Başaran Sokak, <br/> M.Çelikel Apt, A blok, No:2, D:7, 33730 Erdemli/Mersin</p>
         </div>
       </div>
     </div>
