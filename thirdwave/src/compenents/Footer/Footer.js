@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTwitter, faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
+
+
 import "../../sass/components/_footer.scss";
 import Map, {
   Marker,
@@ -19,10 +23,10 @@ export default function Footer() {
   return (
     <div className="footer">
       <div className="footer-top">
-        <div>
+        <div className="footer-top-section-1">
           <h1>3rdWave</h1>
         </div>
-        <div className="footer-top-sections">
+        <div className="footer-top-section-2">
           <ul>
             <li>
               <a href="#">documentation</a>
@@ -47,7 +51,7 @@ export default function Footer() {
               latitude: lat,
               zoom: 15,
             }}
-            style={{ width: 400, height: 400 }}
+            className="messi"
             mapStyle="mapbox://styles/tt33/clauy32th004814n9nvnwcabp"
           >
             <Marker
@@ -67,16 +71,16 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <div>
+        <div className="footer-bottom-section-1">
           <p>Copyrights © 2021</p>
         </div>
-        <div>
-          <a href="#">instagram</a>
-          <a href="#">facebook</a>
-          <a href="#">twitter</a>
+        <div className="footer-bottom-section-2"> 
+          <FontAwesomeIcon icon={faTwitter} className="twitterLogo" onClick={() => window.open("https://github.com/bayogluteoman", "_blank")}/>
+          <FontAwesomeIcon icon={faFacebook} className="twitterLogo" onClick={() => window.open("https://github.com/bayogluteoman", "_blank")}/>
+          <FontAwesomeIcon icon={faInstagram} className="twitterLogo" onClick={() => window.open("https://github.com/bayogluteoman", "_blank")}/>
         </div>
-        <div>
-          <p>Merkez Mahallesi Erdemli</p>
+        <div className="footer-bottom-section-3">
+          <p>Merkez Mahallesi, Kamil Başaran Sokak, <br/> M.Celikel Apt, A blok, No:2, D:7, 33730 Erdemli/Mersin</p>
         </div>
       </div>
     </div>
