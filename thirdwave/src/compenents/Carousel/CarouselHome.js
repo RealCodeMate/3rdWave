@@ -13,7 +13,69 @@ function IndividualIntervalsExample() {
           alt="First slide"
         />
         <Carousel.Caption className="carosuel-content">
-          <h3>First</h3>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item interval={5000}>
+        <img
+          className="d-block w-50"
+          src={messi}
+          alt="First slide"
+        />
+        <Carousel.Caption className="carosuel-content">
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item interval={5000}>
+        <img
+          className="d-block w-50"
+          src={messi}
+          alt="First slide"
+        />
+        <Carousel.Caption className="carosuel-content">
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item interval={5000}>
+        <img
+          className="d-block w-50"
+          src={messi}
+          alt="First slide"
+        />
+        <Carousel.Caption className="carosuel-content">
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item interval={5000}>
+        <img
+          className="d-block w-50"
+          src={messi}
+          alt="First slide"
+        />
+        <Carousel.Caption className="carosuel-content">
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item interval={5000}>
+        <img
+          className="d-block w-50"
+          src={messi}
+          alt="First slide"
+        />
+        <Carousel.Caption className="carosuel-content">
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item interval={5000}>
+        <img
+          className="d-block w-50"
+          src={messi}
+          alt="First slide"
+        />
+        <Carousel.Caption className="carosuel-content">
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item interval={5000}>
+        <img
+          className="d-block w-50"
+          src={messi}
+          alt="First slide"
+        />
+        <Carousel.Caption className="carosuel-content">
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={5000}>
@@ -23,7 +85,6 @@ function IndividualIntervalsExample() {
           alt="Second slide"
         />
         <Carousel.Caption className="carosuel-content">
-          <h3>Second</h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={5000}>
@@ -33,7 +94,6 @@ function IndividualIntervalsExample() {
           alt="Third slide"
         />
         <Carousel.Caption className="carosuel-content">
-          <h3>Third</h3>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

@@ -10,20 +10,29 @@ export default function Header() {
       <div className="nav-container">
         <div className="navbar">
           <Nav.Link as={NavLink} to="/" className="logo">
-            3rd Wave
+            Dt. Mustafa <span className="life-header">Akyılmaz</span>
           </Nav.Link>
 
           <div className="navItems">
             <Nav.Link as={NavLink} to="/" className="menuItems">
-              Home
+              Anasayfa
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/" className="menuItems">
+              Tedaviler
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/" className="menuItems">
+              Galeri
             </Nav.Link>
 
             <Nav.Link as={NavLink} to="/about" className="menuItems">
-              About
+              Hakkımda
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/" className="menuItems">
+              SSS
             </Nav.Link>
 
             <Nav.Link as={NavLink} to="/contact" className="menuItems">
-              Contact
+              İletişim
             </Nav.Link>
           </div>
         </div>

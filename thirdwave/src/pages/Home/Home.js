@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState }from "react";
 import "../../sass/pages/_home.scss";
 import "../../sass/components/_accordion.scss";
 // import "../../sass/components/_carousel.scss";
@@ -8,12 +8,25 @@ import CarouselHome from "../../compenents/Carousel/CarouselHome";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import messi from "../../assets/tooth3.jpg";
 import Footer from "../../compenents/Footer/Footer";
+
+import Map, {
+  Marker,
+  ScaleControl,
+  NavigationControl,
+  GeolocateControl,
+} from "react-map-gl";
+import "mapbox-gl/dist/mapbox-gl.css";
 
 export default function Home() {
   const clickMe = () => {
     alert("hello 3rd wave");
+  };
+
+  const [lng, setLng] = useState(34.313821201725084);
+  const [lat, setLat] = useState(36.602693172981596);
+  const openInNewTab = (url) => {
+    window.open(url, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -25,28 +38,19 @@ export default function Home() {
         <div className="right-bg">
           <div className="main-info">
             <h1>
-              Welcome To <br />
-              Your Goal In <br />
-              <span className="life-header">Real</span> Life.
+              Sizin gülüşünüz<br />
+              bizim için <br />
+              <span className="life-header">önemli</span>.
               <br />
             </h1>
             <br />
             <span className="wave-header" onClick={() => clickMe()}>
-              3rd Wave
+              Başlayalım
             </span>
           </div>
         </div>
       </div>
 
-      <div className="section-a">
-        <h1>
-          If you want to enjoy moments
-          <br /> with <span>passion</span> and <span>persistence</span>, <br />
-          you are in right place.
-        </h1>
-
-        <MyAccordion />
-      </div>
       <div className="section-b">
         <div className="section-b-main">
           <Container>
@@ -69,153 +73,63 @@ export default function Home() {
           </Container>
         </div>
       </div>
-      <div className="section-c">
-        <div className="section-c-main">
-          <Container className="container-c">
-            <Row>
-              <Col sm>
-                <img src={messi} alt="img" className="section-c-main-img"></img>
-              </Col>
-              <Col sm className="section-c-main-content">
-                <h1>Even more great stuff</h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Facilis laborum animi non ut, ratione eos id? Dolore
-                  repellendus illum facilis et dolorum officiis totam similique
-                  consequuntur, magni nobis obcaecati voluptatibus!
-                </p>
-              </Col>
-            </Row>
-          </Container>
-        </div>
-      </div>
+      
       <div className="section-d">
         <div className="section-d-slide">
-          <h1>Photo Gallery</h1>
+          <h1>Foto Galeri</h1>
           <p>
-            Your <span className="life-header">eyes</span> can't lie. Just look
-            at this.
+            Kaliteli <span className="life-header">hizmet</span>  için sizleri bekliyoruz. 
           </p>
           <CarouselHome />
         </div>
       </div>
-      <div className="section-e">
-        <Container>
-          <Row>
-            <Col sm>
-              <div className="section-e-head">
-                <h3>Even more great stuff</h3>
-                <h1>Some words from our 1400+ customers.</h1>
-              </div>
-              <hr />
-            </Col>
-          </Row>
-          <Row>
-            <Col sm={4} className="section-e-rate">
-              <div>
-                <h1>5.0</h1>
-                <p>out of 5</p>
-              </div>
-              <p className="section-e-star">⭐⭐⭐⭐⭐</p>
-            </Col>
-            <Col sm={8}>
-              <p className="section-e-paragraph">
-                "Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Modi
-                ullam in distinctio placeat, repellendus similique quod illo
-                alias enim, asperiores veritatis, repudiandae."{" "}
-              </p>
-            </Col>
-          </Row>
-          <hr />
-          <Row>
-            <Col sm={4} className="section-e-rate">
-              <div>
-                <h1>4.0</h1>
-                <p>out of 5</p>
-              </div>
-              <p className="section-e-star">⭐⭐⭐⭐</p>
-            </Col>
-            <Col sm={8}>
-              <p className="section-e-paragraph">
-                "Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Modi
-                ullam in distinctio placeat, repellendus similique quod illo
-                alias enim, asperiores veritatis, repudiandae."{" "}
-              </p>
-            </Col>
-          </Row>
-          <hr />
-          <Row>
-            <Col sm={4} className="section-e-rate">
-              <div>
-                <h1>3.0</h1>
-                <p>out of 5</p>
-              </div>
-              <p className="section-e-star">⭐⭐⭐</p>
-            </Col>
-            <Col sm={8}>
-              <p className="section-e-paragraph">
-                "Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Modi
-                ullam in distinctio placeat, repellendus similique quod illo
-                alias enim, asperiores veritatis, repudiandae."{" "}
-              </p>
-            </Col>
-          </Row>
-          <hr />
-        </Container>
+      <div className="section-a">
+        <h1>
+          Sıkça Sorulan Sorular
+        </h1>
+
+        <MyAccordion />
+        <a href="#" className="faq-button">Daha Fazlasi</a>
       </div>
+
       <div className="section-f">
-        <Container className="section-f-container">
-          <Row>
-            <Col sm={4}>
-              <h1 className="section-f-container-price">
-                <span>$</span>9.99
-              </h1>
-            </Col>
-            <Col sm={8}>
-              <h1>
-                One year access to all designs listed on this page and all our
-                templates.
-              </h1>
-            </Col>
-            <Col sm={{ span: 8, offset: 4 }}>
-              <Row>
-                <Col sm={{ span: 12 }}>
-                  <Row className="price-content-1">
-                    <Col>
-                      <div className="price-content-tick">
-                        <h5>✔</h5>
-                        <h4> Variable and OpenType fonts</h4>
-                      </div>
-                    </Col>
-                    <Col>
-                      <div className="price-content-tick">
-                        <h5>✔</h5>
-                        <h4> Pixel-level precision</h4>
-                      </div>
-                    </Col>
-                  </Row>
-                  <Row className="price-content-1">
-                    <Col>
-                      <div className="price-content-tick">
-                        <h5>✔</h5>
-                        <h4> Multi-team management</h4>
-                      </div>
-                    </Col>
-                    <Col>
-                      <div className="price-content-tick">
-                        <h5>✔</h5>
-                        <h4> Reusable components</h4>
-                      </div>
-                    </Col>
-                  </Row>
-                </Col>
-              </Row>
-              <div className="btn-display">
-                <a className="section-f-btn">Buy Now</a>
-              </div>
-            </Col>
-          </Row>
-        </Container>
+        <div className="mapContainer">
+          <div className="mapContainer-div">
+           {/* <img src={messi} style={{ width: "300px", height:"300px" }}/> */}
+          </div>
+        
+        
+      {/* <Map
+            mapboxAccessToken="pk.eyJ1IjoidHQzMyIsImEiOiJjbGF1MWloZm4wMjZrM3BuMGZ1d2g1Z2p1In0.BKizdKlGEIXhMxYo-dbYWA"
+            center
+            initialViewState={{
+              longitude: lng,
+              latitude: lat,
+              zoom: 15,
+            }}
+            style={{
+              width: "55%",
+              height: "60%",
+
+            }}
+            className="map"
+            mapStyle="mapbox://styles/tt33/clauy32th004814n9nvnwcabp"
+          >
+            <Marker
+              latitude={lat}
+              longitude={lng}
+              color={'red'}
+              onClick={() =>
+                openInNewTab(
+                  "https://www.google.com/maps/place/di%C5%9F+hekimi+mustafa+aky%C4%B1lmaz/@36.6026435,34.3138118,15z/data=!4m5!3m4!1s0x0:0x28a876623e2b81e!8m2!3d36.6026435!4d34.3138118"
+                )
+              }
+            />
+            <ScaleControl />
+            <NavigationControl />
+            <GeolocateControl />
+          </Map> */}
+      </div>
       </div>
       <Footer />
     </div>

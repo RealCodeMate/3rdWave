@@ -4,21 +4,21 @@ import { faTwitter, faFacebook, faInstagram } from '@fortawesome/free-brands-svg
 
 
 import "../../sass/components/_footer.scss";
-import Map, {
-  Marker,
-  ScaleControl,
-  NavigationControl,
-  GeolocateControl,
-} from "react-map-gl";
-import "mapbox-gl/dist/mapbox-gl.css";
+// import Map, {
+//   Marker,
+//   ScaleControl,
+//   NavigationControl,
+//   GeolocateControl,
+// } from "react-map-gl";
+// import "mapbox-gl/dist/mapbox-gl.css";
 
 export default function Footer() {
-  const [lng, setLng] = useState(34.313821201725084);
-  const [lat, setLat] = useState(36.602693172981596);
+  // const [lng, setLng] = useState(34.313821201725084);
+  // const [lat, setLat] = useState(36.602693172981596);
 
-  const openInNewTab = (url) => {
-    window.open(url, "_blank", "noopener,noreferrer");
-  };
+  // const openInNewTab = (url) => {
+  //   window.open(url, "_blank", "noopener,noreferrer");
+  // };
 
   return (
     <div className="footer">
@@ -43,7 +43,7 @@ export default function Footer() {
           </ul>
         </div>
         <div className="footer-top-map">
-          <Map
+          {/* <Map
             mapboxAccessToken="pk.eyJ1IjoidHQzMyIsImEiOiJjbGF1MWloZm4wMjZrM3BuMGZ1d2g1Z2p1In0.BKizdKlGEIXhMxYo-dbYWA"
             center
             initialViewState={{
@@ -67,7 +67,7 @@ export default function Footer() {
             <ScaleControl />
             <NavigationControl />
             <GeolocateControl />
-          </Map>
+          </Map> */}
         </div>
       </div>
 
