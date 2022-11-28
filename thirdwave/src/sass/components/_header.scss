@@ -4,35 +4,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-.nav-container {
-  position: relative;
-  height: 100vh;
-  .navbar {
-    color: $hover-primary;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 1.5rem;
-    .logo {
-      font-size: 4.5rem;
-      margin-left: 1rem;
-      .life-header {
-        color: $hover-third;
-      }
-    }
-    .navItems {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      .menuItems {
-        font-size: 1.8rem;
-        margin-right: 1.3rem;
-        transition: all 0.3s ease-in-out;
-        &:hover {
-          color: $hover-third;
-        }
-      }
-    }
-  }
+
+// .navbar {
+//   background-color: red;
+// }
+
+.container-fluid .navbar-brand{
+  font-size: 2rem;
 }

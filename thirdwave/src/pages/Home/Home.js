@@ -1,4 +1,4 @@
-import React, { useState }from "react";
+import React, { useState } from "react";
 import "../../sass/pages/_home.scss";
 import "../../sass/components/_accordion.scss";
 // import "../../sass/components/_carousel.scss";
@@ -34,19 +34,22 @@ export default function Home() {
       <Header />
 
       <div id="home">
-        <div className="left-bg" />
-        <div className="right-bg">
-          <div className="main-info">
-            <h1>
-              Sizin gülüşünüz<br />
-              bizim için <br />
-              <span className="life-header">önemli</span>.
+        <div className="messi">
+
+          <div className="left-bg" />
+          <div className="right-bg">
+            <div className="main-info">
+              <h1>
+                Sizin gülüşünüz<br />
+                bizim için <br />
+                <span className="life-header">önemli</span>.
+                <br />
+              </h1>
               <br />
-            </h1>
-            <br />
-            <span className="wave-header" onClick={() => clickMe()}>
-              Başlayalım
-            </span>
+              <span className="wave-header" onClick={() => clickMe()}>
+                Başlayalım
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -73,12 +76,12 @@ export default function Home() {
           </Container>
         </div>
       </div>
-      
+
       <div className="section-d">
         <div className="section-d-slide">
           <h1>Foto Galeri</h1>
           <p>
-            Kaliteli <span className="life-header">hizmet</span>  için sizleri bekliyoruz. 
+            Kaliteli <span className="life-header">hizmet</span>  için sizleri bekliyoruz.
           </p>
           <CarouselHome />
         </div>
@@ -93,43 +96,36 @@ export default function Home() {
       </div>
 
       <div className="section-f">
-        <div className="mapContainer">
-          <div className="mapContainer-div">
-           {/* <img src={messi} style={{ width: "300px", height:"300px" }}/> */}
-          </div>
-        
-        
-      {/* <Map
-            mapboxAccessToken="pk.eyJ1IjoidHQzMyIsImEiOiJjbGF1MWloZm4wMjZrM3BuMGZ1d2g1Z2p1In0.BKizdKlGEIXhMxYo-dbYWA"
-            center
-            initialViewState={{
-              longitude: lng,
-              latitude: lat,
-              zoom: 15,
-            }}
-            style={{
-              width: "55%",
-              height: "60%",
+        <Map
+          mapboxAccessToken="pk.eyJ1IjoidHQzMyIsImEiOiJjbGF1MWloZm4wMjZrM3BuMGZ1d2g1Z2p1In0.BKizdKlGEIXhMxYo-dbYWA"
+          center
+          initialViewState={{
+            longitude: lng,
+            latitude: lat,
+            zoom: 15,
+          }}
+          style={{
+            width: "62%",
+            height: "60%",
 
-            }}
-            className="map"
-            mapStyle="mapbox://styles/tt33/clauy32th004814n9nvnwcabp"
-          >
-            <Marker
-              latitude={lat}
-              longitude={lng}
-              color={'red'}
-              onClick={() =>
-                openInNewTab(
-                  "https://www.google.com/maps/place/di%C5%9F+hekimi+mustafa+aky%C4%B1lmaz/@36.6026435,34.3138118,15z/data=!4m5!3m4!1s0x0:0x28a876623e2b81e!8m2!3d36.6026435!4d34.3138118"
-                )
-              }
-            />
-            <ScaleControl />
-            <NavigationControl />
-            <GeolocateControl />
-          </Map> */}
-      </div>
+          }}
+          className="map"
+          mapStyle="mapbox://styles/tt33/clauy32th004814n9nvnwcabp"
+        >
+          <Marker
+            latitude={lat}
+            longitude={lng}
+            color={'red'}
+            onClick={() =>
+              openInNewTab(
+                "https://www.google.com/maps/place/di%C5%9F+hekimi+mustafa+aky%C4%B1lmaz/@36.6026435,34.3138118,15z/data=!4m5!3m4!1s0x0:0x28a876623e2b81e!8m2!3d36.6026435!4d34.3138118"
+              )
+            }
+          />
+          <ScaleControl />
+          <NavigationControl />
+          <GeolocateControl />
+        </Map>
       </div>
       <Footer />
     </div>

@@ -3,21 +3,17 @@
 #parent {
   font-family: "Alexandria", sans-serif;
 }
-.left-bg {
+.messi{
   height: 100vh;
-  width: 50%;
+  display: flex;
+}
+.left-bg {
   background: url("../../assets/tooth.jpg") center center/cover no-repeat;
-  position: absolute;
-  top: 0;
-  left: 0;
+  height: 100%;
+  width: 50%;
 }
 .right-bg {
-  height: 100vh;
-  width: 50%;
-  background-color: #efefef;
-  position: absolute;
-  top: 0;
-  right: 0;
+  
   .main-info {
     height: 100%;
     width: 100%;
@@ -130,97 +126,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  // max-width: 96vw;
-  // margin:3rem auto ;
-  background: url("../../assets/mapbg.jpg") center center  no-repeat;
-  background-size: 100%;
-
-  .mapContainer {
-    height: 62vh;
-    width: 57vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: url("../../assets/tooth.jpg") center center  no-repeat;
-    background-size: 100%;
-    &-div{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-      width: 100%;
-      background-color: red;
-      background-size: 100%;
-    }
-    
-    
-  }
- 
-  & > * {
-    z-index: 100;
-  }
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    opacity:0;
-    z-index: 1;
-  }
-  &-container {
-    margin-top: 7.5rem;
-    span {
-      color: $hover-third;
-      padding: 0.4rem;
-    }
-  }
-  &-container-price {
-    font-size: 5rem;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-.price-content-1 {
-  padding-top: 2rem;
-  h4 {
-    color: #fff;
-  }
-  .price-content-tick {
-    display: flex;
-    align-items: center;
-    h5 {
-      padding-right: 0.5rem;
-      color: $hover-third;
-      font-weight: bold;
-      font-size: 2rem;
-    }
-  }
-}
-.section-f-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.4rem;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 1.5rem 3rem;
-  margin-right: 3rem;
-  background-color: #fff;
-  color: #000;
-  border-radius: 3rem;
-  margin-top: 2rem;
-  cursor: pointer;
-  transition: all 1s ease;
-  &:hover {
-    color: #fff;
-    background-color: $hover-secondary;
-  }
+  background: url("../../assets/mapbg.jpg") center center/cover  no-repeat;
 }
 .btn-display {
   display: flex;
