@@ -1,13 +1,9 @@
 import React, { useState } from "react";
 import "../../sass/pages/_home.scss";
 import "../../sass/components/_accordion.scss";
-// import "../../sass/components/_carousel.scss";
 import Header from "../../compenents/Header/Header";
 import MyAccordion from "../../compenents/Accordion/MyAccordion";
 import CarouselHome from "../../compenents/Carousel/CarouselHome";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import Footer from "../../compenents/Footer/Footer";
 
 import Map, {
@@ -15,8 +11,10 @@ import Map, {
   ScaleControl,
   NavigationControl,
   GeolocateControl,
+  FullscreenControl,
 } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
+import { faBlackTie } from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
   const clickMe = () => {
@@ -118,35 +116,44 @@ export default function Home() {
       </div>
 
       <div className="section-f">
-        {/* <Map
-          mapboxAccessToken="pk.eyJ1IjoidHQzMyIsImEiOiJjbGF1MWloZm4wMjZrM3BuMGZ1d2g1Z2p1In0.BKizdKlGEIXhMxYo-dbYWA"
-          center
-          initialViewState={{
-            longitude: lng,
-            latitude: lat,
-            zoom: 15,
-          }}
-          style={{
-            width: "62%",
-            height: "60%",
-          }}
-          className="map"
-          mapStyle="mapbox://styles/tt33/clauy32th004814n9nvnwcabp"
-        >
-          <Marker
-            latitude={lat}
-            longitude={lng}
-            color={"red"}
-            onClick={() =>
-              openInNewTab(
-                "https://www.google.com/maps/place/di%C5%9F+hekimi+mustafa+aky%C4%B1lmaz/@36.6026435,34.3138118,15z/data=!4m5!3m4!1s0x0:0x28a876623e2b81e!8m2!3d36.6026435!4d34.3138118"
-              )
-            }
-          />
-          <ScaleControl />
-          <NavigationControl />
-          <GeolocateControl />
-        </Map> */}
+        <div className="left-map">
+          <Map
+            mapboxAccessToken="pk.eyJ1IjoidHQzMyIsImEiOiJjbGF1MWloZm4wMjZrM3BuMGZ1d2g1Z2p1In0.BKizdKlGEIXhMxYo-dbYWA"
+            center
+            initialViewState={{
+              longitude: lng,
+              latitude: lat,
+              zoom: 15,
+            }}
+            style={{
+              width: "85%",
+              height: "80%",
+              borderRadius: "10px"
+            }}
+            className="map"
+            mapStyle="mapbox://styles/tt33/clauy32th004814n9nvnwcabp"
+          >
+            <Marker
+              latitude={lat}
+              longitude={lng}
+              color={"red"}
+              onClick={() =>
+                openInNewTab(
+                  "https://www.google.com/maps/place/di%C5%9F+hekimi+mustafa+aky%C4%B1lmaz/@36.6026435,34.3138118,15z/data=!4m5!3m4!1s0x0:0x28a876623e2b81e!8m2!3d36.6026435!4d34.3138118"
+                )
+              }
+            />
+            <ScaleControl />
+            <NavigationControl />
+            <GeolocateControl />
+            <FullscreenControl />
+          </Map>
+        </div>
+        <div className="right-map">
+
+          <h4>Merkez Mahallesi, Kamil Başaran Sokak,
+            <br /> M.Çelikel Apt, A blok, No:2, D:7, 33730 <br /> Erdemli/Mersin</h4>
+        </div>
       </div>
       <Footer />
     </div>
