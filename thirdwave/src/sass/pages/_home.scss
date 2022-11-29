@@ -1,135 +1,232 @@
 @import "../abstracts/variables";
+@import "../abstracts/mediaquery";
 
 #parent {
   font-family: "Alexandria", sans-serif;
-}
-.messi{
-  height: 100vh;
-  display: flex;
-}
-.left-bg {
-  background: url("../../assets/tooth.jpg") center center/cover no-repeat;
-  height: 100%;
-  width: 50%;
-}
-.right-bg {
-  
-  .main-info {
-    height: 100%;
-    width: 100%;
+
+  .messi {
+    height: 100vh;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding-left: 3rem;
-    color: #000;
+  }
+  .left-bg {
+    background: url("../../assets/tooth.jpg") center center/cover no-repeat;
+    height: 100%;
+    width: 50%;
+  }
+  .right-bg {
+    width: 50%;
+    .main-info {
+      height: 100%;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding-left: 3rem;
+      color: #000;
 
-    h1 {
-      font-size: 5rem;
-      line-height: 5rem;
-    }
-    .life-header {
-      color: $hover-third;
-    }
-    .wave-header {
-      font-size: 2rem;
-      display: inline-block;
-      padding: 0.1rem 0.5rem;
-      background: linear-gradient(to right, #353434, #5a5a5a);
-      border-radius: 10px;
-      color: #fff;
-      cursor: pointer;
-      text-align: center;
-      transition: all 1s ease-in;
-      margin-left: 0.3rem;
-
-      &:hover {
-        padding-right: 4rem;
-        background: linear-gradient(to right, $hover-secondary, $hover-third);
-        color: #fff;
+      h1 {
+        font-size: 5rem;
+        line-height: 5rem;
       }
-    }
-  }
-}
-.section-a {
-  color: #000;
-  background-color: #efefef;
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  line-height: 2.3;
-
-  h1 {
-    padding-bottom: 2rem;
-    color: #000;
-  }
-  span {
-    color: $hover-third;
-  }
-}
-
-.section-b {
-  max-width: 90vw;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: #fff;
-  color: #fff;
-
-  &-main {
-    background: url(../../assets/tooth2.jpg) center center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    height: 90%;
-    width: 100%;
-    text-align: center;
-  }
-}
-
-.section-d {
-  height: 80vh;
-  color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  &-slide {
-    height: 100%;
-    line-height: normal;
-    h1 {
-      text-align: center;
-      font-size: 1rem;
-      color: rgb(84, 83, 83);
-      margin-top: 1rem;
-    }
-    p {
-      text-align: center;
-      font-size: 3rem;
       .life-header {
         color: $hover-third;
+      }
+      .wave-header {
+        font-size: 2rem;
+        display: inline-block;
+        padding: 0.1rem 0.5rem;
+        background: linear-gradient(to right, #353434, #5a5a5a);
+        border-radius: 10px;
+        color: #fff;
         cursor: pointer;
+        text-align: center;
+        transition: all 1s ease-in;
+        margin-left: 0.3rem;
+
         &:hover {
-          color: $hover-primary;
+          padding-right: 4rem;
+          background: linear-gradient(to right, $hover-secondary, $hover-third);
+          color: #fff;
         }
       }
     }
   }
-}
+  .section-a {
+    color: #000;
+    background-color: #efefef;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 2.3;
 
-.section-f {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background: url("../../assets/mapbg.jpg") center center/cover  no-repeat;
-}
-.btn-display {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    h1 {
+      padding-bottom: 2rem;
+      color: #000;
+    }
+    span {
+      color: $hover-third;
+    }
+  }
+
+  .section-b {
+    width: 90vw;
+    margin: 2rem auto;
+    margin-bottom: 0;
+    height: 100vh;
+    position: relative;
+
+    @include respond(tab-land) {
+      height: 140vh !important;
+    }
+    @include respond(tab-port) {
+      height: 160vh !important;
+    }
+
+    &-main {
+      height: 100%;
+      background: url("../../assets/tooth2.jpg") center center / cover no-repeat;
+
+      &::after {
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient($hover-third, $hover-secondary);
+        opacity: 0.2;
+        z-index: 0;
+      }
+    }
+    .row {
+      max-width: 114rem;
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h1 {
+        font-size: 3rem;
+        color: $hover-third;
+        text-align: center;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 4rem;
+        @include respond(tab-port) {
+          margin-bottom: 2rem;
+        }
+      }
+      @include respond(tab-land) {
+        max-width: 50rem;
+      }
+      [class^="col"] {
+        float: left;
+        @include respond(tab-land) {
+          width: 80% !important;
+          margin: 0 !important;
+        }
+      }
+      .col-1-of-3 {
+        z-index: 1;
+        width: calc((100% - 2 * 9rem) / 3);
+        padding: 0;
+        &:not(:nth-child(4), :last-child) {
+          margin-right: 5rem;
+        }
+        .cards {
+          background-color: none;
+          border: none;
+          perspective: 150rem;
+          -moz-perspective: 150rem;
+          position: relative;
+          height: 20rem;
+          // margin: 5rem;
+          // margin-top: 6rem;
+
+          &-side {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            height: 18rem;
+            color: #fff;
+            text-align: center;
+            font-size: 2rem;
+            transition: all 1s ease;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            backface-visibility: hidden;
+            border-radius: 5rem;
+            box-shadow: 0 1.5rem 4rem rgba($color: #000000, $alpha: 0.8);
+
+            &-front {
+              background-color: orangered;
+            }
+
+            &-back {
+              background-color: green;
+              transform: rotateY(180deg);
+            }
+          }
+          &:hover .cards-side-front {
+            transform: rotateY(180deg);
+          }
+          &:hover .cards-side-back {
+            transform: rotateY(0);
+          }
+        }
+      }
+    }
+  }
+
+  .section-d {
+    height: 80vh;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-slide {
+      height: 100%;
+      line-height: normal;
+      h1 {
+        text-align: center;
+        font-size: 1rem;
+        color: rgb(84, 83, 83);
+        margin-top: 1rem;
+      }
+      p {
+        text-align: center;
+        font-size: 3rem;
+        .life-header {
+          color: $hover-third;
+          cursor: pointer;
+          &:hover {
+            color: $hover-primary;
+          }
+        }
+      }
+    }
+  }
+
+  .section-f {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url("../../assets/mapbg.jpg") center center/cover no-repeat;
+  }
+  .btn-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

@@ -35,12 +35,12 @@ export default function Home() {
 
       <div id="home">
         <div className="messi">
-
           <div className="left-bg" />
           <div className="right-bg">
             <div className="main-info">
               <h1>
-                Sizin gülüşünüz<br />
+                Sizin gülüşünüz
+                <br />
                 bizim için <br />
                 <span className="life-header">önemli</span>.
                 <br />
@@ -56,24 +56,45 @@ export default function Home() {
 
       <div className="section-b">
         <div className="section-b-main">
-          <Container>
-            <Row>
-              <Col sm>
-                <h1>Even more great stuff</h1>
-              </Col>
-            </Row>
-            <Row>
-              <Col sm>
-                <h1>Even more</h1>
-              </Col>
-              <Col sm>
-                <h1>great </h1>
-              </Col>
-              <Col sm>
-                <h1> stuff</h1>
-              </Col>
-            </Row>
-          </Container>
+          <div className="row">
+            <h1>Tedaviler</h1>
+            <div className="col-1-of-3">
+              <div className="cards">
+                <div className="cards-side cards-side-front">front</div>
+                <div className="cards-side cards-side-back">back</div>
+              </div>
+            </div>
+            <div className="col-1-of-3">
+              <div className="cards">
+                <div className="cards-side cards-side-front">front</div>
+                <div className="cards-side cards-side-back">back</div>
+              </div>
+            </div>
+            <div className="col-1-of-3">
+              <div className="cards">
+                <div className="cards-side cards-side-front">front</div>
+                <div className="cards-side cards-side-back">back</div>
+              </div>
+            </div>
+            <div className="col-1-of-3">
+              <div className="cards">
+                <div className="cards-side cards-side-front">front</div>
+                <div className="cards-side cards-side-back">back</div>
+              </div>
+            </div>
+            <div className="col-1-of-3">
+              <div className="cards">
+                <div className="cards-side cards-side-front">front</div>
+                <div className="cards-side cards-side-back">back</div>
+              </div>
+            </div>
+            <div className="col-1-of-3">
+              <div className="cards">
+                <div className="cards-side cards-side-front">front</div>
+                <div className="cards-side cards-side-back">back</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -81,22 +102,23 @@ export default function Home() {
         <div className="section-d-slide">
           <h1>Foto Galeri</h1>
           <p>
-            Kaliteli <span className="life-header">hizmet</span>  için sizleri bekliyoruz.
+            Kaliteli <span className="life-header">hizmet</span> için sizleri
+            bekliyoruz.
           </p>
           <CarouselHome />
         </div>
       </div>
       <div className="section-a">
-        <h1>
-          Sıkça Sorulan Sorular
-        </h1>
+        <h1>Sıkça Sorulan Sorular</h1>
 
         <MyAccordion />
-        <a href="#" className="faq-button">Daha Fazlasi</a>
+        <a href="#" className="faq-button">
+          Daha Fazlasi
+        </a>
       </div>
 
       <div className="section-f">
-        <Map
+        {/* <Map
           mapboxAccessToken="pk.eyJ1IjoidHQzMyIsImEiOiJjbGF1MWloZm4wMjZrM3BuMGZ1d2g1Z2p1In0.BKizdKlGEIXhMxYo-dbYWA"
           center
           initialViewState={{
@@ -107,7 +129,6 @@ export default function Home() {
           style={{
             width: "62%",
             height: "60%",
-
           }}
           className="map"
           mapStyle="mapbox://styles/tt33/clauy32th004814n9nvnwcabp"
@@ -115,7 +136,7 @@ export default function Home() {
           <Marker
             latitude={lat}
             longitude={lng}
-            color={'red'}
+            color={"red"}
             onClick={() =>
               openInNewTab(
                 "https://www.google.com/maps/place/di%C5%9F+hekimi+mustafa+aky%C4%B1lmaz/@36.6026435,34.3138118,15z/data=!4m5!3m4!1s0x0:0x28a876623e2b81e!8m2!3d36.6026435!4d34.3138118"
@@ -125,7 +146,7 @@ export default function Home() {
           <ScaleControl />
           <NavigationControl />
           <GeolocateControl />
-        </Map>
+        </Map> */}
       </div>
       <Footer />
     </div>
