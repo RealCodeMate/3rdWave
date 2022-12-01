@@ -9,8 +9,6 @@ export default function Footer() {
   return (
     <div className="footer">
       <div className="footer-top">
-
-        <a href="#">İletişim</a>
         <div className="footer-top-icons">
           <FontAwesomeIcon icon={faTwitter} className="twitterLogo" onClick={() => window.open("https://github.com/bayogluteoman", "_blank")} />
           <FontAwesomeIcon icon={faFacebook} className="facebookLogo" onClick={() => window.open("https://tr-tr.facebook.com/mustafa.akyilmaz", "_blank")} />
