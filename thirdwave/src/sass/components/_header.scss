@@ -11,18 +11,31 @@
 // }
 .navbar {
   height: 5rem;
+  h1 {
+    color: #000;
+    span {
+      color: $hover-third;
+    }
+  }
 }
 .container-fluid .navbar-brand {
   font-size: 2rem;
-  @include respond(phone){
-    font-size:1rem ;
+  @include respond(phone) {
+    font-size: 1rem;
     line-height: normal;
     padding: 0;
   }
 }
-.container-fluid{
-  @include respond(phone){
-
+.container-fluid {
+  @include respond(phone) {
     padding: 0 !important;
+  }
+}
+.pe-3 {
+  h5 {
+    color: $hover-secondary;
+    &:hover {
+      color: $hover-third;
+    }
   }
 }

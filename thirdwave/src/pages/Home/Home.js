@@ -57,54 +57,77 @@ export default function Home() {
           <div className="row">
             <h1>Tedaviler</h1>
             <div className="col-1-of-3">
-
               <div className="cards">
-                <div className="cards-side cards-side-front"><h2>Diş Beyazlatma</h2></div>
+                <div className="cards-side cards-side-front">
+                  <h2>Diş Beyazlatma</h2>
+                </div>
                 <div className="cards-side cards-side-back">
                   <div className="backside-1-header">
                     <h3>Daha beyaz bir gulumseme icin...</h3>
-                    <a href="#">Devamı</a></div></div>
+                    <a href="#">Devamı</a>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="col-1-of-3">
               <div className="cards">
-                <div className="cards-side cards-side-front">Dolgu islemleri</div>
+                <div className="cards-side cards-side-front">
+                  Dolgu islemleri
+                </div>
                 <div className="cards-side cards-side-back">
                   <div className="backside-1-header">
                     <h3>Daha beyaz bir gulumseme icin...</h3>
-                    <a href="#">Devami</a></div></div>
+                    <a href="#">Devami</a>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="col-1-of-3">
               <div className="cards">
                 <div className="cards-side cards-side-front">Diş Çekimleri</div>
-                <div className="cards-side cards-side-back"><div className="backside-1-header">
-                  <h3>Daha beyaz bir gulumseme icin...</h3>
-                  <a href="#">Devami</a></div></div>
+                <div className="cards-side cards-side-back">
+                  <div className="backside-1-header">
+                    <h3>Daha beyaz bir gulumseme icin...</h3>
+                    <a href="#">Devami</a>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="col-1-of-3">
               <div className="cards">
-                <div className="cards-side cards-side-front">İmplant Uygulamaları</div>
-                <div className="cards-side cards-side-back"><div className="backside-1-header">
-                  <h3>Daha beyaz bir gulumseme icin...</h3>
-                  <a href="#">Devami</a></div></div>
+                <div className="cards-side cards-side-front">
+                  İmplant Uygulamaları
+                </div>
+                <div className="cards-side cards-side-back">
+                  <div className="backside-1-header">
+                    <h3>Daha beyaz bir gulumseme icin...</h3>
+                    <a href="#">Devami</a>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="col-1-of-3">
               <div className="cards">
-                <div className="cards-side cards-side-front">Kanal Tedavileri</div>
-                <div className="cards-side cards-side-back"><div className="backside-1-header">
-                  <h3>Daha beyaz bir gulumseme icin...</h3>
-                  <a href="#">Devami</a></div></div>
+                <div className="cards-side cards-side-front">
+                  Kanal Tedavileri
+                </div>
+                <div className="cards-side cards-side-back">
+                  <div className="backside-1-header">
+                    <h3>Daha beyaz bir gulumseme icin...</h3>
+                    <a href="#">Devami</a>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="col-1-of-3">
               <div className="cards">
                 <div className="cards-side cards-side-front">Protezler</div>
-                <div className="cards-side cards-side-back"><div className="backside-1-header">
-                  <h3>Daha beyaz bir gulumseme icin...</h3>
-                  <a href="#">Devami</a></div></div>
+                <div className="cards-side cards-side-back">
+                  <div className="backside-1-header">
+                    <h3>Daha beyaz bir gulumseme icin...</h3>
+                    <a href="#">Devamı</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -123,7 +146,9 @@ export default function Home() {
       </div>
 
       <div className="section-a">
-        <h1>Sıkça Sorulan Sorular</h1>
+        <h1>
+          <span>S</span>ıkça <span>S</span>orulan <span>S</span>orular
+        </h1>
 
         <MyAccordion />
         <a href="#" className="faq-button">
@@ -143,8 +168,8 @@ export default function Home() {
             }}
             style={{
               width: "85%",
-              height: "50%",
-              borderRadius: "10px"
+              height: "70%",
+              borderRadius: "10px",
             }}
             className="map"
             mapStyle="mapbox://styles/tt33/clauy32th004814n9nvnwcabp"
@@ -167,17 +192,69 @@ export default function Home() {
         </div>
         <div className="right-map">
           <div className="right-map-text">
-            <h4>Merkez Mahallesi, Kamil Başaran Sokak,
-              <br /> M.Çelikel Apt, A blok, No:2, D:7, 33730 <br /> Erdemli/Mersin</h4>
-            <ul>
-              <li>Pazartesi 09.00-17.00</li>
-              <li>Salı 09.00-17.00</li>
-              <li>Çarşamba 09.00-17.00</li>
-              <li>Perşembe 09.00-17.00</li>
-              <li>Cuma 09.00-17.00</li>
-              <li>Cumartesi 09.00-12.00</li>
-              <li>Pazar</li>
-            </ul>
+            <div class="opening-hours-container">
+              <div class="left-col">
+                <h2>Çalışma Saatleri</h2>
+                <div class="card">
+                  <div class="content">
+                    <i data-feather="calendar"></i>
+                    <span> Pazartesi </span>
+                  </div>
+
+                  <div class="content">
+                    <i data-feather="clock"></i>
+                    <span> 10:00 - 16:38 </span>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="content">
+                    <i data-feather="calendar"></i>
+                    <span> Salı </span>
+                  </div>
+
+                  <div class="content">
+                    <i data-feather="clock"></i>
+                    <span> 10:00 - 16:38 </span>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="content">
+                    <i data-feather="calendar"></i>
+                    <span> Çarşamba </span>
+                  </div>
+
+                  <div class="content">
+                    <i data-feather="clock"></i>
+                    <span> 10:00 - 16:38 </span>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="content">
+                    <i data-feather="calendar"></i>
+                    <span> Perşembe </span>
+                  </div>
+
+                  <div class="content">
+                    <i data-feather="clock"></i>
+                    <span> 10:00 - 16:38 </span>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="content">
+                    <i data-feather="calendar"></i>
+                    <span> Cuma </span>
+                  </div>
+
+                  <div class="content">
+                    <i data-feather="clock"></i>
+                    <span> 08:00 - 14:00 </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <script src="https://unpkg.com/feather-icons"></script>
           </div>
         </div>
       </div>
