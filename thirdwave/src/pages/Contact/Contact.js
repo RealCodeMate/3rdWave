@@ -1,15 +1,15 @@
 import React, { useState, useRef } from "react";
 import Header from "../../compenents/Header/Header";
 import Footer from "../../compenents/Footer/Footer";
-import emailjs from '@emailjs/browser';
+// import emailjs from '@emailjs/browser';
 import "../../sass/pages/_contact.scss";
 
 export default function Contact() {
   const [inputs, setInputs] = useState({
-    displayName: '',
-    email: '',
-    message: ''
-  })
+    displayName: "",
+    email: "",
+    message: "",
+  });
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -46,7 +46,7 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert('Thank you ' + inputs.displayName + ' :)');
+    alert("Thank you " + inputs.displayName + " :)");
 
     // emailjs.sendForm(
     //   'gmail',
@@ -59,8 +59,7 @@ export default function Contact() {
     //   }, (error) => {
     //     console.log(error.text);
     //   });
-
-  }
+  };
 
   const { displayName, email, message } = inputs;
 
@@ -99,17 +98,13 @@ export default function Contact() {
               </form>
             </div>
           </div>
-          <div className="col-2">
-            col2
-          </div>
+          <div className="col-2">col2</div>
         </div>
         <div className="row-2">
-          <div className="col-3">
-            col3
-          </div>
+          <div className="col-3">col3</div>
         </div>
       </div>
       <Footer />
     </div>
-  )
+  );
 }
