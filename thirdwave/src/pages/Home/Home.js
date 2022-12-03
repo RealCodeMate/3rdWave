@@ -5,6 +5,7 @@ import Header from "../../compenents/Header/Header";
 import MyAccordion from "../../compenents/Accordion/MyAccordion";
 import CarouselHome from "../../compenents/Carousel/CarouselHome";
 import Footer from "../../compenents/Footer/Footer";
+import { Link } from "react-router-dom";
 
 import Map, {
   Marker,
@@ -64,7 +65,7 @@ export default function Home() {
                 <div className="cards-side cards-side-back">
                   <div className="backside-1-header">
                     <h3>Daha beyaz bir gulumseme icin...</h3>
-                    <a href="#">Devamı</a>
+                    <Link to="/treatments/dis-beyazlatma">Devami</Link>
                   </div>
                 </div>
               </div>
@@ -77,18 +78,19 @@ export default function Home() {
                 <div className="cards-side cards-side-back">
                   <div className="backside-1-header">
                     <h3>Daha beyaz bir gulumseme icin...</h3>
-                    <a href="#">Devami</a>
+                    <Link to="/treatments/dolgu-islemleri">Devami</Link>
                   </div>
                 </div>
               </div>
             </div>
             <div className="col-1-of-3">
-              <div className="cards">
+              <div className="cards" >
                 <div className="cards-side cards-side-front">Diş Çekimleri</div>
                 <div className="cards-side cards-side-back">
                   <div className="backside-1-header">
                     <h3>Daha beyaz bir gulumseme icin...</h3>
-                    <a href="#">Devami</a>
+                    {/* <a onClick={() => alert('dis cekimleri')}>Devami</a> */}
+                    <Link to="/treatments/dis-cekimleri">Devami</Link>
                   </div>
                 </div>
               </div>
@@ -101,7 +103,7 @@ export default function Home() {
                 <div className="cards-side cards-side-back">
                   <div className="backside-1-header">
                     <h3>Daha beyaz bir gulumseme icin...</h3>
-                    <a href="#">Devami</a>
+                    <Link to="/treatments/implant-uygulamalari">Devami</Link>
                   </div>
                 </div>
               </div>
@@ -114,7 +116,7 @@ export default function Home() {
                 <div className="cards-side cards-side-back">
                   <div className="backside-1-header">
                     <h3>Daha beyaz bir gulumseme icin...</h3>
-                    <a href="#">Devami</a>
+                    <Link to="/treatments/kanal-tedavileri">Devami</Link>
                   </div>
                 </div>
               </div>
@@ -125,7 +127,7 @@ export default function Home() {
                 <div className="cards-side cards-side-back">
                   <div className="backside-1-header">
                     <h3>Daha beyaz bir gulumseme icin...</h3>
-                    <a href="#">Devamı</a>
+                    <Link to="/treatments/protez-tedavileri">Devami</Link>
                   </div>
                 </div>
               </div>
