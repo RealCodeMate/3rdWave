@@ -1,104 +1,189 @@
 @import "../abstracts/variables";
 
 #parent {
-    font-family: "Alexandria", sans-serif;
+  font-family: "Alexandria", sans-serif;
 }
 
 .contact {
-    height: 95vh;
-    width: 100vw;
+  height: 90vh;
+  width: 100vw;
 
 
-    .row-1 {
-        height: 70%;
-        width: 100%;
+  .row-1 {
+    height: 65%;
+    width: 100%;
 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .col-1 {
+      height: 100%;
+      width: 50%;
+
+      .contact-form {
+        height: 100%;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
 
-        .col-1 {
-            height: 100%;
-            width: 50%;
-            
-            .contact-form{
-                height: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                form {
-                    width: 80%;
-                    height: 100%;
-                    display: flex;
-                    flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                    
-                  }
-                  
-                  .feedback-input {
-                    color: black;
-                    font-family: Helvetica, Arial, sans-serif;
-                    font-weight: 500;
-                    font-size: 18px;
-                    border-radius: 5px;
-                    line-height: 22px;
-                    background-color: transparent;
-                    border: 2px solid #ff3d00;
-                    transition: all 0.3s;
-                    padding: 13px;
-                    margin-bottom: 15px;
-                    width: 100%;
-                    box-sizing: border-box;
-                    outline: 0;
-                  }
-                  
-                  .feedback-input:focus {
-                    border: 2px solid #ff3d00;
-                  }
-                  
-                  textarea {
-                    height: 150px;
-                    line-height: 150%;
-                    resize: vertical;
-                  }
-                  
-                  [type="submit"] {
-                    font-family: "Montserrat", Arial, Helvetica, sans-serif;
-                    width: 30%;
-                    background: #ff3d00;
-                    border-radius: 5px;
-                    border: 0;
-                    cursor: pointer;
-                    color: white;
-                    font-size: 24px;
-                    padding-top: 10px;
-                    padding-bottom: 10px;
-                    transition: all 0.3s;
-                    margin-top: -4px;
-                    font-weight: 700;
-                  }
-                  [type="submit"]:hover {
-                    background: #ff3d00;
-                  }
-            }
-            
+        form {
+          width: 80%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
 
         }
 
-        .col-2 {
-            height: 100%;
-            width: 50%;
-            background-color: green;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        .feedback-input {
+          color: black;
+          font-family: Helvetica, Arial, sans-serif;
+          font-weight: 500;
+          font-size: 18px;
+          border-radius: 5px;
+          line-height: 22px;
+          background-color: transparent;
+          border: 1px solid #222;
+          transition: all 0.3s;
+          padding: 13px;
+          margin-bottom: 15px;
+          width: 100%;
+          box-sizing: border-box;
+          outline: 0;
         }
+
+        .feedback-input-2 {
+          height: 18rem;
+          color: black;
+          font-family: Helvetica, Arial, sans-serif;
+          font-weight: 500;
+          font-size: 18px;
+          border-radius: 5px;
+          line-height: 22px;
+          background-color: transparent;
+          border: 1px solid #222;
+          transition: all 0.3s;
+          padding: 13px;
+          margin-bottom: 15px;
+          width: 100%;
+          box-sizing: border-box;
+          outline: 0;
+        }
+
+        .feedback-input:focus {
+          border: 2px solid $hover-third;
+        }
+
+        textarea {
+          height: 150px;
+          line-height: 150%;
+          resize: vertical;
+        }
+
+        [type="submit"] {
+          font-family: "Montserrat", Arial, Helvetica, sans-serif;
+          width: 30%;
+          background: $hover-third;
+          border-radius: 5px;
+          border: 0;
+          cursor: pointer;
+          color: white;
+          font-size: 24px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          transition: all 0.3s;
+          margin-top: -4px;
+          font-weight: 700;
+        }
+
+        [type="submit"]:hover {
+          opacity: .8;
+        }
+      }
+
+
     }
 
-    .row-2 {
-        height: 30%;
+    .col-2 {
+      height: 100%;
+      width: 50%;
+
+      &-img {
+        height: 100%;
         width: 100%;
+      }
     }
+  }
+
+  .row-2 {
+    height: 35%;
+    width: 100%;
+
+    .row-2-container {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+
+
+    }
+
+    .card-1 {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      background-color: rgba(248, 249, 250, 1);
+      border-radius: 15px;
+      padding: 1rem;
+      p{
+        margin-bottom: .4rem;
+      }
+      h3{
+        margin-top: 1rem;
+      }
+
+      
+    }
+
+    .card-2 {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(248, 249, 250, 1);
+      margin-left: 2rem;
+      margin-right: 2rem;
+      border-radius: 15px;
+      padding: 1rem;
+      p{
+        margin-bottom: .4rem;
+      }
+      h3{
+        margin-top: 1rem;
+      }
+
+      
+    }
+
+    .card-header {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;    
+    }
+  }
+
+
 }

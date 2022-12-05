@@ -3,6 +3,9 @@ import Header from "../../compenents/Header/Header";
 import Footer from "../../compenents/Footer/Footer";
 // import emailjs from '@emailjs/browser';
 import "../../sass/pages/_contact.scss";
+import barcode from "../../assets/contact.svg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { asd } from '@fortawesome/free-brands-svg-icons'
 
 export default function Contact() {
   const [inputs, setInputs] = useState({
@@ -89,7 +92,7 @@ export default function Contact() {
                 />
                 <textarea
                   name="message"
-                  className="feedback-input"
+                  className="feedback-input-2"
                   placeholder="Message"
                   value={message}
                   onChange={handleChange}
@@ -98,12 +101,33 @@ export default function Contact() {
               </form>
             </div>
           </div>
-          <div className="col-2">col2</div>
+          <div className="col-2">
+            <img src={barcode} className="col-2-img" />
+          </div>
         </div>
         <div className="row-2">
-          <div className="col-3">col3</div>
+          <div className="row-2-container">
+            <div className="card-1">
+                <i class="fa-solid fa-location-dot fa-3x" />
+              <div className="card-header">
+                <h3>Adres</h3>
+              </div>
+              <p>Merkez Mahallesi Kamil Başaran Sokak M.Çelikel Apt. </p>
+              <p> A Blok No: 2, Daire: 7, 33730 Erdemli / Mersin</p>
+            </div>
+            <div className="card-2">
+                <i class="fa-solid fa-phone fa-3x" />
+              <div className="card-header">
+                <h3>Telefon</h3>
+              </div>
+              <p>+90 555 555 55 55</p>
+              <p>(0324) 515 21 14</p>
+            </div>
+
+          </div>
         </div>
       </div>
+
       <Footer />
     </div>
   );
