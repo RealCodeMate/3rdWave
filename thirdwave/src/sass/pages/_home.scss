@@ -14,9 +14,13 @@
   }
 
   .left-bg {
-    background: url("../../assets/tooth.jpg") center center/cover no-repeat;
+    background: url("../../assets/dentist-with-smile.png") left center/cover no-repeat;
     height: 100%;
     width: 50%;
+    position: relative;
+
+
+
 
     @include respond(tab-port) {
       width: 50%;
@@ -66,7 +70,7 @@
       .wave-header {
         font-size: 2rem;
         display: inline-block;
-        padding: 0.1rem 0.5rem;
+        padding: 1rem 0.8rem;
         background: linear-gradient(to right, #353434, #5a5a5a);
         border-radius: 10px;
         color: #fff;
@@ -99,7 +103,140 @@
     justify-content: center;
     text-align: center;
     line-height: 2.3;
-    background-color: rgba(116, 111, 107, 0.7);
+    background-color: rgba(41, 109, 124);
+    z-index: -1;
+
+    .sss-animation {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+
+    }
+
+    .sss-info {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+
+      .faq-button {
+        z-index: 100;
+      }
+
+      h1 {
+        z-index: 100;
+      }
+    }
+
+    section {
+      height: 100%;
+      width: 100%;
+      // position:absolute ;  
+
+    }
+
+    .leaf {
+      position: absolute;
+      width: 100%;
+      height: 80%;
+      top: 0;
+      left: 0;
+    }
+
+    .leaf div {
+      position: absolute;
+      display: block;
+    }
+
+    .leaf div:nth-child(1) {
+      left: 20%;
+      animation: fall 15s linear infinite;
+      animation-delay: -2s;
+
+    }
+
+    .leaf div:nth-child(2) {
+      left: 70%;
+      animation: fall 15s linear infinite;
+      animation-delay: -4s;
+    }
+
+    .leaf div:nth-child(3) {
+      left: 5%;
+      animation: fall 20s linear infinite;
+      animation-delay: -7s;
+
+    }
+
+    .leaf div:nth-child(4) {
+      left: 50%;
+      animation: fall 18s linear infinite;
+      animation-delay: -5s;
+    }
+
+    .leaf div:nth-child(5) {
+      left: 85%;
+      animation: fall 14s linear infinite;
+      animation-delay: -5s;
+    }
+
+    .leaf div:nth-child(6) {
+      left: 15%;
+      animation: fall 16s linear infinite;
+      animation-delay: -10s;
+    }
+
+    .leaf div:nth-child(7) {
+      left: 90%;
+      animation: fall 15s linear infinite;
+      animation-delay: -4s;
+    }
+
+    @keyframes fall {
+      0% {
+        opacity: 1;
+        top: 0;
+        transform: translateX (20px) rotate(0deg);
+      }
+
+      20% {
+        opacity: 0.8;
+        transform: translateX (-20px) rotate(45deg);
+      }
+
+      40% {
+
+        transform: translateX (-20px) rotate(90deg);
+      }
+
+      60% {
+
+        transform: translateX (-20px) rotate(135deg);
+      }
+
+      80% {
+
+        transform: translateX (-20px) rotate(180deg);
+      }
+
+      100% {
+
+        top: 100%;
+        transform: translateX (-20px) rotate(225deg);
+      }
+    }
+
+    .leaf1 {
+      transform: rotateX(180deg);
+    }
+
 
     a {
       font-size: 1rem;
@@ -118,6 +255,7 @@
     h1 {
       padding-bottom: 2rem;
       color: $hover-third;
+
       span {
         color: #fff;
       }
@@ -149,8 +287,7 @@
 
     &-main {
       height: 100%;
-      background: url("../../assets/recruitmentBg.jpg") center center / cover
-        no-repeat;
+      background: url("../../assets/recruitmentBg.jpg") center center / cover no-repeat;
 
       &::after {
         content: "";
@@ -219,6 +356,9 @@
           height: 20rem;
           // margin: 5rem;
           // margin-top: 6rem;
+          // clip-path: polygon(20% 60%, 22% 66%, 24% 71%, 26% 76%, 27% 81%, 29% 86%, 32% 88%, 35% 85%, 36% 81%, 37% 77%, 38% 73%, 39% 69%, 40% 65%, 42% 62%, 43% 58%, 44% 61%, 48% 64%, 49% 67%, 50% 71%, 52% 75%, 52% 78%, 54% 82%, 55% 85%, 57% 88%, 59% 87%, 62% 88%, 62% 89%, 65% 89%, 65% 85%, 67% 81%, 68% 78%, 68% 75%, 70% 72%, 72% 67%, 73% 62%, 74% 57%, 76% 52%, 78% 46%, 83% 42%, 86% 38%, 89% 34%, 93% 30%, 96% 26%, 97% 20%, 95% 13%, 91% 9%, 86% 5%, 79% 2%, 73% 2%, 67% 3%, 62% 5%, 58% 9%, 52% 12%, 45% 13%, 39% 10%, 34% 7%, 30% 4%, 25% 2%, 20% 1%, 16% 1%, 11% 2%, 6% 4%, 3% 7%, 1% 12%, 1% 17%, 0 22%, 0 27%, 2% 32%, 3% 37%, 8% 41%, 13% 46%, 16% 51%, 18% 55%);
+
+
 
           &-side {
             display: flex;
@@ -337,12 +477,14 @@
       height: 100%;
       z-index: 1;
       padding: 5rem;
+
       &-text {
         display: flex;
         width: 100%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
         .opening-hours-container {
           display: flex;
           justify-content: center;
@@ -373,6 +515,7 @@
           margin-left: 0.5rem;
         }
       }
+
       h2 {
         color: $hover-third;
         margin-bottom: 2rem;

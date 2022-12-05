@@ -6,6 +6,7 @@ import MyAccordion from "../../compenents/Accordion/MyAccordion";
 import CarouselHome from "../../compenents/Carousel/CarouselHome";
 import Footer from "../../compenents/Footer/Footer";
 import { Link } from "react-router-dom";
+import toothBrush from "../../assets/toothbrush.png";
 
 import Map, {
   Marker,
@@ -38,10 +39,10 @@ export default function Home() {
           <div className="right-bg">
             <div className="main-info">
               <h1>
-                Sizin gülüşünüz
+                Sizin <span className="life-header">gülüşünüz</span>
                 <br />
                 bizim için <br />
-                <span className="life-header">önemli</span>.
+                önemli.
                 <br />
               </h1>
               <br />
@@ -148,14 +149,49 @@ export default function Home() {
       </div>
 
       <div className="section-a">
-        <h1>
-          <span>S</span>ıkça <span>S</span>orulan <span>S</span>orular
-        </h1>
+        
+        <div className="sss-info">
+          <h1>
+            <span>S</span>ıkça <span>S</span>orulan <span>S</span>orular
+          </h1>
 
-        <MyAccordion />
-        <a href="#" className="faq-button">
-          Daha Fazlasi
-        </a>
+          <MyAccordion />
+          {/* <a href="#" className="faq-button">
+            Daha Fazlasi
+          </a> */}
+          <Link to="/faq" className="faq-button">Daha Fazlası</Link>
+          <div className="sss-animation">
+          <section>
+
+            <div className="leaf">
+              <div>
+                <div>
+                  <img src={toothBrush} height="75px" width="75px"></img></div>
+              </div>
+              <div>
+                <div>
+                  <img src={toothBrush} height="75px" width="75px"></img></div>
+              </div>
+              <div>
+                <div>
+                  <img src={toothBrush} height="75px" width="75px"></img></div>
+              </div>
+              <div>
+                <div>
+                  <img src={toothBrush} height="75px" width="75px"></img></div>
+              </div>
+              <div>
+                <img src={toothBrush} height="75px" width="75px"></img></div>
+              <div>
+                <img src={toothBrush} height="75px" width="75px"></img></div>
+              <div>
+                <img src={toothBrush} height="75px" width="75px"></img></div>
+            
+            </div>
+          </section>
+        </div>
+        </div>
+        
       </div>
 
       <div className="section-f">
