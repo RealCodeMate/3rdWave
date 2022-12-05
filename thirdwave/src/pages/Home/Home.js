@@ -7,7 +7,6 @@ import CarouselHome from "../../compenents/Carousel/CarouselHome";
 import Footer from "../../compenents/Footer/Footer";
 import { Link } from "react-router-dom";
 import toothBrush from "../../assets/toothbrush.png";
-
 import Map, {
   Marker,
   ScaleControl,
@@ -16,13 +15,9 @@ import Map, {
   FullscreenControl,
 } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
-import { faBlackTie } from "@fortawesome/free-brands-svg-icons";
+import GoToTop from "../../utils/GoToTop";
 
 export default function Home() {
-  const clickMe = () => {
-    alert("hello 3rd wave");
-  };
-
   const [lng, setLng] = useState(34.313821201725084);
   const [lat, setLat] = useState(36.602693172981596);
   const openInNewTab = (url) => {
@@ -46,7 +41,10 @@ export default function Home() {
                 <br />
               </h1>
               <br />
-              <span className="wave-header" onClick={() => clickMe()}>
+              <span className="wave-header" onClick={() => {
+                window.scrollTo({top: 1051, behavior:"smooth" });
+              }}>
+
                 Başlayalım
               </span>
             </div>
@@ -65,7 +63,6 @@ export default function Home() {
                 </div>
                 <div className="cards-side cards-side-back">
                   <div className="backside-1-header">
-                    <h3>Daha beyaz bir gulumseme icin...</h3>
                     <Link to="/treatments/dis-beyazlatma">Devami</Link>
                   </div>
                 </div>
@@ -78,7 +75,6 @@ export default function Home() {
                 </div>
                 <div className="cards-side cards-side-back">
                   <div className="backside-1-header">
-                    <h3>Daha beyaz bir gulumseme icin...</h3>
                     <Link to="/treatments/dolgu-islemleri">Devami</Link>
                   </div>
                 </div>
@@ -89,8 +85,6 @@ export default function Home() {
                 <div className="cards-side cards-side-front">Diş Çekimleri</div>
                 <div className="cards-side cards-side-back">
                   <div className="backside-1-header">
-                    <h3>Daha beyaz bir gulumseme icin...</h3>
-                    {/* <a onClick={() => alert('dis cekimleri')}>Devami</a> */}
                     <Link to="/treatments/dis-cekimleri">Devami</Link>
                   </div>
                 </div>
@@ -103,7 +97,6 @@ export default function Home() {
                 </div>
                 <div className="cards-side cards-side-back">
                   <div className="backside-1-header">
-                    <h3>Daha beyaz bir gulumseme icin...</h3>
                     <Link to="/treatments/implant-uygulamalari">Devami</Link>
                   </div>
                 </div>
@@ -116,7 +109,6 @@ export default function Home() {
                 </div>
                 <div className="cards-side cards-side-back">
                   <div className="backside-1-header">
-                    <h3>Daha beyaz bir gulumseme icin...</h3>
                     <Link to="/treatments/kanal-tedavileri">Devami</Link>
                   </div>
                 </div>
@@ -127,7 +119,6 @@ export default function Home() {
                 <div className="cards-side cards-side-front">Protezler</div>
                 <div className="cards-side cards-side-back">
                   <div className="backside-1-header">
-                    <h3>Daha beyaz bir gulumseme icin...</h3>
                     <Link to="/treatments/protez-tedavileri">Devami</Link>
                   </div>
                 </div>
@@ -141,7 +132,7 @@ export default function Home() {
         <div className="section-d-slide">
           <h1>Foto Galeri</h1>
           <p>
-            Kaliteli <span className="life-header">hizmet</span> için sizleri
+            Güzel bir <span className="life-header">gülümseme</span> için sizleri
             bekliyoruz.
           </p>
           <CarouselHome />
@@ -149,49 +140,46 @@ export default function Home() {
       </div>
 
       <div className="section-a">
-        
+
         <div className="sss-info">
           <h1>
             <span>S</span>ıkça <span>S</span>orulan <span>S</span>orular
           </h1>
 
           <MyAccordion />
-          {/* <a href="#" className="faq-button">
-            Daha Fazlasi
-          </a> */}
-          <Link to="/faq" className="faq-button">Daha Fazlası</Link>
+          <Link to="/faq" className="faq-button"  >Daha Fazlası</Link>
           <div className="sss-animation">
-          <section>
+            <section>
 
-            <div className="leaf">
-              <div>
+              <div className="leaf">
+                <div>
+                  <div>
+                    <img src={toothBrush} height="75px" width="75px"></img></div>
+                </div>
+                <div>
+                  <div>
+                    <img src={toothBrush} height="75px" width="75px"></img></div>
+                </div>
+                <div>
+                  <div>
+                    <img src={toothBrush} height="75px" width="75px"></img></div>
+                </div>
+                <div>
+                  <div>
+                    <img src={toothBrush} height="75px" width="75px"></img></div>
+                </div>
                 <div>
                   <img src={toothBrush} height="75px" width="75px"></img></div>
-              </div>
-              <div>
                 <div>
                   <img src={toothBrush} height="75px" width="75px"></img></div>
-              </div>
-              <div>
                 <div>
                   <img src={toothBrush} height="75px" width="75px"></img></div>
+
               </div>
-              <div>
-                <div>
-                  <img src={toothBrush} height="75px" width="75px"></img></div>
-              </div>
-              <div>
-                <img src={toothBrush} height="75px" width="75px"></img></div>
-              <div>
-                <img src={toothBrush} height="75px" width="75px"></img></div>
-              <div>
-                <img src={toothBrush} height="75px" width="75px"></img></div>
-            
-            </div>
-          </section>
+            </section>
+          </div>
         </div>
-        </div>
-        
+
       </div>
 
       <div className="section-f">
@@ -297,6 +285,7 @@ export default function Home() {
         </div>
       </div>
       <Footer />
+      <GoToTop />
     </div>
   );
 }
