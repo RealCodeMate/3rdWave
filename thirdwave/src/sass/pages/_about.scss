@@ -1,10 +1,10 @@
 @import "../abstracts/variables";
 
-#parent{
+#parent {
     font-family: "Alexandria", sans-serif;
 }
 
-.about{
+.about {
     height: 95vh;
     width: 100vw;
     display: flex;
@@ -19,25 +19,8 @@
     align-items: flex-start;
     justify-content: center;
 
-    p{
+    p {
         margin: 2rem auto;
-    }
-
-    a{
-        font-size: 1.6rem;
-        display: inline-block;
-        padding: 0.1rem 0.5rem;
-        background: linear-gradient(to right, #353434, #5a5a5a);
-        border-radius: 10px;
-        color: #fff;
-        cursor: pointer;
-        text-align: center;
-        text-decoration: none;
-        margin-top: 1rem;
-        &:hover{
-          background: linear-gradient(to right, $hover-secondary, $hover-third);
-          color: #fff;
-        }
     }
 }
 
@@ -47,10 +30,10 @@
     justify-content: center;
     align-items: center;
 
-    img{
+    img {
         width: 65%;
         height: 85%;
         border-radius: 20px;
-        box-shadow: 2rem 1.5rem  rgba(101, 101, 101, 0.2);
+        box-shadow: 2rem 1.5rem rgba(101, 101, 101, 0.2);
     }
 }
