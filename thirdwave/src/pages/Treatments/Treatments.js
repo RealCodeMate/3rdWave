@@ -12,6 +12,7 @@ import RootCanalTreatments from "./TreatmentsMethods/RootCanalTreatments";
 import TeethFillings from "./TreatmentsMethods/TeethFillings";
 import TeethWhitening from "./TreatmentsMethods/TeethWhitening";
 import ToothPulling from "./TreatmentsMethods/ToothPulling";
+import GoToTop from "../../utils/GoToTop";
 
 export default function Treatments() {
   const { string } = useParams();
@@ -67,6 +68,7 @@ export default function Treatments() {
           </div>
         </div>
         <Footer />
+        <GoToTop />
       </section>
 
     </div>
