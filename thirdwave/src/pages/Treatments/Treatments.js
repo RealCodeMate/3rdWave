@@ -2,8 +2,6 @@ import React from "react";
 import Header from "../../compenents/Header/Header";
 import Footer from "../../compenents/Footer/Footer";
 import "../../sass/pages/_treatments.scss";
-import image1 from "../../assets/home.jpg";
-import image2 from "../../assets/home2.jpg";
 import { useParams } from 'react-router';
 import { Link } from "react-router-dom";
 import ImplantMethods from "./TreatmentsMethods/ImplantMethods";
@@ -16,7 +14,6 @@ import GoToTop from "../../utils/GoToTop";
 
 export default function Treatments() {
   const { string } = useParams();
-  console.log(string)
 
   const changePage = () => {
     if (string === undefined) { return <TeethWhitening data={string} /> }
@@ -36,31 +33,24 @@ export default function Treatments() {
         <div className="treatments-parent">
 
           <div className="treatments-list">
-          <header class="section-header">
-                <h1>
-                  Tedaviler
-                </h1>
-              </header>
+            <header class="section-header">
+              <h1>
+                Tedaviler
+              </h1>
+            </header>
             <ul>
-              
-              <li>
-                <Link className="list-items" to="/treatments/dis-beyazlatma">Dis Beyazlatma</Link>
-              </li>
-              <li>
-                <Link className="list-items" to="/treatments/dolgu-islemleri">Dolgu islemleri</Link>
-              </li>
-              <li>
-                <Link className="list-items" to="/treatments/dis-cekimleri">Dis Cekimleri</Link>
-              </li>
-              <li>
-                <Link className="list-items" to="/treatments/implant-uygulamalari">Implant Uygulamalari</Link>
-              </li>
-              <li>
-                <Link className="list-items" to="/treatments/kanal-tedavileri">Kanal Tedavileri</Link>
-              </li>
-              <li>
-                <Link className="list-items" to="/treatments/protez-tedavileri">Protez Tedavileri</Link>
-              </li>
+              <Link className="list-items" to="/treatments/dis-beyazlatma">Dis Beyazlatma</Link>
+              <Link className="list-items" to="/treatments/dolgu-islemleri">Dolgu islemleri</Link>
+              <Link className="list-items" to="/treatments/dis-cekimleri">Dis Cekimleri</Link>
+              <Link className="list-items" to="/treatments/implant-uygulamalari">Implant Uygulamalari</Link>
+              <Link className="list-items" to="/treatments/kanal-tedavileri">Kanal Tedavileri</Link>
+              <Link className="list-items" to="/treatments/protez-tedavileri">Protez Tedavileri</Link>
+              <Link className="list-items" to="/treatments/dis-beyazlatma">Dis Beyazlatma</Link>
+              <Link className="list-items" to="/treatments/dolgu-islemleri">Dolgu islemleri</Link>
+              <Link className="list-items" to="/treatments/dis-cekimleri">Dis Cekimleri</Link>
+              <Link className="list-items" to="/treatments/implant-uygulamalari">Implant Uygulamalari</Link>
+              <Link className="list-items" to="/treatments/kanal-tedavileri">Kanal Tedavileri</Link>
+              <Link className="list-items" to="/treatments/protez-tedavileri">Protez Tedavileri</Link>
             </ul>
           </div>
           <div className="treatments-info">
