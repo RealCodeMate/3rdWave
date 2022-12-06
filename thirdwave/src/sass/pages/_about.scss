@@ -1,5 +1,5 @@
 @import "../abstracts/variables";
-
+@import "../abstracts/mediaquery";
 #parent {
     font-family: "Alexandria", sans-serif;
 }
@@ -8,6 +8,11 @@
     height: 95vh;
     width: 100vw;
     display: flex;
+    @include respond(tab-port) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
 }
 
 .left-about {
@@ -19,8 +24,16 @@
     align-items: flex-start;
     justify-content: center;
 
+    @include respond(tab-port) {
+        height: 60%;
+        width: 100%;
+        display: block;
+        padding-bottom: 0rem;
+      }
+
     p {
         margin: 2rem auto;
+        
     }
 }
 
@@ -29,6 +42,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include respond(tab-port) {
+        height: 40%;
+        width: 100%;
+        margin-bottom: 2rem;
+      }
 
     img {
         width: 65%;

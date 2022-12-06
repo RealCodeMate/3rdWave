@@ -1,4 +1,5 @@
 @import "../abstracts/variables";
+@import "../abstracts/mediaquery";
 .accordion {
   display: flex;
   flex-direction: column;
@@ -7,6 +8,10 @@
   width: 50vw;
   margin: 2rem auto;
   z-index: 100;
+  @include respond(tab-port) {
+    width: 80vw;
+    
+  }
 }
 
 .accordion-item {
