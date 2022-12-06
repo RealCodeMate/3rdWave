@@ -9,7 +9,7 @@ export default function Gallery() {
     <div id="parent">
       <Header />
       <main class="gallery">
-        <h1>Tedaviler</h1>
+        <h1>Galeri</h1>
         <ul class="gallery__list">
           <li>
             <figure>

@@ -1,4 +1,5 @@
 @import "../abstracts/variables";
+@import "../abstracts/mediaquery";
 
 #parent {
   font-family: "Alexandria", sans-serif;
@@ -7,6 +8,10 @@
 main.gallery {
   padding: 2rem;
   width: 100vw;
+  @include respond(tab-port) {
+    padding: .5rem;
+    text-align: center;
+  }
 }
 
 .gallery>h1 {
@@ -18,12 +23,17 @@ main.gallery {
 
 .gallery>ul>li {
   list-style: none;
+  
 }
 
 .gallery>.gallery__list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-template-rows: repeat(5, 400px);
+  @include respond(tab-port) {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(1, 250px);
+  }
   grid-gap: 1rem;
   grid-auto-flow: dense;
   padding-left: 0;
