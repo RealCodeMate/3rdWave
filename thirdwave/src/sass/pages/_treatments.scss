@@ -26,7 +26,7 @@
   align-items: flex-start;
   justify-content: flex-start;
 
-  @include respond(tab-port) {
+  @include respond(phone) {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -40,7 +40,7 @@
   margin-right: 2rem;
   background-color: rgb(213, 221, 229);
 
-  @include respond(tab-port) {
+  @include respond(phone) {
     width: 100%;
     margin-right: 0;
   }
@@ -67,7 +67,7 @@
     list-style: none;
     cursor: pointer;
 
-    @include respond(tab-port) {
+    @include respond(phone) {
       width: 50%;
     }
 
@@ -93,7 +93,7 @@
   width: 70%;
   padding: 2rem;
 
-  @include respond(tab-port) {
+  @include respond(phone) {
     height: 100%;
   }
 }

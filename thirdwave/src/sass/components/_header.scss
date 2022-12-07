@@ -17,13 +17,9 @@
     span {
       color: $hover-third;
     }
-    @include respond(tab-land) {
-      font-size: 1.2rem;
-    }
+    
   }
-  @include respond(tab-land) {
-    height: 3rem;
-  }
+ 
 }
 .container-fluid .navbar-brand {
   font-size: 2rem;
@@ -47,8 +43,11 @@
   }
 }
 .navbar-toggler {
-  @include respond(tab-land) {
+  @include respond(tab-port) {
     font-size: 1rem !important;
     margin-right: 0.3rem;
   }
+}
+#offcanvasNavbarLabel-expand-lg{
+  color: $hover-third;
 }

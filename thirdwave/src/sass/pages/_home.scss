@@ -8,19 +8,18 @@
     height: 100vh;
     display: flex;
 
-    @include respond(tab-port) {
+    @include respond(phone) {
       height: 50vh;
     }
   }
 
   .left-bg {
-    background: url("../../assets/dentist-with-smile.png") left center/cover
-      no-repeat;
+    background: url("../../assets/dentist-with-smile.png") left center/cover no-repeat;
     height: 100%;
     width: 50%;
     position: relative;
 
-    @include respond(tab-port) {
+    @include respond(phone) {
       width: 50%;
       background-position: left;
     }
@@ -29,7 +28,7 @@
   .right-bg {
     width: 50%;
 
-    @include respond(tab-port) {
+    @include respond(phone) {
       width: 50%;
     }
 
@@ -43,18 +42,35 @@
       padding-left: 3rem;
       color: #000;
 
+      @include respond(tab-land) {
+        padding-left: .5rem;
+      }
+
       @include respond(tab-port) {
         padding-left: 1rem;
       }
 
+      @include respond(phone) {
+        padding-left: 1rem;
+      }
+
+
+
       h1 {
-        @include respond(tab-port) {
-          font-size: 2rem;
-          line-height: 2rem;
+
+        @include respond(tab-land) {
+          font-size: 2.5rem;
+          line-height: 3.5rem;
           margin-bottom: 0;
         }
 
         @include respond(tab-port) {
+          font-size: 3rem;
+          line-height: 3.5rem;
+          margin-bottom: 0;
+        }
+
+        @include respond(phone) {
           font-size: 2rem;
           line-height: normal;
         }
@@ -70,7 +86,7 @@
       .wave-header {
         font-size: 2rem;
         display: inline-block;
-        padding: 1rem 0.8rem;
+        padding: 1rem 1rem;
         background: linear-gradient(to right, #353434, #5a5a5a);
         border-radius: 10px;
         color: #fff;
@@ -79,7 +95,7 @@
         transition: all 1s ease-in;
         margin-left: 0.3rem;
 
-        @include respond(tab-port) {
+        @include respond(phone) {
           font-size: 1rem;
           margin-left: 0.1rem;
           padding: 0.5rem 2rem;
@@ -256,10 +272,12 @@
     span {
       color: $hover-third;
     }
+
     .brush {
       height: 75px;
       width: 75px;
-      @include respond(tab-port) {
+
+      @include respond(phone) {
         height: 50px;
         width: 50px;
       }
@@ -273,15 +291,26 @@
     margin-bottom: 0;
     height: 100vh;
     position: relative;
+
+    @include respond(tab-land) {
+      margin: 2rem;
+      height: auto;
+    }
+
     @include respond(tab-port) {
+      margin: 2rem;
+      height: auto;
+    }
+
+    @include respond(phone) {
       margin: 1rem auto;
       height: auto;
     }
 
+
     &-main {
       height: 100%;
-      background: url("../../assets/recruitmentBg.jpg") center center / cover
-        no-repeat;
+      background: url("../../assets/recruitmentBg.jpg") center center / cover no-repeat;
 
       &::after {
         content: "";
@@ -309,11 +338,25 @@
         font-size: 3rem;
         color: $hover-third;
         text-align: center;
+
+        @include respond(tab-land) {
+          font-size: 3rem;
+          margin-top: 1.3rem;
+          margin-bottom: 1.7rem;
+        }
+
         @include respond(tab-port) {
+          font-size: 3rem;
+          margin-top: 1.3rem;
+          margin-bottom: 1.7rem;
+        }
+
+        @include respond(phone) {
           font-size: 2.3rem;
           margin-top: 2rem;
           margin-bottom: 2rem;
         }
+
       }
 
       &:not(:last-child) {
@@ -323,23 +366,53 @@
       [class^="col"] {
         float: left;
 
+        @include respond(tab-land) {
+          width: 40% !important;
+          margin: 0 !important;
+        }
+
         @include respond(tab-port) {
+          width: 40% !important;
+          margin: 0 !important;
+        }
+
+        @include respond(phone) {
           width: 80% !important;
           margin: 0 !important;
         }
+
       }
 
       .col-1-of-3 {
         z-index: 1;
         width: calc((100% - 2 * 9rem) / 3);
         padding: 0;
-        @include respond(tab-port) {
-          height: 8rem;
+
+        @include respond(tab-land) {
+          height: 20rem;
+          margin: auto !important;
           margin-bottom: 2rem !important;
         }
 
+        @include respond(tab-port) {
+          height: 11rem;
+          margin: auto !important;
+          margin-bottom: 2rem !important;
+
+        }
+
+        @include respond(phone) {
+          height: 8rem;
+          margin-bottom: 2rem !important;
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+        }
+
+
         &:not(:nth-child(4), :last-child) {
           margin-right: 5rem;
+
+
         }
 
         .cards {
@@ -370,9 +443,15 @@
             backface-visibility: hidden;
             border-radius: 5rem;
             box-shadow: 0 1.5rem 4rem rgba($color: #000000, $alpha: 0.8);
+
             @include respond(tab-port) {
+              height: 11rem;
+            }
+
+            @include respond(phone) {
               height: 8rem;
             }
+
 
             &-front {
               background: rgba(255, 255, 255, 0.3);
@@ -381,9 +460,23 @@
                 font-size: 1.8rem;
                 color: #fff;
               }
+
+              @include respond(desktop) {
+                font-size: 1.4rem;
+              }
+
+              @include respond(tab-land) {
+                font-size: 1.8rem;
+              }
+
               @include respond(tab-port) {
+                font-size: 1.4rem;
+              }
+
+              @include respond(phone) {
                 font-size: 1rem;
               }
+
             }
 
             &-back {
@@ -391,10 +484,12 @@
               transform: rotateY(180deg);
 
               .backside-1-header {
+
                 h3 {
                   font-size: 1.5rem;
                   color: #fff;
                   margin-bottom: 2rem;
+
                 }
 
                 a {
@@ -404,6 +499,15 @@
                   border-radius: 10px;
 
                   color: #fff;
+
+                  @include respond(phone) {
+                    font-size: 1rem;
+                    padding: 0.5rem 2rem;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                  }
                 }
               }
             }
@@ -437,14 +541,40 @@
         font-size: 1rem;
         color: rgb(84, 83, 83);
         margin-top: 1rem;
+
+        @include respond(desktop) {
+          font-size: 2rem;
+        }
+
+        @include respond(tab-land) {
+          font-size: 2rem;
+        }
+
+        @include respond(tab-port) {
+          font-size: 2rem;
+        }
       }
 
       p {
         text-align: center;
         font-size: 3rem;
+
+        @include respond(desktop) {
+          font-size: 1.8rem;
+        }
+
+        @include respond(tab-land) {
+          font-size: 1.8rem;
+        }
+
         @include respond(tab-port) {
+          font-size: 1.5rem;
+        }
+
+        @include respond(phone) {
           font-size: 1rem;
         }
+
 
         .life-header {
           color: $hover-third;
@@ -463,6 +593,23 @@
     align-items: flex-start;
     justify-content: center;
     height: 100vh;
+
+    @include respond(desktop) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 150vh;
+    }
+
+    @include respond(tab-land) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 150vh;
+    }
+
     @include respond(tab-port) {
       display: flex;
       flex-direction: column;
@@ -471,6 +618,15 @@
       height: 150vh;
     }
 
+    @include respond(phone) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 150vh;
+    }
+
+
     .left-map {
       display: flex;
       align-items: center;
@@ -478,6 +634,23 @@
       height: 100%;
       width: 70%;
       z-index: 1;
+
+      @include respond(desktop) {
+        width: 100%;
+      }
+
+      @include respond(tab-land) {
+        width: 100%;
+      }
+
+      @include respond(tab-port) {
+        width: 100%;
+      }
+
+      @include respond(phone) {
+        width: 90%;
+      }
+
     }
 
     .right-map {
@@ -487,6 +660,26 @@
       height: 100%;
       width: 30%;
       z-index: 1;
+
+      @include respond(desktop) {
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+
+      @include respond(tab-land) {
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+
+      @include respond(tab-port) {
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+
+      @include respond(phone) {
+        width: 100%;
+      }
+
 
       &-text {
         display: flex;
@@ -499,6 +692,8 @@
           display: flex;
           justify-content: center;
           align-items: center;
+
+          
         }
 
         .card {
@@ -515,7 +710,17 @@
 
           color: #fff;
           box-shadow: 0 5rem 5.5rem rgba(189, 196, 214, 0.5);
+
+          @include respond(phone) {
+            min-width: 10rem;
+            font-size: 1rem;
+            grid-template-columns: 7rem auto;
+
+          }
+
+
         }
+
 
         .card:not(:last-child) {
           margin-bottom: 1.5rem;
@@ -530,6 +735,18 @@
         color: $hover-third;
         margin-bottom: 2rem;
         text-align: center;
+
+        @include respond(tab-land) {
+          font-size: 2.5rem;
+        }
+
+        @include respond(tab-port) {
+          font-size: 2rem;
+        }
+
+        @include respond(phone) {
+          font-size: 1.5rem;
+        }
       }
 
       h4 {

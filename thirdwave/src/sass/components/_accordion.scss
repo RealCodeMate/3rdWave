@@ -8,7 +8,7 @@
   width: 50vw;
   margin: 2rem auto;
   z-index: 100;
-  @include respond(tab-port) {
+  @include respond(phone) {
     width: 80vw;
     
   }

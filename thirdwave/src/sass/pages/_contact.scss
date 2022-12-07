@@ -21,7 +21,7 @@
     margin-top: 2rem;
 
 
-    @include respond(tab-port) {
+    @include respond(phone) {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -33,7 +33,7 @@
     .col-1 {
       height: 100%;
       width: 50%;
-      @include respond(tab-port) {
+      @include respond(phone) {
         width: 75%;
   
       }
@@ -55,7 +55,7 @@
           align-items: center;
           justify-content: center;
 
-          @include respond(tab-port) {
+          @include respond(phone) {
             width: 100%;
             
           }
@@ -120,7 +120,7 @@
           transition: all 0.3s;
           margin-top: -4px;
           font-weight: 700;
-          @include respond(tab-port) {
+          @include respond(phone) {
             width: 50%;
             font-size: 1rem;
             margin-top: .8rem;
@@ -140,7 +140,7 @@
     .col-2 {
       height: 100%;
       width: 50%;
-      @include respond(tab-port) {
+      @include respond(phone) {
         width: 100%;
   
       }
@@ -165,7 +165,7 @@
       justify-content: center;
       padding: 2rem;
 
-      @include respond(tab-port) {
+      @include respond(phone) {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -195,7 +195,7 @@
         margin-top: 1rem;
       }
 
-      @include respond(tab-port) {
+      @include respond(phone) {
         margin-bottom: 2rem;
       }
 

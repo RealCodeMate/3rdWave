@@ -8,7 +8,7 @@
   margin: auto;
   cursor: pointer;
   transition: all 1s;
-  @include respond(tab-port) {
+  @include respond(phone) {
     width: 90% !important;
   }
   &:hover {
@@ -20,7 +20,7 @@
 }
 .carousel-indicators {
   button {
-    @include respond(tab-port) {
+    @include respond(phone) {
       height: 1px !important;
       width: 10px !important;
     }

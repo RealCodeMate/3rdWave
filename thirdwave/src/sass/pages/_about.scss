@@ -8,7 +8,7 @@
     height: 95vh;
     width: 100vw;
     display: flex;
-    @include respond(tab-port) {
+    @include respond(phone) {
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -24,7 +24,7 @@
     align-items: flex-start;
     justify-content: center;
 
-    @include respond(tab-port) {
+    @include respond(phone) {
         height: 60%;
         width: 100%;
         display: block;
@@ -42,7 +42,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @include respond(tab-port) {
+    @include respond(phone) {
         height: 40%;
         width: 100%;
         margin-bottom: 2rem;
