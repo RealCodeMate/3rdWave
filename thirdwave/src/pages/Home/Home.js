@@ -29,7 +29,7 @@ export default function Home() {
       <Header />
 
       <div id="home">
-        <div className="messi">
+        <div className="home-container">
           <div className="left-bg" />
           <div className="right-bg">
             <div className="main-info">
@@ -41,10 +41,12 @@ export default function Home() {
                 <br />
               </h1>
               <br />
-              <span className="wave-header" onClick={() => {
-                window.scrollTo({top: 1051, behavior:"smooth" });
-              }}>
-
+              <span
+                className="wave-header"
+                onClick={() => {
+                  window.scrollTo({ top: 1051, behavior: "smooth" });
+                }}
+              >
                 Başlayalım
               </span>
             </div>
@@ -81,7 +83,7 @@ export default function Home() {
               </div>
             </div>
             <div className="col-1-of-3">
-              <div className="cards" >
+              <div className="cards">
                 <div className="cards-side cards-side-front">Diş Çekimleri</div>
                 <div className="cards-side cards-side-back">
                   <div className="backside-1-header">
@@ -132,54 +134,59 @@ export default function Home() {
         <div className="section-d-slide">
           <h1>Foto Galeri</h1>
           <p>
-            Güzel bir <span className="life-header">gülümseme</span> için sizleri
-            bekliyoruz.
+            Güzel bir <span className="life-header">gülümseme</span> için
+            sizleri bekliyoruz.
           </p>
           <CarouselHome />
         </div>
       </div>
 
       <div className="section-a">
-
         <div className="sss-info">
           <h1>
             <span>S</span>ıkça <span>S</span>orulan <span>S</span>orular
           </h1>
 
           <MyAccordion />
-          <Link to="/faq" className="faq-button"  >Daha Fazlası</Link>
+          <Link to="/faq" className="faq-button">
+            Daha Fazlası
+          </Link>
           <div className="sss-animation">
             <section>
-
               <div className="leaf">
                 <div>
                   <div>
-                    <img src={toothBrush} height="75px" width="75px"></img></div>
+                    <img src={toothBrush} className="brush"></img>
+                  </div>
                 </div>
                 <div>
                   <div>
-                    <img src={toothBrush} height="75px" width="75px"></img></div>
+                    <img src={toothBrush} className="brush"></img>
+                  </div>
                 </div>
                 <div>
                   <div>
-                    <img src={toothBrush} height="75px" width="75px"></img></div>
+                    <img src={toothBrush} className="brush"></img>
+                  </div>
                 </div>
                 <div>
                   <div>
-                    <img src={toothBrush} height="75px" width="75px"></img></div>
+                    <img src={toothBrush} className="brush"></img>
+                  </div>
                 </div>
                 <div>
-                  <img src={toothBrush} height="75px" width="75px"></img></div>
+                  <img src={toothBrush} className="brush"></img>
+                </div>
                 <div>
-                  <img src={toothBrush} height="75px" width="75px"></img></div>
+                  <img src={toothBrush} className="brush"></img>
+                </div>
                 <div>
-                  <img src={toothBrush} height="75px" width="75px"></img></div>
-
+                  <img src={toothBrush} className="brush"></img>
+                </div>
               </div>
             </section>
           </div>
         </div>
-
       </div>
 
       <div className="section-f">
@@ -279,8 +286,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
-            <script src="https://unpkg.com/feather-icons"></script>
           </div>
         </div>
       </div>

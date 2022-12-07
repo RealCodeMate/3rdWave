@@ -4,26 +4,25 @@
 #parent {
   font-family: "Alexandria", sans-serif;
 
-  .messi {
+  .home-container {
     height: 100vh;
     display: flex;
 
     @include respond(tab-port) {
-      height: 70vh;
+      height: 50vh;
     }
   }
 
   .left-bg {
-    background: url("../../assets/dentist-with-smile.png") left center/cover no-repeat;
+    background: url("../../assets/dentist-with-smile.png") left center/cover
+      no-repeat;
     height: 100%;
     width: 50%;
     position: relative;
 
-
-
-
     @include respond(tab-port) {
       width: 50%;
+      background-position: left;
     }
   }
 
@@ -52,10 +51,11 @@
         @include respond(tab-port) {
           font-size: 2rem;
           line-height: 2rem;
+          margin-bottom: 0;
         }
 
-        @include respond(phone) {
-          font-size: 1rem;
+        @include respond(tab-port) {
+          font-size: 2rem;
           line-height: normal;
         }
 
@@ -82,6 +82,7 @@
         @include respond(tab-port) {
           font-size: 1rem;
           margin-left: 0.1rem;
+          padding: 0.5rem 2rem;
         }
 
         &:hover {
@@ -113,7 +114,6 @@
       top: 0;
       left: 0;
       z-index: 0;
-
     }
 
     .sss-info {
@@ -138,8 +138,7 @@
     section {
       height: 100%;
       width: 100%;
-      // position:absolute ;  
-
+      // position:absolute ;
     }
 
     .leaf {
@@ -159,7 +158,6 @@
       left: 20%;
       animation: fall 15s linear infinite;
       animation-delay: -2s;
-
     }
 
     .leaf div:nth-child(2) {
@@ -172,7 +170,6 @@
       left: 5%;
       animation: fall 20s linear infinite;
       animation-delay: -7s;
-
     }
 
     .leaf div:nth-child(4) {
@@ -212,22 +209,18 @@
       }
 
       40% {
-
         transform: translateX (-20px) rotate(90deg);
       }
 
       60% {
-
         transform: translateX (-20px) rotate(135deg);
       }
 
       80% {
-
         transform: translateX (-20px) rotate(180deg);
       }
 
       100% {
-
         top: 100%;
         transform: translateX (-20px) rotate(225deg);
       }
@@ -236,7 +229,6 @@
     .leaf1 {
       transform: rotateX(180deg);
     }
-
 
     a {
       font-size: 1rem;
@@ -264,30 +256,32 @@
     span {
       color: $hover-third;
     }
+    .brush {
+      height: 75px;
+      width: 75px;
+      @include respond(tab-port) {
+        height: 50px;
+        width: 50px;
+      }
+    }
   }
 
   .section-b {
-    width: 90vw;
-    margin: 2rem auto;
+    max-width: 90vw;
+    margin: auto;
+    margin-top: 2rem;
     margin-bottom: 0;
     height: 100vh;
     position: relative;
-
     @include respond(tab-port) {
-      width: 100%;
-    }
-
-    @include respond(tab-land) {
-      height: 140vh !important;
-    }
-
-    @include respond(tab-port) {
-      height: 160vh !important;
+      margin: 1rem auto;
+      height: auto;
     }
 
     &-main {
       height: 100%;
-      background: url("../../assets/recruitmentBg.jpg") center center / cover no-repeat;
+      background: url("../../assets/recruitmentBg.jpg") center center / cover
+        no-repeat;
 
       &::after {
         content: "";
@@ -315,25 +309,22 @@
         font-size: 3rem;
         color: $hover-third;
         text-align: center;
-      }
-
-      &:not(:last-child) {
-        margin-bottom: 4rem;
-
         @include respond(tab-port) {
+          font-size: 2.3rem;
+          margin-top: 2rem;
           margin-bottom: 2rem;
         }
       }
 
-      @include respond(tab-land) {
-        max-width: 50rem;
+      &:not(:last-child) {
+        margin-bottom: 4rem;
       }
 
       [class^="col"] {
         float: left;
 
-        @include respond(phone) {
-          width: 50% !important;
+        @include respond(tab-port) {
+          width: 80% !important;
           margin: 0 !important;
         }
       }
@@ -342,6 +333,10 @@
         z-index: 1;
         width: calc((100% - 2 * 9rem) / 3);
         padding: 0;
+        @include respond(tab-port) {
+          height: 8rem;
+          margin-bottom: 2rem !important;
+        }
 
         &:not(:nth-child(4), :last-child) {
           margin-right: 5rem;
@@ -354,11 +349,10 @@
           -moz-perspective: 150rem;
           position: relative;
           height: 20rem;
+
           // margin: 5rem;
           // margin-top: 6rem;
           // clip-path: polygon(20% 60%, 22% 66%, 24% 71%, 26% 76%, 27% 81%, 29% 86%, 32% 88%, 35% 85%, 36% 81%, 37% 77%, 38% 73%, 39% 69%, 40% 65%, 42% 62%, 43% 58%, 44% 61%, 48% 64%, 49% 67%, 50% 71%, 52% 75%, 52% 78%, 54% 82%, 55% 85%, 57% 88%, 59% 87%, 62% 88%, 62% 89%, 65% 89%, 65% 85%, 67% 81%, 68% 78%, 68% 75%, 70% 72%, 72% 67%, 73% 62%, 74% 57%, 76% 52%, 78% 46%, 83% 42%, 86% 38%, 89% 34%, 93% 30%, 96% 26%, 97% 20%, 95% 13%, 91% 9%, 86% 5%, 79% 2%, 73% 2%, 67% 3%, 62% 5%, 58% 9%, 52% 12%, 45% 13%, 39% 10%, 34% 7%, 30% 4%, 25% 2%, 20% 1%, 16% 1%, 11% 2%, 6% 4%, 3% 7%, 1% 12%, 1% 17%, 0 22%, 0 27%, 2% 32%, 3% 37%, 8% 41%, 13% 46%, 16% 51%, 18% 55%);
-
-
 
           &-side {
             display: flex;
@@ -376,6 +370,9 @@
             backface-visibility: hidden;
             border-radius: 5rem;
             box-shadow: 0 1.5rem 4rem rgba($color: #000000, $alpha: 0.8);
+            @include respond(tab-port) {
+              height: 8rem;
+            }
 
             &-front {
               background: rgba(255, 255, 255, 0.3);
@@ -383,6 +380,9 @@
               h2 {
                 font-size: 1.8rem;
                 color: #fff;
+              }
+              @include respond(tab-port) {
+                font-size: 1rem;
               }
             }
 
@@ -442,6 +442,9 @@
       p {
         text-align: center;
         font-size: 3rem;
+        @include respond(tab-port) {
+          font-size: 1rem;
+        }
 
         .life-header {
           color: $hover-third;
@@ -468,14 +471,12 @@
       height: 150vh;
     }
 
-    
-
     .left-map {
       display: flex;
       align-items: center;
       justify-content: center;
       height: 100%;
-      width: 80%;
+      width: 70%;
       z-index: 1;
     }
 
@@ -484,8 +485,8 @@
       align-items: center;
       justify-content: center;
       height: 100%;
+      width: 30%;
       z-index: 1;
-      padding: 5rem;
 
       &-text {
         display: flex;

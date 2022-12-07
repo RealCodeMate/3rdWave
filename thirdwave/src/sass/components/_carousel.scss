@@ -1,16 +1,28 @@
-.container-carousel{
+@import "../abstracts/mediaquery";
+.container-carousel {
   z-index: 0;
 }
 .d-block {
   height: 45%;
-  width: 100%;
+  width: 70%;
   margin: auto;
   cursor: pointer;
   transition: all 1s;
+  @include respond(tab-port) {
+    width: 90% !important;
+  }
   &:hover {
     transform: scale(2);
   }
 }
 .carosuel-content h3 {
   color: #000;
+}
+.carousel-indicators {
+  button {
+    @include respond(tab-port) {
+      height: 1px !important;
+      width: 10px !important;
+    }
+  }
 }
