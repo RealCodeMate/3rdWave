@@ -28,7 +28,7 @@ export default function Header() {
           >
             <Offcanvas.Header closeButton>
               <Offcanvas.Title id="offcanvasNavbarLabel-expand-lg">
-                Offcanvas
+                Menü
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
