@@ -61,7 +61,7 @@ export default function Home() {
             <div className="col-1-of-3">
               <div className="cards">
                 <div className="cards-side cards-side-front">
-                  <h2>Diş Beyazlatma</h2>
+                  Diş Beyazlatma
                 </div>
                 <div className="cards-side cards-side-back">
                   <div className="backside-1-header">
@@ -230,7 +230,7 @@ export default function Home() {
                 <h2>Çalışma Saatleri</h2>
                 <div class="card">
                   <div class="content">
-                    <i data-feather="calendar"></i>
+                    
                     <span> Pazartesi </span>
                   </div>
 
@@ -241,46 +241,39 @@ export default function Home() {
                 </div>
                 <div class="card">
                   <div class="content">
-                    <i data-feather="calendar"></i>
+                    
                     <span> Salı </span>
                   </div>
 
                   <div class="content">
-                    <i data-feather="clock"></i>
                     <span> 10:00 - 16:38 </span>
                   </div>
                 </div>
                 <div class="card">
                   <div class="content">
-                    <i data-feather="calendar"></i>
                     <span> Çarşamba </span>
                   </div>
 
                   <div class="content">
-                    <i data-feather="clock"></i>
                     <span> 10:00 - 16:38 </span>
                   </div>
                 </div>
                 <div class="card">
                   <div class="content">
-                    <i data-feather="calendar"></i>
                     <span> Perşembe </span>
                   </div>
 
                   <div class="content">
-                    <i data-feather="clock"></i>
                     <span> 10:00 - 16:38 </span>
                   </div>
                 </div>
 
                 <div class="card">
                   <div class="content">
-                    <i data-feather="calendar"></i>
                     <span> Cuma </span>
                   </div>
 
                   <div class="content">
-                    <i data-feather="clock"></i>
                     <span> 08:00 - 14:00 </span>
                   </div>
                 </div>
