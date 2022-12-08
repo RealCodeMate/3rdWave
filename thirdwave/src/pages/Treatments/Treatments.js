@@ -29,15 +29,15 @@ export default function Treatments() {
     <div id="parent">
       <Header />
       <section id="container">
-
-        <div className="treatments-parent">
-
-          <div className="treatments-list">
-            <header class="section-header">
+      <header class="section-header">
               <h1>
                 Tedaviler
               </h1>
             </header>
+        <div className="treatments-parent">
+
+          <div className="treatments-list">
+            
             <ul>
               <Link className="list-items" to="/treatments/dis-beyazlatma">Dis Beyazlatma</Link>
               <Link className="list-items" to="/treatments/dolgu-islemleri">Dolgu islemleri</Link>

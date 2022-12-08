@@ -16,6 +16,25 @@
   background-color: $hover-third;
   color: #fff;
 
+  h1 {
+    margin: 1rem auto;
+
+    @include respond(tab-land) {
+      font-size: 2.5rem;
+      margin: 1rem auto !important;
+    }
+
+    @include respond(tab-port) {
+      font-size: 2.5rem;
+      margin: 1rem auto !important;
+    }
+
+    @include respond(phone) {
+      font-size: 2.5rem;
+      margin: 1rem auto !important;
+    }
+  }
+
 }
 
 .treatments-parent {
@@ -26,8 +45,20 @@
   align-items: flex-start;
   justify-content: flex-start;
 
+  @include respond(tab-land) {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  @include respond(tab-port) {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
   @include respond(phone) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: flex-start;
   }
@@ -39,6 +70,16 @@
   margin-left: 0;
   margin-right: 2rem;
   background-color: rgb(213, 221, 229);
+
+  @include respond(tab-land) {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  @include respond(tab-port) {
+    width: 100%;
+    margin-right: 0;
+  }
 
   @include respond(phone) {
     width: 100%;
@@ -62,10 +103,17 @@
     padding: 1rem;
     background-color: rgb(255, 255, 255);
     text-align: center;
-    margin-bottom: 1rem;
     margin-top: 1rem;
     list-style: none;
     cursor: pointer;
+
+    @include respond(tab-land) {
+      width: 60%;
+    }
+
+    @include respond(tab-port) {
+      width: 60%;
+    }
 
     @include respond(phone) {
       width: 50%;
@@ -93,7 +141,19 @@
   width: 70%;
   padding: 2rem;
 
+  @include respond(tab-land) {
+    padding: 0;
+    padding-top: 1rem;
+  }
+
+  @include respond(tab-port) {
+    padding: 0;
+    padding-top: 1rem;
+  }
+
   @include respond(phone) {
     height: 100%;
+    padding: 0;
+    padding-top: 1rem;
   }
 }
