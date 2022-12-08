@@ -14,24 +14,37 @@
   h1 {
     color: #000;
     margin-left: 0.3rem;
+    font-size: 2.7rem;
+
+    @include respond(desktop) {
+      font-size: 2.2rem;
+      line-height: normal;
+    }
+
+    @include respond(tab-land) {
+      font-size: 2.3rem;
+      line-height: normal;
+    }
+    @include respond(tab-port) {
+      font-size: 1.9rem;
+      line-height: normal;
+    }
+    @include respond(phone) {
+      font-size: 1.6rem;
+      line-height: normal;
+    }
     span {
       color: $hover-third;
     }
-    
-  }
- 
-}
-.container-fluid .navbar-brand {
-  font-size: 2rem;
-  @include respond(phone) {
-    font-size: 1rem;
-    line-height: normal;
-    padding: 0;
   }
 }
+
 .container-fluid {
+  @include respond(tab-port) {
+    padding: 0.2rem !important;
+  }
   @include respond(phone) {
-    padding: 0 !important;
+    padding: 0.2rem !important;
   }
 }
 .pe-3 {
@@ -43,11 +56,18 @@
   }
 }
 .navbar-toggler {
+  @include respond(tab-land) {
+    font-size: 1.2rem !important;
+    margin-right: 0.3rem;
+  }
   @include respond(tab-port) {
     font-size: 1rem !important;
     margin-right: 0.3rem;
   }
+  @include respond(phone) {
+    font-size: 0.9rem !important;
+  }
 }
-#offcanvasNavbarLabel-expand-lg{
+#offcanvasNavbarLabel-expand-lg {
   color: $hover-third;
 }
