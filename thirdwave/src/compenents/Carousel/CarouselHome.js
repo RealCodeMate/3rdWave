@@ -1,5 +1,5 @@
 import Carousel from "react-bootstrap/Carousel";
-import messi from "../../assets/home2.jpg";
+import messi from "../../assets/home2.jpeg";
 import "../../sass/components/_carousel.scss";
 
 function IndividualIntervalsExample() {
