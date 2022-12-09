@@ -11,7 +11,10 @@ export default function About() {
       <div className="about">
         <div className="left-about">
           <h1>So who am I ? </h1>
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          <p>1975 Mersin doğumluyum. İlk ve ortaoğretimi Mersin'de okudum. 1993 yılında Özel Toros Koleji'nden mezun oldum ve
+            Gazi Üniversitesi Diş Hekimligi Fakültesi’ni kazandım. 1999 yılında fakültemi bitirerek askeri görevimi yaptım.
+            2000 yılından itibaren aktif olarak Erdemli'deki muayenehanemde çalışmaktayım. Evli ve 3 kız çocuk babasıyım.
+          </p>
         </div>
         <div className="right-about">
           <img src={image} alt="img" className="aboutmeImage" />

@@ -65,7 +65,7 @@ export default function Home() {
                 </div>
                 <div className="cards-side cards-side-back">
                   <div className="backside-1-header">
-                    <Link to="/treatments/dis-beyazlatma">Devami</Link>
+                    <Link to="/treatments/dis-beyazlatma">Devamı</Link>
                   </div>
                 </div>
               </div>
@@ -73,11 +73,11 @@ export default function Home() {
             <div className="col-1-of-3">
               <div className="cards">
                 <div className="cards-side cards-side-front">
-                  Dolgu islemleri
+                  Dolgu işlemleri
                 </div>
                 <div className="cards-side cards-side-back">
                   <div className="backside-1-header">
-                    <Link to="/treatments/dolgu-islemleri">Devami</Link>
+                    <Link to="/treatments/dolgu-islemleri">Devamı</Link>
                   </div>
                 </div>
               </div>
@@ -87,7 +87,7 @@ export default function Home() {
                 <div className="cards-side cards-side-front">Diş Çekimleri</div>
                 <div className="cards-side cards-side-back">
                   <div className="backside-1-header">
-                    <Link to="/treatments/dis-cekimleri">Devami</Link>
+                    <Link to="/treatments/dis-cekimleri">Devamı</Link>
                   </div>
                 </div>
               </div>
@@ -99,7 +99,7 @@ export default function Home() {
                 </div>
                 <div className="cards-side cards-side-back">
                   <div className="backside-1-header">
-                    <Link to="/treatments/implant-uygulamalari">Devami</Link>
+                    <Link to="/treatments/implant-uygulamalari">Devamı</Link>
                   </div>
                 </div>
               </div>
@@ -111,7 +111,7 @@ export default function Home() {
                 </div>
                 <div className="cards-side cards-side-back">
                   <div className="backside-1-header">
-                    <Link to="/treatments/kanal-tedavileri">Devami</Link>
+                    <Link to="/treatments/kanal-tedavileri">Devamı</Link>
                   </div>
                 </div>
               </div>
@@ -121,7 +121,7 @@ export default function Home() {
                 <div className="cards-side cards-side-front">Protezler</div>
                 <div className="cards-side cards-side-back">
                   <div className="backside-1-header">
-                    <Link to="/treatments/protez-tedavileri">Devami</Link>
+                    <Link to="/treatments/protez-tedavileri">Devamı</Link>
                   </div>
                 </div>
               </div>
@@ -236,7 +236,7 @@ export default function Home() {
 
                   <div class="content">
                     <i data-feather="clock"></i>
-                    <span> 10:00 - 16:38 </span>
+                    <span> 09:00 - 17:00 </span>
                   </div>
                 </div>
                 <div class="card">
@@ -246,7 +246,7 @@ export default function Home() {
                   </div>
 
                   <div class="content">
-                    <span> 10:00 - 16:38 </span>
+                    <span> 09:00 - 17:00 </span>
                   </div>
                 </div>
                 <div class="card">
@@ -255,7 +255,7 @@ export default function Home() {
                   </div>
 
                   <div class="content">
-                    <span> 10:00 - 16:38 </span>
+                    <span> 09:00 - 17:00 </span>
                   </div>
                 </div>
                 <div class="card">
@@ -264,7 +264,7 @@ export default function Home() {
                   </div>
 
                   <div class="content">
-                    <span> 10:00 - 16:38 </span>
+                    <span> 09:00 - 17:00 </span>
                   </div>
                 </div>
 
@@ -274,7 +274,7 @@ export default function Home() {
                   </div>
 
                   <div class="content">
-                    <span> 08:00 - 14:00 </span>
+                    <span> 09:00 - 17:00 </span>
                   </div>
                 </div>
               </div>
