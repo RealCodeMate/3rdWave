@@ -3,10 +3,16 @@ import Header from "../../compenents/Header/Header";
 import "../../sass/pages/_about.scss";
 import image from "../../assets/aboutMe.jpeg"
 import Footer from "../../compenents/Footer/Footer";
+import { Helmet } from 'react-helmet';
+
+const TITLE = 'Hakkımda | Dt. Mustafa Akyılmaz';
 
 export default function About() {
   return (
     <div id="parent">
+      <Helmet>
+        <title>{TITLE}</title>
+      </Helmet>
       <Header />
       <div className="about">
         <div className="left-about">

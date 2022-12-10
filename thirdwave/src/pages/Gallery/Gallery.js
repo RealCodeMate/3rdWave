@@ -3,10 +3,16 @@ import Header from "../../compenents/Header/Header";
 import Footer from "../../compenents/Footer/Footer";
 import "../../sass/pages/_gallery.scss";
 import image1 from "../../assets/tooth.jpg";
+import { Helmet } from 'react-helmet';
 
+const TITLE = 'Galeri | Dt. Mustafa Akyılmaz';
 export default function Gallery() {
   return (
     <div id="parent">
+      <Helmet>
+        <title>{TITLE}</title>
+      </Helmet>
+
       <Header />
       <main class="gallery">
         <h1>Galeri</h1>

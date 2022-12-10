@@ -13,6 +13,9 @@ import ToothPulling from "./TreatmentsMethods/ToothPulling";
 import ZirconiumCoating from "./TreatmentsMethods/ZirconiumCoating";
 import LaminateCoating from "./TreatmentsMethods/LaminateCoating";
 import GoToTop from "../../utils/GoToTop";
+import { Helmet } from 'react-helmet';
+
+const TITLE = 'Tedaviler | Dt. Mustafa Akyılmaz';
 
 export default function Treatments() {
   const { string } = useParams();
@@ -31,17 +34,21 @@ export default function Treatments() {
   }
   return (
     <div id="parent">
+      <Helmet>
+        <title>{TITLE}</title>
+      </Helmet>
+      
       <Header />
       <section id="container">
-      <header class="section-header">
-              <h1>
-                Tedaviler
-              </h1>
-            </header>
+        <header class="section-header">
+          <h1>
+            Tedaviler
+          </h1>
+        </header>
         <div className="treatments-parent">
 
           <div className="treatments-list">
-            
+
             <ul>
               <Link className="list-items" to="/treatments/dis-beyazlatma">Diş Beyazlatma</Link>
               <Link className="list-items" to="/treatments/dolgu-islemleri">Dolgu işlemleri</Link>

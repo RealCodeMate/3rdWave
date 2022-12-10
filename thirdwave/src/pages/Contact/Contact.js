@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import { Helmet } from 'react-helmet';
 import Header from "../../compenents/Header/Header";
 import Footer from "../../compenents/Footer/Footer";
 // import emailjs from '@emailjs/browser';
@@ -6,6 +7,8 @@ import "../../sass/pages/_contact.scss";
 import barcode from "../../assets/contact.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { asd } from '@fortawesome/free-brands-svg-icons'
+
+const TITLE = 'İletişim | Dt. Mustafa Akyılmaz';
 
 export default function Contact() {
   const [inputs, setInputs] = useState({
@@ -68,6 +71,10 @@ export default function Contact() {
 
   return (
     <div id="parent">
+      <Helmet>
+        <title>{TITLE}</title>
+      </Helmet>
+      
       <Header />
       <div className="contact">
         <div className="row-1">
@@ -108,7 +115,7 @@ export default function Contact() {
         <div className="row-2">
           <div className="row-2-container">
             <div className="card-1">
-                <i class="fa-solid fa-location-dot fa-3x" />
+              <i class="fa-solid fa-location-dot fa-3x" />
               <div className="card-header">
                 <h3>Adres</h3>
               </div>
@@ -116,7 +123,7 @@ export default function Contact() {
               <p> A Blok No: 2, Daire: 7, 33730 Erdemli / Mersin</p>
             </div>
             <div className="card-2">
-                <i class="fa-solid fa-phone fa-3x" />
+              <i class="fa-solid fa-phone fa-3x" />
               <div className="card-header">
                 <h3>Telefon</h3>
               </div>

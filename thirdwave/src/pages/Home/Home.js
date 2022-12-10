@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from 'react-helmet';
 import "../../sass/pages/_home.scss";
 import "../../sass/components/_accordion.scss";
 import Header from "../../compenents/Header/Header";
@@ -17,6 +18,8 @@ import Map, {
 import "mapbox-gl/dist/mapbox-gl.css";
 import GoToTop from "../../utils/GoToTop";
 
+const TITLE = 'Anasayfa | Dt. Mustafa Akyılmaz';
+
 export default function Home() {
   const [lng, setLng] = useState(34.313821201725084);
   const [lat, setLat] = useState(36.602693172981596);
@@ -26,6 +29,10 @@ export default function Home() {
 
   return (
     <div id="parent">
+      <Helmet>
+        <title>{TITLE}</title>
+      </Helmet>
+
       <Header />
 
       <div id="home">
@@ -230,7 +237,7 @@ export default function Home() {
                 <h2>Çalışma Saatleri</h2>
                 <div class="card">
                   <div class="content">
-                    
+
                     <span> Pazartesi </span>
                   </div>
 
@@ -241,7 +248,7 @@ export default function Home() {
                 </div>
                 <div class="card">
                   <div class="content">
-                    
+
                     <span> Salı </span>
                   </div>
 
