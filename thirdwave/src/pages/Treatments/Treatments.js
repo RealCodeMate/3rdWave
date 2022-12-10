@@ -10,6 +10,8 @@ import RootCanalTreatments from "./TreatmentsMethods/RootCanalTreatments";
 import TeethFillings from "./TreatmentsMethods/TeethFillings";
 import TeethWhitening from "./TreatmentsMethods/TeethWhitening";
 import ToothPulling from "./TreatmentsMethods/ToothPulling";
+import ZirconiumCoating from "./TreatmentsMethods/ZirconiumCoating";
+import LaminateCoating from "./TreatmentsMethods/LaminateCoating";
 import GoToTop from "../../utils/GoToTop";
 
 export default function Treatments() {
@@ -23,6 +25,8 @@ export default function Treatments() {
     if (string === 'implant-uygulamalari') { return <ImplantMethods data={string} /> }
     if (string === 'kanal-tedavileri') { return <RootCanalTreatments data={string} /> }
     if (string === 'protez-tedavileri') { return <ProstheticTreatments data={string} /> }
+    if (string === 'zirkonyum-kaplama') { return <ZirconiumCoating data={string} /> }
+    if (string === 'laminat-kaplama') { return <LaminateCoating data={string} /> }
 
   }
   return (
@@ -39,18 +43,14 @@ export default function Treatments() {
           <div className="treatments-list">
             
             <ul>
-              <Link className="list-items" to="/treatments/dis-beyazlatma">Dis Beyazlatma</Link>
-              <Link className="list-items" to="/treatments/dolgu-islemleri">Dolgu islemleri</Link>
-              <Link className="list-items" to="/treatments/dis-cekimleri">Dis Cekimleri</Link>
-              <Link className="list-items" to="/treatments/implant-uygulamalari">Implant Uygulamalari</Link>
+              <Link className="list-items" to="/treatments/dis-beyazlatma">Diş Beyazlatma</Link>
+              <Link className="list-items" to="/treatments/dolgu-islemleri">Dolgu işlemleri</Link>
+              <Link className="list-items" to="/treatments/dis-cekimleri">Diş Çekimleri</Link>
+              <Link className="list-items" to="/treatments/implant-uygulamalari">İmplant Uygulamaları</Link>
               <Link className="list-items" to="/treatments/kanal-tedavileri">Kanal Tedavileri</Link>
               <Link className="list-items" to="/treatments/protez-tedavileri">Protez Tedavileri</Link>
-              <Link className="list-items" to="/treatments/dis-beyazlatma">Dis Beyazlatma</Link>
-              <Link className="list-items" to="/treatments/dolgu-islemleri">Dolgu islemleri</Link>
-              <Link className="list-items" to="/treatments/dis-cekimleri">Dis Cekimleri</Link>
-              <Link className="list-items" to="/treatments/implant-uygulamalari">Implant Uygulamalari</Link>
-              <Link className="list-items" to="/treatments/kanal-tedavileri">Kanal Tedavileri</Link>
-              <Link className="list-items" to="/treatments/protez-tedavileri">Protez Tedavileri</Link>
+              <Link className="list-items" to="/treatments/zirkonyum-kaplama">Zirkonyum Kaplama</Link>
+              <Link className="list-items" to="/treatments/laminat-kaplama">Laminat Kaplama</Link>
             </ul>
           </div>
           <div className="treatments-info">
