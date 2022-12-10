@@ -1,92 +1,96 @@
 import Accordion from "react-bootstrap/Accordion";
 
-
-
 function MyAccordion() {
     return (
         <Accordion defaultActiveKey="0" flush>
 
             <Accordion.Item eventKey="0">
                 <Accordion.Header>
-                    Diş Beyazlatmanın Dişlere Zararı Var Mıdır?
+                    Diş etlerinin fırçalanması neden önemlidir?
                 </Accordion.Header>
                 <Accordion.Body>
-                    Bir çok birey için gülüşün güzel olarak algılanmasında, diş ve çevre yapılarının formu ve simetrisi kadar dişlerin beyaz gözükmeleride önemlidir. Diş beyazlatma işlemi hekim kontrolünde olduğu sürece zararlı değildir ancak tedavi bitiminde 1 haftadan uzun sürmeyen diş hassasiyeti görülebilmektedir ve hastalar tedavi sonrası 2 hafta boyunca dişleri renklendirme potansiyeli olan; kahve, şarap, sigara gibi tüketimlerden mümkün olduğunca kaçınmalıdır.
+                    Yapılması gereken başka bir işlem de diş etlerini fırçalamaktır. “Ama doktor, diş etlerim kanıyor…” şikayeti olsa
+                    bile fırçalamaya devam edilmelidir, çünkü diş etlerini besleyen damarlar dolaşım bozukluğu sonucunda dolgunlaşmıştır.
+                    Buna tıp dilinde “konjestiyon” denir. Tedavi etmek için kılcal damarları açmak yani fırça yapmak gerekecektir. Böylece
+                    diş etinin damarları iyileşir ve kanama da kendiliğinden durur. Diş etinin fırçalanması, diş eti hastalıklarından
+                    korunmanın en etkin çarelerindendir.
                 </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="1">
                 <Accordion.Header>
-                    Zirkonyum Kaplama Nedir?
+                    Diş çekimi sonrası sigara içilir mi?
                 </Accordion.Header>
                 <Accordion.Body>
-                    Diş kaplamaları genellikle porselen kaplama şeklinde uygulanır. Diş kaplamaları ikiye ayrılır bunlar metal destekli ve metal desteksizdir. Daha estetik bir gülüş isteyen bireyler için diş hekimleri de daha estetik tedavi yaklaşımları içersindedirler. Bu estetik ihtiyaçlar, diş hekimliğinde daha estetik bir yaklaşım olan zirkonyum alt yapılı protezlerin kullanılmasını gündeme getirmektedir. Diş yapımında kullanılmakta olan ve beyaz renkli bir malzeme olan zirkonyum, saf mineral hali yerine zirkonya seramiği haline dönüştürülüp kullanılarak özel fırınlarda işlenmektedir. Zirkonyum diş kaplama, metal desteksiz kaplamalar grubundan olup, metal destekli kaplamalara kıyasla daha doğal bir görünüm sunar.
+                    Elbette diş çekimi sonrasında kesinlikle sigara içmemek gerekiyor. Özellikle diş çekimini takiben ilk 24 saat içerisinde
+                    sigara içilmesi ciddi iltihaplanmalara yol açabilir. Bununla birlikte sigaranın yaraların iyileşmesini de sıkıntıya
+                    soktuğunu unutmamak gerekiyor. İyileşme sürecine zarar verebilir ve diş çekiminden sonra yaşanan ağrının artmasına da yol açabilir.
                 </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="2">
-                <Accordion.Header>Dişler Nasıl Fırçalanmalı?</Accordion.Header>
+                <Accordion.Header>Diyabetli kişi implant yaptırabilir mi ?</Accordion.Header>
                 <Accordion.Body>
-                    Dişlerimizi korumanın en etkili yolu düzenli olarak fırçalamaktır. Diş fırçalama işlemi ortalama 2 dk sürmeli, her dişin üzeri 8-10 kez fırçalanmalıdır. Diş fırçalarken mutlaka diş dişeti birleşim yeri özellikle fırçalanmalıdır. Amaç diş yüzeyindeki yemek artıklarını, bakteri plağını uzaklaştırmaktır.
+                    Diyabetli kişi implant yaptırmak istediğinde öncelikle diş hekimi tarafından bir sağlık kuruluşuna yönlendirilir. Kanında ki
+                    hba1c miktarı ve hastanın genel durumu diş hekimi tarafından değerlendirilir. Sonuç uygun görülürse implant tedavisine başlanır.
                 </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="3">
-                <Accordion.Header>Dental İmplant Nedir?</Accordion.Header>
+                <Accordion.Header>Dişlerde neden hassasiyet oluşur?</Accordion.Header>
                 <Accordion.Body>
-                    Dental implant diş eksikliklerinde üzerine protez diş yapmak amacıyla kullanılan genellikle titanyum malzemesinden oluşan vida sistemidir. Çene kemiğine yerleştirilen dental implantlar dişlerin kökü gibi görev yapmaktadırlar. Tek diş eksikliklerinde, komşu sağlam dişlere dokunulmadan eksik dişi tamamlamak mümkün olabildiği gibi çoklu diş eksikliklerinde hareketli protez yerine sabit protezler kullanabilmek dental implantlar sayesinde mümkündür. Tam dişsizlik durumlarında özellikle alt çenede kullanımı zor olan, ağızdan sürekli çıkmaya eğilimli hareketli protezleri implantlar sayesinde sabitlemek veya stabilizasyonunu arttırmak mümkündür.
+                    Normalde dişleri sıcak, soğuk, ekşi ve tatlı gibi dış etkilerden mine tabakası korur. Erozyon, abrazyon veya çürüğe bağlı olarak
+                    mine kaybedilmiş ise iç tabaka olan hassas dentin tabakası açığa çıkar. Dentinde uyaranları ileten sinir uçları bulunur ve bu
+                    nedenle hassasiyet hissedilir.
                 </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="4">
-                <Accordion.Header>Soru 5</Accordion.Header>
+                <Accordion.Header>Diş çürüğü nedir? Diş çürüklerini önlemek için ne yapmak gerekir?</Accordion.Header>
                 <Accordion.Body>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.
+                    Diş çürüğü, yiyip içtiğimiz besinlerin dişlerimizde bıraktığı artıklar olarak tanımlayabileceğimiz maddelerin ağız içindeki
+                    bakterilerin üremesine uygun bir ortam oluşturması ve uzaklaştırılmayan bu maddelerin desteklediği bakteriyel faaliyet sonucu
+                    dişlerde madde kaybı meydana gelmesidir. Özellikle şekerli ve yapışkan gıdalar bu tabloya sebep olmaktadır. Yapılması gereken
+                    bu tür gıdaların tüketiminden veya öğünlerden sonra mümkün olamıyorsa günde en az iki kere dişlerin fırçalanmasıdır. Diş ipi
+                    ve gargara kullanımı da ağız içi hijyeni iyileştirmeye ciddi katkı sağlar.
                 </Accordion.Body>
             </Accordion.Item>
 
             <Accordion.Item eventKey="5">
-                <Accordion.Header>Soru 6</Accordion.Header>
+                <Accordion.Header>Abse nedir?</Accordion.Header>
                 <Accordion.Body>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.
+                    Abse oluşumu, diş çürüğünün ilerleyen safhalarında dişin sinirinin bulunduğu kanaldan kök ucuna hatta kemiğe kadar ilerleyip
+                    bu alanda iltihap oluşumuna sebep olmasıdır. Akut (alevli) safhada çene kemiği ve dişin içinde iltihabın sıkışmasıyla yoğun
+                    ağrı yaşanabilir. Müdahale edilmezse sonrasında iltihap kendine fistül adını verdiğimiz bir çıkış yolu oluşturur ve ağız içine
+                    akar ve genelde ağrı kesilir. Bu dönemde de yine kanal tedavisi veya dişin çekimi şeklinde bir müdahale ile iltihabın
+                    uzaklaştırılması gereklidir.
                 </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="6">
-                <Accordion.Header>Soru 7</Accordion.Header>
+                <Accordion.Header>Süt dişlerinin önemi nedir?</Accordion.Header>
                 <Accordion.Body>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.
+                    Süt dişleri, ilerde yerlerine gelecek olan sürekli dişlere rehberlik ederler. Bu anlamda sağlıklı olmaları zamanından önce
+                    çekilmemeleri sürekli dişlenme açısından da oldukça önemlidir. Süt dişleri çekilmek zorundaysa diş hekiminiz yer tutucu önerecektir.
                 </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="7">
-                <Accordion.Header>Soru 8</Accordion.Header>
+                <Accordion.Header>Çocuklarda çürük oluşumu engellenebilir mi?</Accordion.Header>
                 <Accordion.Body>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.
+                    Çocuklarda çürük oluşumunun engellenmesi için yapılması gereken en önemli şey diş fırçalama alışkanlığının kazandırılması,
+                    çocuğun yapışkan ve şekerli gıdalardan mümkün olduğunca uzak tutulmasıdır.
                 </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="8">
-                <Accordion.Header>Soru 9</Accordion.Header>
+                <Accordion.Header>Laminalar sararır mı?</Accordion.Header>
                 <Accordion.Body>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.
+                    Porselen lamina camsı bir yapı olması nedeniyle leke tutmayan bir özelliğe sahiptir. Çay, kahve sigara kullanımında aşırıya
+                    kaçılmadığı ve ağız bakımına dikkat edildiği taktirde sararma göstermeyeceklerdir.
                 </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="9">
-                <Accordion.Header>Soru 10</Accordion.Header>
+                <Accordion.Header>İmplantların uzun ömürlü olabilmesi nelere bağlıdır?</Accordion.Header>
                 <Accordion.Body>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.
+                    İmplantlar da, dişler gibi dişeti ve kemik ile ilişkidedir ve bu yapılarda oluşabilecek rahatsızlıklar implantları
+                    etkileyebilmektedir. İyi bir ağız bakımı yapılamadığında, implantların çevresindeki dişeti iltihaplanarak doğal dişe
+                    benzer şekilde dişeti hastalıklarının oluşmasına ve implantların kaybedilmesine varan sorunlara neden olabilir. Doğal
+                    dişlere olduğu gibi, implantların çevresine de doğru bir ağız bakımı uygulayıp, rutin kontrollere gittiğinizde;
+                    implantlarınızı uzun bir süre sağlıklı bir şekilde kullanabilirsiniz.
                 </Accordion.Body>
             </Accordion.Item>
 

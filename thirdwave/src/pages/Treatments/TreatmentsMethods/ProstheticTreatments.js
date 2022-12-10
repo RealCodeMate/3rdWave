@@ -1,4 +1,5 @@
 import react from 'react';
+import Banner from '../../../compenents/Banner/Banner';
 
 export default function ProstheticTreatments({ data }) {
 
@@ -6,11 +7,40 @@ export default function ProstheticTreatments({ data }) {
         <div>
             {data.toUpperCase()}
             <p>
-                Sabit Protezler: Yeterli diş dokusu desteği olmayan ve dolgu materyali ile restore edilemeyecek büyüklükte madde kaybı yaşayan dişlerde doku kaybının büyüklüğüne göre dişin bir bölümünü içine alan inley, onley restorasyonlar veya dişin tamamı küçültülerek kuron restorasyonu yapılabilmektedir. Bir veya daha fazla diş eksikliği olduğu durumlarda ise boşluğun iki tarafındaki dişlerin küçültülerek destek olarak kullanıldığı protezler köprü protezleridir. İnsanların sosyal hayatlarındaki değişimler, diş hekimliğindeki ilerleyen teknoloji ve protetik tedavilerdeki gelişmeler hastaların estetik ve fonksiyonel beklentilerini artırmış, yaşam standartlarını yükseltmiştir. Özellikle estetik beklentinin artması ile alt yapıda kullanılan metal alaşımları yerini üstün estetik ve biyouyumlu materyallere bırakmıştır.
-                Zirkonyum Restorasyonlar: Yüksek dirence sahip, biyouyumlu, dayanıklı ve estetik restorasyonlardır. Zirkonyum oksitin doğal diş rengine yakın bir materyal olması ve kuvvetler karşısında en az onun kadar dayanıklı kalması sabit ve implant üstü protezlerde zirkonyum seramiklerin kullanılmasını yaygınlaştırmıştır.
-                Empress kuronlar; metal veya zirkonyum oksit gibi alt yapı materyali kullanılmadan tamamı seramikten oluşan dayanıklılığı artırılmış ve ışık geçirgenliği oldukça iyi olan yüksek estetik özelliklere sahip restorasyonlardır.
+                <h4>Protez tedavi nedir?</h4>
+                <p>
+                    Protetik (Protez) Diş Tedavisi, ağızdaki eksik diş sayısına ve yerlerine göre, bu eksiklikleri gidererek,
+                    ağız bütünlüğünü kazandıran, yalnızca estetik değil aynı zamanda çiğneme fonksiyonları, konuşurken sesleri
+                    düzgün çıkarabilme ve dişsizlikten kaynaklanan psikolojik problemleri de ortadan kaldırmayı hedefleyen diş
+                    hekimliğinin önemli ve büyük dallarından biridir.
 
-                Laminate Restorasyonlar: Dişlerdeki şekil, renk, form ve boyut bozukluklarını tedavi etmek için diş yüzeyinin minimal düzeyde aşındırılması sonucu elde edilen yaprak şeklindeki porselenlerin yapıştırılması ile elde edilen doğal dişe yakın oldukça estetik restorasyonlardır.
+                    Protetik Diş Tedavisi, çoğunlukla tedaviye geç kalan hastalara uygulanır. Böylece kaybedilen diş ya da dişler
+                    farklı protez türleri ile geri kazanılabilir. Protetik tedavi yöntemleri, fonksiyon ve estetik anlamında
+                    kişinin kendisini daha iyi hissetmesini sağlar. Kişiye çiğneme ve konuşma fonksiyonu geri kazandırılırken,
+                    rahatlık ve estetik açıdan da kişinin kendini iyi hissetmesi sağlanır.
+                </p>
+
+                <Banner />
+                <p>
+                    Temel olarak protetik diş tedavileri ile kaybedilen dişin yerine farklı protez türleri uygulanır. Protez
+                    tedavileri, protez uzmanı olarak tanımlanan prostodontist hekimler tarafından uygulanır. Protetik diş tedavisi
+                    uzmanı olarak da adlandırılan bu hekimler, ağız içi sabit ve hareketli protez uygulamalarının yanı sıra kanal
+                    tedavisi sonrasında dişin porselen kuronlarla desteklenmesi ile de uğraşır.
+
+                    Günümüzde estetik diş hekimliği olarak da tanımlanan protetik diş tedavileri bilimi, zaman zaman ortodonti gibi
+                    diğer diş hekimliği uzmanlıkları ile multidisipliner bir yaklaşımla çalışır. Protez uzmanları ya da diğer adıyla
+                    prostodontistler, temel olarak zarar görmüş ya da kaybedilmiş dişin, protez uygulamaları ile yerine koyulması ile
+                    uğraşır. Bu noktada tercih edilecek protezin hastanın ihtiyacına göre belirlenmesi ve protezin doğal dişler ile
+                    aynı boy ve renkte olması önemlidir. Var olan doku yerine protez dişin kullanılması nedeniyle protetik diş tedavileri
+                    sıklıkla estetik diş tedavisi olarak da bilinir. Bu noktada estetik görünüm çok önemli olsa da protetik diş
+                    tedavisinde esas olan kişinin çiğneme ve konuşma becerilerinin geri kazanılmasıdır.
+                </p>
+                <p>
+                    Estetik olması için yapılan yanlış uygulamalara bağlı olarak kişinin konuşması sırasında bazı seslerin çıkmaması
+                    ya da yanakların ısırılması gibi istenmeyen sonuçlar ortaya çıkabilir. Dolayısıyla kaybedilen diş, protez uygulamaları
+                    ile geri kazanılırken işlevsellik başta olmak üzere estetik kaygılar da giderilir. Dişlerin tamamının kaybedildiği
+                    vakalarda ise total protez uygulamaları yine protetik diş uzmanları tarafından uygulanır.
+                </p>
             </p>
         </div>
     );

@@ -1,4 +1,5 @@
 import react from 'react';
+import Banner from '../../../compenents/Banner/Banner';
 
 export default function RootCanalTreatments({ data }) {
 
@@ -6,17 +7,30 @@ export default function RootCanalTreatments({ data }) {
         <div>
             {data.toUpperCase()}
             <p>
-                Endodonti tedavisi olarak da bilinen kanal tedavisi, bir dişin hasarlı veya enfekte olmuş özünün (pulpa) çıkarılarak, dişin dezenfekte edilmesini ve ardından tekrar dolgu ile kapatılmasını ifade eder. Dişin en iç kısmında bulunan pulpa, yumuşak bir çekirdek olarak düşünülebilir. Dişlerin kök ucuna kadar uzanan pulpada; sinirler, kan damarları ve bağ dokusu bulunur. Dişin herhangi bir darbe sonucu çatladığı ya da derin bir çürüğün oluştuğu durumlarda, bakteriler pulpanın içine girerek burada çoğalmaya başlar. Bu durum tedavi edilmezse, bakteriler ciddi bir enfeksiyon veya diş apsesine neden olarak pulpa ölümüyle birlikte kemik veya diş kaybına yol açabilir. Böyle bir durumda çatlamış ya da çürümüş olan dişe kanal tedavisi uygulanarak dişin kurtarılması sağlanır.
-                Kanal tedavisini gerektiren durumların başında derin çürükler ve diş kemiğinde oluşan çatlaklar yer alır. Dişin iyileşemeyecek kadar zarar gördüğü durumlarda pulpa kısmının çıkarılarak dişin korunması sağlanır. Dolayısıyla, kanal tedavisinin en büyük avantajı ölü dişi kurtarmak ve dişin kemik yapısını kaybetmemektir. Kanal tedavisi gerektiren durumlara ilişkin bazı belirtiler şu şekilde sıralanabilir:
-                Yüz ve boyunda şişlik
-                Özellikle sıcak veya soğuğa karşı kalıcı diş hassasiyeti
-                Çiğneme ya da ısırma esnasında ağrı
-                Diş etlerinde sivilce benzeri yara oluşumu
-                Çatlamış dişler
-                Diş etinin şişmesi
-                Yansıyan diş ağrısı
-                Derin çürükler
-                Koyulaşmış diş etleri
+                <h4>Kanal tedavisi nedir?</h4>
+                <p>
+                    Dişin iç kısmında bulunan pulpa dokusunun hastalanmasıyla oluşan rahatsızlıkların çözümü için uygulanan tedavilere kanal
+                    tedavisi denmektedir. Dişin canlılığını koruduğu durumlarda uygulanan lokal anestezilerde tedavi öncesi hastamız kanal tedavisine
+                    hazır hale getirilir.Dişin içinde bulunan pulpa dokusu özel el aletleriyle çıkarılır. Çeşitli kimyasal solüsyonların yardımıyla dişin
+                    iç kısmı artıklardan ve bakterilerden arındırılmaya çalışılır. Dokuyla uyumlu malzemelerle kök kanalları sızdırmaz bir biçimde kapatılır.
+                    Dişin iç kısmında iltihabi durumların olduğu vakalarda kanallar doldurulmadan önce pansuman yapılabilinir.
+                </p>
+                <h4>Kanal tedavisi yapılan dişlerin ömrü nedir?</h4>
+                <p>
+                    Kanal tedavisi sonrası herhangi bir dişinizden farklı bir ömrü olmayacaktır. Uygun tedaviler uygun dişlere yapıldıktan sonra ömür boyunca
+                    kullanabileceğinizi söyleyebiliriz.
+                </p>
+                <Banner />
+                <h4>Dişlerimiz neden ağrır veya enfekte olur?</h4>
+                <p>
+                    Diş çürüğünün ilerlemiş durumlarında diş içerisindeki pulpa dış dünyaya açık hale gelebilir. Soğuk, sıcak veya asitli uyaranlar canlılığını devam ettiren diş sinirlerini etkileyerek ağrı oluşturabilir. Bazı durumlarda kök uçlarında enfeksiyon basınç oluşturarak ağrıyı başlatabilir.
+
+                    Bunun yanında dişler darbelere maruz kalarak sağlıklarını yitirebilir. Bu darbeler şiddetli ve tek seferde olabileceği gibi küçük ama sürekli de olabilir.
+                </p>
+                <h4>Kanal tedavisi başarısı nedir?</h4>
+                <p>
+                    Kanal tedavisi ile kansere yakalanma vakaları arasında herhangi bir ilişki yoktur.
+                </p>
             </p>
         </div>
     );
