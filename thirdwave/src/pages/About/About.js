@@ -22,9 +22,7 @@ export default function About() {
             2000 yılından itibaren aktif olarak Erdemli'deki muayenehanemde çalışmaktayım. Evli ve 3 kız çocuk babasıyım.
           </p>
         </div>
-        <div className="right-about">
-          <img src={image} alt="img" className="aboutmeImage" />
-        </div>
+        <div className="right-about"></div>
       </div>
       <Footer />
     </div>

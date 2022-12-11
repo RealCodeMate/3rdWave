@@ -8,6 +8,14 @@
   height: 95vh;
   width: 100vw;
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  @include respond(tab-land) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   @include respond(tab-port) {
     flex-direction: column;
     align-items: center;
@@ -21,30 +29,32 @@
 }
 
 .left-about {
-  width: 50%;
+  width: 30%;
   height: 100%;
   padding: 2rem;
+  margin-left: 2rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   @include respond(tab-land) {
     height: 100%;
-    width: 40%;
-    padding-bottom: 0rem;
+    width: 90%;
+    padding-left: 0;
+    padding-bottom: 0;
   }
   @include respond(tab-port) {
     height: 40%;
     width: 100%;
     display: block;
-    padding-bottom: 0rem;
+    padding-left: 0rem;
   }
 
   @include respond(phone) {
     height: 50%;
     width: 100%;
     display: block;
-    padding-bottom: 0rem;
+    padding-left: 0rem;
   }
 
   p {
@@ -53,31 +63,30 @@
 }
 
 .right-about {
-  width: 50%;
+  width: 70%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url('../../assets/about-bg.jpg') center center/cover no-repeat;
+  clip-path: polygon(0 0, 100% 1%, 100% 100%, 41% 100%);
   @include respond(tab-land) {
     height: 100%;
-    width: 60%;
+    width: 90%;
     margin-bottom: 2rem;
+    clip-path:none;
   }
   @include respond(tab-port) {
     height: 60%;
-    width: 100%;
+    width: 90%;
     margin-bottom: 2rem;
+    clip-path:none;
   }
 
   @include respond(phone) {
     height: 50%;
-    width: 100%;
+    width: 90%;
     margin-bottom: 2rem;
-  }
-
-  img {
-    width: 65%;
-    height: 85%;
-    border-radius: 20px;
-    box-shadow: 2rem 1.5rem rgba(101, 101, 101, 0.2);
+    clip-path: none;
   }
 }
