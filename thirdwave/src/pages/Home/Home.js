@@ -17,12 +17,16 @@ import Map, {
 } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import GoToTop from "../../utils/GoToTop";
+import { useTranslation } from 'react-i18next';
 
 const TITLE = 'Anasayfa | Dt. Mustafa Akyılmaz';
 
 export default function Home() {
   const [lng, setLng] = useState(34.313821201725084);
   const [lat, setLat] = useState(36.602693172981596);
+
+  const { t } = useTranslation();
+
   const openInNewTab = (url) => {
     window.open(url, "_blank", "noopener,noreferrer");
   };
@@ -41,10 +45,10 @@ export default function Home() {
           <div className="right-bg">
             <div className="main-info">
               <h1>
-                Sizin <span className="life-header">gülüşünüz</span>
+                {t('homePage.welcomeTitle.word1')} <span className="life-header">{t('homePage.welcomeTitle.word2')}</span>
                 <br />
-                bizim için <br />
-                önemli.
+                {t('homePage.welcomeTitle.word3')} <br />
+                {t('homePage.welcomeTitle.word4')}
                 <br />
               </h1>
               <br />
@@ -54,7 +58,7 @@ export default function Home() {
                   window.scrollTo({ top: 1051, behavior: "smooth" });
                 }}
               >
-                Başlayalım
+                {t('homePage.welcomeButton.text')}
               </span>
             </div>
           </div>
@@ -64,37 +68,15 @@ export default function Home() {
       <div className="section-b">
         <div className="section-b-main">
           <div className="row">
-            <h1>Tedaviler</h1>
+            <h1>{t('homePage.treatmentsSection.treHeader')}</h1>
             <div className="col-1-of-3">
               <div className="cards">
                 <div className="cards-side cards-side-front">
-                  Diş Beyazlatma
+                {t('homePage.treatmentsSection.tre1')}
                 </div>
                 <div className="cards-side cards-side-back">
                   <div className="backside-1-header">
-                    <Link to="/treatments/dis-beyazlatma">Devamı</Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-1-of-3">
-              <div className="cards">
-                <div className="cards-side cards-side-front">
-                  Dolgu işlemleri
-                </div>
-                <div className="cards-side cards-side-back">
-                  <div className="backside-1-header">
-                    <Link to="/treatments/dolgu-islemleri">Devamı</Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-1-of-3">
-              <div className="cards">
-                <div className="cards-side cards-side-front">Diş Çekimleri</div>
-                <div className="cards-side cards-side-back">
-                  <div className="backside-1-header">
-                    <Link to="/treatments/dis-cekimleri">Devamı</Link>
+                    <Link to="/treatments/dis-beyazlatma">{t('homePage.treatmentsSection.more')}</Link>
                   </div>
                 </div>
               </div>
@@ -102,11 +84,21 @@ export default function Home() {
             <div className="col-1-of-3">
               <div className="cards">
                 <div className="cards-side cards-side-front">
-                  İmplant Uygulamaları
+                {t('homePage.treatmentsSection.tre2')}
                 </div>
                 <div className="cards-side cards-side-back">
                   <div className="backside-1-header">
-                    <Link to="/treatments/implant-uygulamalari">Devamı</Link>
+                    <Link to="/treatments/dolgu-islemleri">{t('homePage.treatmentsSection.more')}</Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-1-of-3">
+              <div className="cards">
+                <div className="cards-side cards-side-front">{t('homePage.treatmentsSection.tre3')}</div>
+                <div className="cards-side cards-side-back">
+                  <div className="backside-1-header">
+                    <Link to="/treatments/dis-cekimleri">{t('homePage.treatmentsSection.more')}</Link>
                   </div>
                 </div>
               </div>
@@ -114,21 +106,33 @@ export default function Home() {
             <div className="col-1-of-3">
               <div className="cards">
                 <div className="cards-side cards-side-front">
-                  Kanal Tedavileri
+                {t('homePage.treatmentsSection.tre4')}
                 </div>
                 <div className="cards-side cards-side-back">
                   <div className="backside-1-header">
-                    <Link to="/treatments/kanal-tedavileri">Devamı</Link>
+                    <Link to="/treatments/implant-uygulamalari">{t('homePage.treatmentsSection.more')}</Link>
                   </div>
                 </div>
               </div>
             </div>
             <div className="col-1-of-3">
               <div className="cards">
-                <div className="cards-side cards-side-front">Protezler</div>
+                <div className="cards-side cards-side-front">
+                {t('homePage.treatmentsSection.tre5')}
+                </div>
                 <div className="cards-side cards-side-back">
                   <div className="backside-1-header">
-                    <Link to="/treatments/protez-tedavileri">Devamı</Link>
+                    <Link to="/treatments/kanal-tedavileri">{t('homePage.treatmentsSection.more')}</Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-1-of-3">
+              <div className="cards">
+                <div className="cards-side cards-side-front">{t('homePage.treatmentsSection.tre6')}</div>
+                <div className="cards-side cards-side-back">
+                  <div className="backside-1-header">
+                    <Link to="/treatments/protez-tedavileri">{t('homePage.treatmentsSection.more')}</Link>
                   </div>
                 </div>
               </div>
@@ -139,10 +143,9 @@ export default function Home() {
 
       <div className="section-d">
         <div className="section-d-slide">
-          <h1>Foto Galeri</h1>
+          <h1>{t('homePage.photoGallerySection.header')}</h1>
           <p>
-            Güzel bir <span className="life-header">gülümseme</span> için
-            sizleri bekliyoruz.
+          {t('homePage.photoGallerySection.word1')} <span className="life-header">{t('homePage.photoGallerySection.word2')}</span> {t('homePage.photoGallerySection.word3')}
           </p>
           <CarouselHome />
         </div>
