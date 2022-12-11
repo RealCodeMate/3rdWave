@@ -36,9 +36,9 @@ function MyAccordion() {
             <Accordion.Item eventKey="3">
                 <Accordion.Header>Dişlerde neden hassasiyet oluşur?</Accordion.Header>
                 <Accordion.Body>
-                    Normalde dişleri sıcak, soğuk, ekşi ve tatlı gibi dış etkilerden mine tabakası korur. Erozyon, abrazyon veya çürüğe bağlı olarak
+                    Diş eti çekilmesi hassasiye yol açan en önemli nedenlerden birisidirç Bunun yanı sıra dişleri sıcak, soğuk, ekşi ve tatlı gibi dış etkilerden mine tabakası korur. Erozyon, abrazyon veya çürüğe bağlı olarak
                     mine kaybedilmiş ise iç tabaka olan hassas dentin tabakası açığa çıkar. Dentinde uyaranları ileten sinir uçları bulunur ve bu
-                    nedenle hassasiyet hissedilir.
+                    nedenle hassasiyet hissedilir. 
                 </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="4">

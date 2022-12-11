@@ -1,11 +1,10 @@
 import react from 'react';
 import Banner from '../../../compenents/Banner/Banner';
 
-export default function RootCanalTreatments({ data }) {
+export default function RootCanalTreatments() {
 
     return (
         <div>
-            {data.toUpperCase()}
             <p>
                 <h4>Kanal tedavisi nedir?</h4>
                 <p>

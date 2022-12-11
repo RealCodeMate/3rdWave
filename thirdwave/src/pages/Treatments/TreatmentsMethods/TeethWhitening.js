@@ -2,11 +2,10 @@ import react from 'react';
 import Banner from '../../../compenents/Banner/Banner';
 import "../../../sass/pages/_treatments.scss";
 
-export default function TeethWhitening({ data }) {
+export default function TeethWhitening() {
 
     return (
         <div>
-            {data ? (data?.toUpperCase()) : `DIS-BEYAZLATMA`}
             <h4>Diş beyazlatma nedir?</h4>
             <p>
                 Diş beyazlatma (Bleaching)
@@ -29,19 +28,17 @@ export default function TeethWhitening({ data }) {
                 <li>
                     Tedavinin ortalama 1 – 4 hafta içinde sonlandırılması. İkinci yöntem ise klinikte bir hekim tarafından yapılan beyazlatmadır ki aşağıdaki şekilde uygulanır:
                 </li>
-                    <ol>
-                        <li>
+                <ol>
+                    <li>
                         Ağartıcı ilaç bu işlem hakkında deneyimi olan bir hekim tarafından diş üzerine yerleştirilir.
-                        </li>
-                        <li>
+                    </li>
+                    <li>
                         İlgili dişin üzerine beyaz renkli ışık kaynağı belli bir süre tutulur.
-                        </li>
-                        <li>
+                    </li>
+                    <li>
                         İşlem bittiğinde sonuç hemen gözlenir.
-                        </li>
-                    </ol>
-                
-                
+                    </li>
+                </ol>
             </ul>
             Her iki yöntemde etkin olmasına rağmen tercih, renklenmenin derecesine, tedavinin ne kadar çabuk sonlandırılmak istendiğine ve hekimin görüşüne bağlıdır.
             <p></p>

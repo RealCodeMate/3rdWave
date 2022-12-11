@@ -1,12 +1,11 @@
 import react from 'react';
 import Banner from '../../../compenents/Banner/Banner';
-export default function ToothPulling({ data }) {
+export default function ToothPulling() {
 
     return (
         <div>
-            {data.toUpperCase()}
             <p>
-                <h4>Diş çekimi nedir? Nasıl Yypılır? Acıtır Mı?</h4>
+                <h4>Diş çekimi nedir? Nasıl Yapılır? Acıtır Mı?</h4>
                 <p>
                     Diş çekimi herhangi bir problem olduğunda ve dişin kurtarılması pek mümkün görünmediğinde
                     tercih edilen bir çözümdür. Diş hekimleri için diş çekiminin son çare olarak tercih edildiğini

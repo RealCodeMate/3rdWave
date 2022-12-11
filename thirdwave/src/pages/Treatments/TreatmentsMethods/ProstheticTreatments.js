@@ -1,11 +1,10 @@
 import react from 'react';
 import Banner from '../../../compenents/Banner/Banner';
 
-export default function ProstheticTreatments({ data }) {
+export default function ProstheticTreatments() {
 
     return (
         <div>
-            {data.toUpperCase()}
             <p>
                 <h4>Protez tedavi nedir?</h4>
                 <p>

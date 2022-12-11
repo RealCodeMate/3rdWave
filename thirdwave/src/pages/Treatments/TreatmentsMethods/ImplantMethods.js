@@ -1,11 +1,10 @@
 import react from 'react';
 import Banner from '../../../compenents/Banner/Banner';
 
-export default function ImplantMethods({ data }) {
+export default function ImplantMethods() {
 
     return (
         <div>
-            {data?.toUpperCase()}
             <p>
                 <h4>İmplant nedir? </h4>
                 <p>

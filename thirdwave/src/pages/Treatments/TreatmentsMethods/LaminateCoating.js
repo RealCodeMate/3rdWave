@@ -1,11 +1,10 @@
 import react from 'react';
 import Banner from '../../../compenents/Banner/Banner';
 
-export default function TeethFillings({ data }) {
+export default function TeethFillings() {
 
     return (
         <div>
-            {data.toUpperCase()}
             <p>
                 <h4>Laminat kaplama nedir?</h4>
                 Görünüşünüzü olumsuz yönde etkileyen bir çok diş bozukluklarında mükemmel bir kozmetik çözümdür. Laminat kaplamalarda

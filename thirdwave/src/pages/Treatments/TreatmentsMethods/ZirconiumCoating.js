@@ -1,11 +1,10 @@
 import react from 'react';
 import Banner from '../../../compenents/Banner/Banner';
 
-export default function ZirconiumCoating({ data }) {
+export default function ZirconiumCoating() {
 
     return (
         <div>
-            {data.toUpperCase()}
             <p>
                 <h4>Zirkonyum kaplama nedir?</h4>
                 Dişlerinde oluşan lekeler sonucunda kişiler zirkonyum kaplama tercih etmektedir. Bu  kaplamalar ise porselen kaplama olarakta
@@ -52,8 +51,6 @@ export default function ZirconiumCoating({ data }) {
                         </li>
                     </ul>
                 </p>
-
-
             </p>
         </div>
     );
