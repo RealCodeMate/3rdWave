@@ -14,11 +14,13 @@ import ZirconiumCoating from "./TreatmentsMethods/ZirconiumCoating";
 import LaminateCoating from "./TreatmentsMethods/LaminateCoating";
 import GoToTop from "../../utils/GoToTop";
 import { Helmet } from 'react-helmet';
+import { useTranslation } from 'react-i18next';
 
 const TITLE = 'Tedaviler | Dt. Mustafa Akyılmaz';
 
 export default function Treatments() {
   const { string } = useParams();
+  const { t } = useTranslation();
 
   const changePage = () => {
     if (string === undefined) { return <TeethWhitening data={string} /> }
@@ -42,7 +44,7 @@ export default function Treatments() {
       <section id="container">
         <header class="section-header">
           <h1>
-            Tedaviler
+            {t('treatmentsPage.header')}
           </h1>
         </header>
         <div className="treatments-parent">
@@ -50,14 +52,14 @@ export default function Treatments() {
           <div className="treatments-list">
 
             <ul>
-              <Link className="list-items" to="/treatments/dis-beyazlatma">Diş Beyazlatma</Link>
-              <Link className="list-items" to="/treatments/dolgu-islemleri">Dolgu işlemleri</Link>
-              <Link className="list-items" to="/treatments/dis-cekimleri">Diş Çekimleri</Link>
-              <Link className="list-items" to="/treatments/implant-uygulamalari">İmplant Uygulamaları</Link>
-              <Link className="list-items" to="/treatments/kanal-tedavileri">Kanal Tedavileri</Link>
-              <Link className="list-items" to="/treatments/protez-tedavileri">Protez Tedavileri</Link>
-              <Link className="list-items" to="/treatments/zirkonyum-kaplama">Zirkonyum Kaplama</Link>
-              <Link className="list-items" to="/treatments/laminat-kaplama">Laminat Kaplama</Link>
+              <Link className="list-items" to="/treatments/dis-beyazlatma">{t('treatmentsPage.sideMenu.m1')}</Link>
+              <Link className="list-items" to="/treatments/dolgu-islemleri">{t('treatmentsPage.sideMenu.m2')}</Link>
+              <Link className="list-items" to="/treatments/dis-cekimleri">{t('treatmentsPage.sideMenu.m3')}</Link>
+              <Link className="list-items" to="/treatments/implant-uygulamalari">{t('treatmentsPage.sideMenu.m4')}</Link>
+              <Link className="list-items" to="/treatments/kanal-tedavileri">{t('treatmentsPage.sideMenu.m5')}</Link>
+              <Link className="list-items" to="/treatments/protez-tedavileri">{t('treatmentsPage.sideMenu.m6')}</Link>
+              <Link className="list-items" to="/treatments/zirkonyum-kaplama">{t('treatmentsPage.sideMenu.m7')}</Link>
+              <Link className="list-items" to="/treatments/laminat-kaplama">{t('treatmentsPage.sideMenu.m8')}</Link>
             </ul>
           </div>
           <div className="treatments-info">

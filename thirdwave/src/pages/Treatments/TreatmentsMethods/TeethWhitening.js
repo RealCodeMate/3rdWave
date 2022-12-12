@@ -1,47 +1,45 @@
 import react from 'react';
 import Banner from '../../../compenents/Banner/Banner';
 import "../../../sass/pages/_treatments.scss";
+import { useTranslation } from 'react-i18next';
 
 export default function TeethWhitening() {
+    const { t } = useTranslation();
 
     return (
         <div>
-            <h4>Diş beyazlatma nedir?</h4>
+            <h4>{t('treatmentsPage.teethWhitening.header')}</h4>
             <p>
-                Diş beyazlatma (Bleaching)
-                Modern toplumlarda bireyler dişlerinin görünümünü önemser, hatta dişlerdeki şekil ve renk bozuklukları kişide psikolojik rahatsızlıklara kadar varan problemlere sebep olabilir. Diş hekimliğinde estetik ve restoratif maddelerin gelişmesiyle pek çok renk, şekil, konum bozuklukları kolaylıkla çözümlenebilmektedir. Renklenmiş dişlerin beyazlatılması (bleaching), diğer restoratif metotlara kıyasla daha ucuz, pratik ve zararsızdır.
-                Diş beyazlatma işlemi nasıl yapılır?
-                Beyazlatma dişlerin yapısında (mine ve dentin tabakasında) oluşan renklenmeleri giderme işlemidir. Şu anda bilinen iki değişik beyazlatma yöntemi vardır. Bunlardan ilki hastanın kendi başına uygulayabileceği bir yöntemdir, aşamaları şöyledir:
-
+                {t('treatmentsPage.teethWhitening.info1')}
                 <Banner />
             </p>
             <ul>
                 <li>
-                    Hekimin ağızdan ölçü alıp, dişlerinizin üzerine takabileceğiniz ince lastik kalıpları hazırlatması,
+                    {t('treatmentsPage.teethWhitening.l1')}
                 </li>
                 <li>
-                    Hastanın kendisi için hazırlanmış özel kalıbın içerisine ilaç yerleştirerek bu kalıbı beyazlatılacak dişlerin üstüne günde en az 6 – 8 saat takması (tercihen uykuda),
+                    {t('treatmentsPage.teethWhitening.l2')}
                 </li>
                 <li>
-                    Özgüvenin geri kazanılması ile daha mutlu bir sosyal hayat
+                    {t('treatmentsPage.teethWhitening.l3')}
                 </li>
                 <li>
-                    Tedavinin ortalama 1 – 4 hafta içinde sonlandırılması. İkinci yöntem ise klinikte bir hekim tarafından yapılan beyazlatmadır ki aşağıdaki şekilde uygulanır:
+                    {t('treatmentsPage.teethWhitening.l4')}
                 </li>
                 <ol>
                     <li>
-                        Ağartıcı ilaç bu işlem hakkında deneyimi olan bir hekim tarafından diş üzerine yerleştirilir.
+                        {t('treatmentsPage.teethWhitening.l5')}
                     </li>
                     <li>
-                        İlgili dişin üzerine beyaz renkli ışık kaynağı belli bir süre tutulur.
+                        {t('treatmentsPage.teethWhitening.l6')}
                     </li>
                     <li>
-                        İşlem bittiğinde sonuç hemen gözlenir.
+                        {t('treatmentsPage.teethWhitening.l7')}
                     </li>
                 </ol>
             </ul>
-            Her iki yöntemde etkin olmasına rağmen tercih, renklenmenin derecesine, tedavinin ne kadar çabuk sonlandırılmak istendiğine ve hekimin görüşüne bağlıdır.
-            <p></p>
+            {t('treatmentsPage.teethWhitening.info2')}
+
         </div>
     );
 }

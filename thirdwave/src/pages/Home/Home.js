@@ -72,7 +72,7 @@ export default function Home() {
             <div className="col-1-of-3">
               <div className="cards">
                 <div className="cards-side cards-side-front">
-                {t('homePage.treatmentsSection.tre1')}
+                  {t('homePage.treatmentsSection.tre1')}
                 </div>
                 <div className="cards-side cards-side-back">
                   <div className="backside-1-header">
@@ -84,7 +84,7 @@ export default function Home() {
             <div className="col-1-of-3">
               <div className="cards">
                 <div className="cards-side cards-side-front">
-                {t('homePage.treatmentsSection.tre2')}
+                  {t('homePage.treatmentsSection.tre2')}
                 </div>
                 <div className="cards-side cards-side-back">
                   <div className="backside-1-header">
@@ -106,7 +106,7 @@ export default function Home() {
             <div className="col-1-of-3">
               <div className="cards">
                 <div className="cards-side cards-side-front">
-                {t('homePage.treatmentsSection.tre4')}
+                  {t('homePage.treatmentsSection.tre4')}
                 </div>
                 <div className="cards-side cards-side-back">
                   <div className="backside-1-header">
@@ -118,7 +118,7 @@ export default function Home() {
             <div className="col-1-of-3">
               <div className="cards">
                 <div className="cards-side cards-side-front">
-                {t('homePage.treatmentsSection.tre5')}
+                  {t('homePage.treatmentsSection.tre5')}
                 </div>
                 <div className="cards-side cards-side-back">
                   <div className="backside-1-header">
@@ -145,7 +145,7 @@ export default function Home() {
         <div className="section-d-slide">
           <h1>{t('homePage.photoGallerySection.header')}</h1>
           <p>
-          {t('homePage.photoGallerySection.word1')} <span className="life-header">{t('homePage.photoGallerySection.word2')}</span> {t('homePage.photoGallerySection.word3')}
+            {t('homePage.photoGallerySection.word1')} <span className="life-header">{t('homePage.photoGallerySection.word2')}</span> {t('homePage.photoGallerySection.word3')}
           </p>
           <CarouselHome />
         </div>
@@ -154,12 +154,17 @@ export default function Home() {
       <div className="section-a">
         <div className="sss-info">
           <h1>
-            <span>S</span>ıkça <span>S</span>orulan <span>S</span>orular
+            <span>{t('homePage.faqSection.header.word1')}</span>
+            {t('homePage.faqSection.header.word2')} 
+            <span> {t('homePage.faqSection.header.word3')}</span>
+            {t('homePage.faqSection.header.word4')} <span>
+            {t('homePage.faqSection.header.word5')}</span>
+            {t('homePage.faqSection.header.word6')}
           </h1>
 
           <MyAccordion />
           <Link to="/faq" className="faq-button">
-            Daha Fazlası
+          {t('homePage.faqSection.button.more')}
           </Link>
           <div className="sss-animation">
             <section>
@@ -237,11 +242,11 @@ export default function Home() {
           <div className="right-map-text">
             <div class="opening-hours-container">
               <div class="left-col">
-                <h2>Çalışma Saatleri</h2>
+                <h2>{t('homePage.workingDaysAndHours.header')}</h2>
                 <div class="card">
                   <div class="content">
 
-                    <span> Pazartesi </span>
+                    <span> {t('homePage.workingDaysAndHours.day1')} </span>
                   </div>
 
                   <div class="content">
@@ -252,7 +257,7 @@ export default function Home() {
                 <div class="card">
                   <div class="content">
 
-                    <span> Salı </span>
+                    <span> {t('homePage.workingDaysAndHours.day2')} </span>
                   </div>
 
                   <div class="content">
@@ -261,7 +266,7 @@ export default function Home() {
                 </div>
                 <div class="card">
                   <div class="content">
-                    <span> Çarşamba </span>
+                    <span> {t('homePage.workingDaysAndHours.day3')} </span>
                   </div>
 
                   <div class="content">
@@ -270,7 +275,7 @@ export default function Home() {
                 </div>
                 <div class="card">
                   <div class="content">
-                    <span> Perşembe </span>
+                    <span> {t('homePage.workingDaysAndHours.day4')} </span>
                   </div>
 
                   <div class="content">
@@ -280,7 +285,7 @@ export default function Home() {
 
                 <div class="card">
                   <div class="content">
-                    <span> Cuma </span>
+                    <span> {t('homePage.workingDaysAndHours.day5')} </span>
                   </div>
 
                   <div class="content">
