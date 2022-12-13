@@ -1,36 +1,22 @@
-import react from 'react';
-import Banner from '../../../compenents/Banner/Banner';
+import react from "react";
+import Banner from "../../../compenents/Banner/Banner";
+import { useTranslation } from "react-i18next";
 
 export default function RootCanalTreatments() {
-
-    return (
-        <div>
-            <p>
-                <h4>Kanal tedavisi nedir?</h4>
-                <p>
-                    Dişin iç kısmında bulunan pulpa dokusunun hastalanmasıyla oluşan rahatsızlıkların çözümü için uygulanan tedavilere kanal
-                    tedavisi denmektedir. Dişin canlılığını koruduğu durumlarda uygulanan lokal anestezilerde tedavi öncesi hastamız kanal tedavisine
-                    hazır hale getirilir.Dişin içinde bulunan pulpa dokusu özel el aletleriyle çıkarılır. Çeşitli kimyasal solüsyonların yardımıyla dişin
-                    iç kısmı artıklardan ve bakterilerden arındırılmaya çalışılır. Dokuyla uyumlu malzemelerle kök kanalları sızdırmaz bir biçimde kapatılır.
-                    Dişin iç kısmında iltihabi durumların olduğu vakalarda kanallar doldurulmadan önce pansuman yapılabilinir.
-                </p>
-                <h4>Kanal tedavisi yapılan dişlerin ömrü nedir?</h4>
-                <p>
-                    Kanal tedavisi sonrası herhangi bir dişinizden farklı bir ömrü olmayacaktır. Uygun tedaviler uygun dişlere yapıldıktan sonra ömür boyunca
-                    kullanabileceğinizi söyleyebiliriz.
-                </p>
-                <Banner />
-                <h4>Dişlerimiz neden ağrır veya enfekte olur?</h4>
-                <p>
-                    Diş çürüğünün ilerlemiş durumlarında diş içerisindeki pulpa dış dünyaya açık hale gelebilir. Soğuk, sıcak veya asitli uyaranlar canlılığını devam ettiren diş sinirlerini etkileyerek ağrı oluşturabilir. Bazı durumlarda kök uçlarında enfeksiyon basınç oluşturarak ağrıyı başlatabilir.
-
-                    Bunun yanında dişler darbelere maruz kalarak sağlıklarını yitirebilir. Bu darbeler şiddetli ve tek seferde olabileceği gibi küçük ama sürekli de olabilir.
-                </p>
-                <h4>Kanal tedavisi başarısı nedir?</h4>
-                <p>
-                    Kanal tedavisi ile kansere yakalanma vakaları arasında herhangi bir ilişki yoktur.
-                </p>
-            </p>
-        </div>
-    );
+  const { t } = useTranslation();
+  return (
+    <div>
+      <p>
+        <h4>{t("treatmentsPage.rootCanalTreatments.header1")}</h4>
+        <p>{t("treatmentsPage.rootCanalTreatments.info1")}</p>
+        <h4>{t("treatmentsPage.rootCanalTreatments.header2")}</h4>
+        <p>{t("treatmentsPage.rootCanalTreatments.info2")}</p>
+        <Banner />
+        <h4>{t("treatmentsPage.rootCanalTreatments.header3")}</h4>
+        <p>{t("treatmentsPage.rootCanalTreatments.info3")}</p>
+        <h4>{t("treatmentsPage.rootCanalTreatments.header4")}</h4>
+        <p>{t("treatmentsPage.rootCanalTreatments.info4")}</p>
+      </p>
+    </div>
+  );
 }
