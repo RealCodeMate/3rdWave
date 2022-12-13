@@ -5,10 +5,13 @@ import "../../sass/pages/_faq.scss";
 import AllQA from "../../compenents/Accordion/AllQA";
 import GoToTop from "../../utils/GoToTop";
 import { Helmet } from 'react-helmet';
+import { useTranslation } from "react-i18next";
 
 const TITLE = 'SSS | Dt. Mustafa Akyılmaz';
 
 export default function Faq() {
+    const { t } = useTranslation();
+
     return (
         <div id="parent">
             <Helmet>
@@ -17,7 +20,7 @@ export default function Faq() {
 
             <Header />
             <div className="faq">
-                <h1>Sıkça Sorulan Sorular</h1>
+                <h1>{t("faqPage.header")}</h1>
                 <AllQA />
 
             </div>

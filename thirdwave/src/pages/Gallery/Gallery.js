@@ -4,9 +4,13 @@ import Footer from "../../compenents/Footer/Footer";
 import "../../sass/pages/_gallery.scss";
 import image1 from "../../assets/tooth.jpg";
 import { Helmet } from 'react-helmet';
+import { useTranslation } from "react-i18next";
 
 const TITLE = 'Galeri | Dt. Mustafa Akyılmaz';
+
 export default function Gallery() {
+  const { t } = useTranslation();
+
   return (
     <div id="parent">
       <Helmet>
@@ -15,7 +19,7 @@ export default function Gallery() {
 
       <Header />
       <main class="gallery">
-        <h1>Galeri</h1>
+        <h1>{t("galleryPage.header")}</h1>
         <ul class="gallery__list">
           <li>
             <figure>

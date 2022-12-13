@@ -7,10 +7,13 @@ import "../../sass/pages/_contact.scss";
 import barcode from "../../assets/contact.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { asd } from '@fortawesome/free-brands-svg-icons'
+import { useTranslation } from "react-i18next";
 
 const TITLE = 'İletişim | Dt. Mustafa Akyılmaz';
 
 export default function Contact() {
+  const { t } = useTranslation();
+
   const [inputs, setInputs] = useState({
     displayName: "",
     email: "",
@@ -85,7 +88,7 @@ export default function Contact() {
                   name="displayName"
                   type="text"
                   className="feedback-input"
-                  placeholder="Name"
+                  placeholder={t("contactPage.name")}
                   value={displayName}
                   onChange={handleChange}
                 />
@@ -93,18 +96,18 @@ export default function Contact() {
                   name="email"
                   type="text"
                   className="feedback-input"
-                  placeholder="Email"
+                  placeholder={t("contactPage.email")}
                   value={email}
                   onChange={handleChange}
                 />
                 <textarea
                   name="message"
                   className="feedback-input-2"
-                  placeholder="Message"
+                  placeholder={t("contactPage.message")}
                   value={message}
                   onChange={handleChange}
                 />
-                <input type="submit" value="Submit" />
+                <input type="submit" value={t("contactPage.submitBtn")} />
               </form>
             </div>
           </div>
@@ -117,15 +120,15 @@ export default function Contact() {
             <div className="card-1">
               <i class="fa-solid fa-location-dot fa-3x" />
               <div className="card-header">
-                <h3>Adres</h3>
+                <h3>{t("contactPage.addressHeader")}</h3>
               </div>
-              <p>Merkez Mahallesi Kamil Başaran Sokak M.Çelikel Apt. </p>
-              <p> A Blok No: 2, Daire: 7, 33730 Erdemli / Mersin</p>
+              <p>{t("contactPage.address1")}</p>
+              <p>{t("contactPage.address2")}</p>
             </div>
             <div className="card-2">
               <i class="fa-solid fa-phone fa-3x" />
               <div className="card-header">
-                <h3>Telefon</h3>
+                <h3>{t("contactPage.phoneHeader")}</h3>
               </div>
               <p>+90 555 555 55 55</p>
               <p>(0324) 515 21 14</p>
