@@ -5,7 +5,7 @@
 }
 
 .about {
-  height: 95vh;
+  
   width: 100vw;
   display: flex;
   flex-direction: row;
@@ -56,6 +56,15 @@
     display: block;
     padding-left: 0rem;
   }
+  @include respond(smallphone) {
+    height: 50%;
+    width: 100%;
+    display: block;
+    padding: 0rem;
+    margin: 0;
+    text-align: center;
+  }
+
 
   p {
     margin: 2rem auto;
@@ -64,27 +73,27 @@
 
 .right-about {
   width: 70%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background: url('../../assets/about-bg.jpg') center center/cover no-repeat;
   clip-path: polygon(0 0, 100% 1%, 100% 100%, 41% 100%);
   @include respond(tab-land) {
-    height: 100%;
+    height: 100vh;
     width: 90%;
     margin-bottom: 2rem;
     clip-path:none;
   }
   @include respond(tab-port) {
-    height: 60%;
+    height: 60vh;
     width: 90%;
     margin-bottom: 2rem;
     clip-path:none;
   }
 
   @include respond(phone) {
-    height: 50%;
+    height: 50vh;
     width: 90%;
     margin-bottom: 2rem;
     clip-path: none;

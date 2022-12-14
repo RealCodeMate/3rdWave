@@ -37,6 +37,9 @@
       @include respond(phone) {
         font-size: 0.8rem;
       }
+      @include respond(smallphone) {
+        font-size: 0.65rem;
+      }
     }
     &-icons {
       display: flex;
@@ -62,6 +65,10 @@
 
       @include respond(phone) {
         font-size: 1.7rem;
+      }
+      @include respond(miniphone) {
+        font-size: 1.5rem;
+        margin-bottom: .6rem;
       }
     }
   }

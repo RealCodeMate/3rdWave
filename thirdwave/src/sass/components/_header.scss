@@ -33,6 +33,14 @@
       font-size: 1.6rem;
       line-height: normal;
     }
+    @include respond(miniphone) {
+      font-size: 1.3rem;
+      line-height: normal;
+    }
+    @include respond(smallphone) {
+      font-size: 1rem;
+      line-height: normal;
+    }
     span {
       color: $hover-third;
     }
@@ -48,6 +56,9 @@
     padding: 0.2rem !important;
   }
   @include respond(phone) {
+    padding: 0.2rem !important;
+  }
+  @include respond(miniphone) {
     padding: 0.2rem !important;
   }
 }
@@ -70,6 +81,9 @@
   }
   @include respond(phone) {
     font-size: 0.9rem !important;
+  }
+  @include respond(miniphone) {
+    font-size: 0.7rem !important;
   }
 }
 #offcanvasNavbarLabel-expand-lg {
