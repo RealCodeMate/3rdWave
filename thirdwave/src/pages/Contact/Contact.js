@@ -130,7 +130,7 @@ export default function Contact() {
               <div className="card-header">
                 <h3>{t("contactPage.phoneHeader")}</h3>
               </div>
-              <p>+90 555 555 55 55</p>
+              <p>+90 533 430 03 22</p>
               <p>(0324) 515 21 14</p>
             </div>
 
