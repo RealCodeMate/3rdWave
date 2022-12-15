@@ -1,5 +1,6 @@
 @import "../abstracts/variables";
 @import "../abstracts/mediaquery";
+
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +12,7 @@
 // }
 .navbar {
   height: 5rem;
+
   h1 {
     color: #000;
     margin-left: 0.3rem;
@@ -25,22 +27,27 @@
       font-size: 2.3rem;
       line-height: normal;
     }
+
     @include respond(tab-port) {
       font-size: 1.9rem;
       line-height: normal;
     }
+
     @include respond(phone) {
       font-size: 1.6rem;
       line-height: normal;
     }
+
     @include respond(miniphone) {
       font-size: 1.3rem;
       line-height: normal;
     }
+
     @include respond(smallphone) {
       font-size: 1rem;
       line-height: normal;
     }
+
     span {
       color: $hover-third;
     }
@@ -55,37 +62,88 @@
   @include respond(tab-port) {
     padding: 0.2rem !important;
   }
+
   @include respond(phone) {
     padding: 0.2rem !important;
   }
+
   @include respond(miniphone) {
     padding: 0.2rem !important;
   }
 }
+
 .pe-3 {
   h5 {
     color: $hover-secondary;
+
     &:hover {
       color: $hover-third;
     }
   }
 }
+
 .navbar-toggler {
   @include respond(tab-land) {
     font-size: 1.2rem !important;
     margin-right: 0.3rem;
   }
+
   @include respond(tab-port) {
     font-size: 1rem !important;
     margin-right: 0.3rem;
   }
+
   @include respond(phone) {
     font-size: 0.9rem !important;
   }
+
   @include respond(miniphone) {
     font-size: 0.7rem !important;
   }
 }
+
 #offcanvasNavbarLabel-expand-lg {
   color: $hover-third;
+}
+
+.dropdown {
+  position: relative;
+
+  button {
+    border: none;
+    background-color: inherit;
+    font-size: 1.1rem;
+    color: $hover-secondary;
+
+  }
+}
+
+.menu {
+
+  position: absolute;
+  list-style-type: none;
+  padding: 0;
+  width: 110px;
+}
+
+.menu>li {
+  margin: 0;
+  z-index: 1;
+
+}
+
+.menu>li:hover {
+  background-color: lightgray;
+}
+
+.menu>li>button {
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  color: inherit;
+  border: none;
+  padding: 5px;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
 }
