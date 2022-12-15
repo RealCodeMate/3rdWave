@@ -18,7 +18,7 @@ export default function Header() {
     <>
       <Navbar key="lg" expand="lg" bg="light" sticky="top">
         <Container fluid>
-          <Navbar.Brand>
+          <Navbar.Brand as={NavLink} to="/">
             <h1>
               <span>Dt.</span> Mustafa Akyılmaz
             </h1>
@@ -54,14 +54,14 @@ export default function Header() {
                 <Nav.Link as={NavLink} to="/contact">
                   <h5>{t('header.contact')}</h5>
                 </Nav.Link>
-                <div>
-                  {/* {Object.keys(lngs).map((lng) => (
+                {/* {Object.keys(lngs).map((lng) => (
                     <button key={lng} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
                       {lngs[lng].nativeName}
                     </button>
                   ))} */}
+                <Nav.Link >
                   <LngBtn />
-                </div>
+                </Nav.Link>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>

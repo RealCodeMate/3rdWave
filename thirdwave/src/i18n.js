@@ -26,6 +26,10 @@ i18n
                         about: "Hakkımda",
                         faq: "SSS",
                         contact: "İletişim",
+                        language:{
+                            en:"EN 🇬🇧",
+                            tr:"TR 🇹🇷"
+                        }
                     },
                     homePage: {
                         welcomeTitle: {
@@ -273,6 +277,10 @@ i18n
                         about: "About",
                         faq: "FAQ",
                         contact: "Contact",
+                        language:{
+                            en:"EN 🇬🇧",
+                            tr:"TR 🇹🇷"
+                        }
                     },
                     homePage: {
                         welcomeTitle: {
