@@ -44,13 +44,11 @@ export default function Home() {
           <div className="left-bg" />
           <div className="right-bg">
             <div className="main-info">
-              <h1>
-                {t('homePage.welcomeTitle.word1')} <span className="life-header">{t('homePage.welcomeTitle.word2')}</span>
-                <br />
-                {t('homePage.welcomeTitle.word3')} <br />
-                {t('homePage.welcomeTitle.word4')}
-                <br />
+              <h1 className="firstWord">{t('homePage.welcomeTitle.word1')}
+                <span className="life-header"> {t('homePage.welcomeTitle.word2')}</span>
               </h1>
+              <h1 className="secondWord">{t('homePage.welcomeTitle.word3')}</h1>
+              <h1 className="thirdWord">{t('homePage.welcomeTitle.word4')}</h1>
               <br />
               <span
                 className="wave-header"
@@ -155,16 +153,16 @@ export default function Home() {
         <div className="sss-info">
           <h1>
             <span>{t('homePage.faqSection.header.word1')}</span>
-            {t('homePage.faqSection.header.word2')} 
+            {t('homePage.faqSection.header.word2')}
             <span> {t('homePage.faqSection.header.word3')}</span>
             {t('homePage.faqSection.header.word4')} <span>
-            {t('homePage.faqSection.header.word5')}</span>
+              {t('homePage.faqSection.header.word5')}</span>
             {t('homePage.faqSection.header.word6')}
           </h1>
 
           <MyAccordion />
           <Link to="/faq" className="faq-button">
-          {t('homePage.faqSection.button.more')}
+            {t('homePage.faqSection.button.more')}
           </Link>
           <div className="sss-animation">
             <section>
