@@ -37,6 +37,26 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+
+  h1{
+    animation: moveInLeft 1s ease-out;
+
+    @include respond(tab-land) {
+      animation: moveInLeftPhones 1s ease-out;
+    }
+    @include respond(tab-port) {
+      animation: moveInLeftPhones 1s ease-out;
+    }
+    @include respond(phone) {
+      animation: moveInLeftPhones 1s ease-out;
+    }
+    @include respond(miniphone) {
+      animation: moveInLeftPhones 1s ease-out;
+    }
+    @include respond(smallphone) {
+      animation: moveInLeftPhones 1s ease-out;
+    }
+  }
   @include respond(tab-land) {
     height: 100%;
     width: 90%;
@@ -68,6 +88,22 @@
 
   p {
     margin: 2rem auto;
+    animation: moveInRight 1s ease-out;
+    @include respond(tab-land) {
+      animation: moveInRightPhones 1s ease-out;
+    }
+    @include respond(tab-port) {
+      animation: moveInRightPhones 1s ease-out;
+    }
+    @include respond(phone) {
+      animation: moveInRightPhones 1s ease-out;
+    }
+    @include respond(miniphone) {
+      animation: moveInRightPhones 1s ease-out;
+    }
+    @include respond(smallphone) {
+      animation: moveInRightPhones 1s ease-out;
+    }
   }
 }
 
@@ -97,5 +133,61 @@
     width: 90%;
     margin-bottom: 2rem;
     clip-path: none;
+  }
+}
+
+@keyframes moveInLeft{
+  0%{
+    opacity:0;
+    transform: translateX(-100px);
+  }
+  80%{
+    transform: translateX(10px);
+  }
+  100%{
+    opacity:1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInLeftPhones{
+  0%{
+    opacity:0;
+    transform: translateX(-10px);
+  }
+  80%{
+    transform: translateX(5px);
+  }
+  100%{
+    opacity:1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight{
+  0%{
+    opacity:0;
+    transform: translateX(100px);
+  }
+  80%{
+    transform: translateX(-10px);
+  }
+  100%{
+    opacity:1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRightPhones{
+  0%{
+    opacity:0;
+    transform: translateX(10px);
+  }
+  80%{
+    transform: translateX(-5px);
+  }
+  100%{
+    opacity:1;
+    transform: translate(0);
   }
 }
