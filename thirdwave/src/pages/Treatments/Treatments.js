@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../../compenents/Header/Header";
 import Footer from "../../compenents/Footer/Footer";
 import "../../sass/pages/_treatments.scss";
@@ -19,9 +19,9 @@ import { useTranslation } from 'react-i18next';
 const TITLE = 'Tedaviler | Dt. Mustafa Akyılmaz';
 
 export default function Treatments() {
+  const [selectedId, setSelectedId] = useState(1);
   const { string } = useParams();
   const { t } = useTranslation();
-
   const changePage = () => {
     if (string === undefined) { return <TeethWhitening data={string} /> }
     if (string === 'dis-beyazlatma') { return <TeethWhitening data={string} /> }
@@ -34,12 +34,30 @@ export default function Treatments() {
     if (string === 'laminat-kaplama') { return <LaminateCoating data={string} /> }
 
   }
+
+
+
+  const arr = [
+    { id: 1, url: "dis-beyazlatma", title: `${t('treatmentsPage.sideMenu.m1')}` },
+    { id: 2, url: "dolgu-islemleri", title: `${t('treatmentsPage.sideMenu.m2')}` },
+    { id: 3, url: "dis-cekimleri", title: `${t('treatmentsPage.sideMenu.m3')}` },
+    { id: 4, url: "implant-uygulamalari", title: `${t('treatmentsPage.sideMenu.m4')}` },
+    { id: 5, url: "kanal-tedavileri", title: `${t('treatmentsPage.sideMenu.m5')}` },
+    { id: 6, url: "protez-tedavileri", title: `${t('treatmentsPage.sideMenu.m6')}` },
+    { id: 7, url: "zirkonyum-kaplama", title: `${t('treatmentsPage.sideMenu.m7')}` },
+    { id: 8, url: "laminat-kaplama", title: `${t('treatmentsPage.sideMenu.m8')}` },
+  ];
+
+  const handleChangeBg = (id) => {
+    setSelectedId(id);
+  }
+
   return (
     <div id="parent">
       <Helmet>
         <title>{TITLE}</title>
       </Helmet>
-      
+
       <Header />
       <section id="container">
         <header class="section-header">
@@ -52,14 +70,18 @@ export default function Treatments() {
           <div className="treatments-list">
 
             <ul>
-              <Link className="list-items" to="/treatments/dis-beyazlatma">{t('treatmentsPage.sideMenu.m1')}</Link>
-              <Link className="list-items" to="/treatments/dolgu-islemleri">{t('treatmentsPage.sideMenu.m2')}</Link>
-              <Link className="list-items" to="/treatments/dis-cekimleri">{t('treatmentsPage.sideMenu.m3')}</Link>
-              <Link className="list-items" to="/treatments/implant-uygulamalari">{t('treatmentsPage.sideMenu.m4')}</Link>
-              <Link className="list-items" to="/treatments/kanal-tedavileri">{t('treatmentsPage.sideMenu.m5')}</Link>
-              <Link className="list-items" to="/treatments/protez-tedavileri">{t('treatmentsPage.sideMenu.m6')}</Link>
-              <Link className="list-items" to="/treatments/zirkonyum-kaplama">{t('treatmentsPage.sideMenu.m7')}</Link>
-              <Link className="list-items" to="/treatments/laminat-kaplama">{t('treatmentsPage.sideMenu.m8')}</Link>
+              {arr.map(el => {
+                return (
+                  <Link
+                    onClick={() => handleChangeBg(el.id)}
+                    className="list-items"
+                    to={'/treatments/' + el.url}
+                    style={{ backgroundColor: selectedId === el.id ? "#a4be7b" : "" }}
+                  >
+                    {el.title}
+                  </Link>
+                )
+              })}
             </ul>
           </div>
           <div className="treatments-info">
