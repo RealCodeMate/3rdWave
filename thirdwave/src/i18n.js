@@ -27,8 +27,8 @@ i18n
                         faq: "SSS",
                         contact: "İletişim",
                         language:{
-                            en:"EN 🇬🇧",
-                            tr:"TR 🇹🇷"
+                            en:"EN",
+                            tr:"TR"
                         }
                     },
                     homePage: {
@@ -278,8 +278,8 @@ i18n
                         faq: "FAQ",
                         contact: "Contact",
                         language:{
-                            en:"EN 🇬🇧",
-                            tr:"TR 🇹🇷"
+                            en:"EN",
+                            tr:"TR"
                         }
                     },
                     homePage: {
