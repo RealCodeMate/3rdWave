@@ -102,18 +102,21 @@
   }
 }
 
-#offcanvasNavbarLabel-expand-lg {
+#offcanvasNavbarLabel-expand-lg { 
   color: $hover-third;
 }
 
 .dropdown {
   position: relative;
 
+
   button {
     border: none;
     background-color: inherit;
     font-size: 1.1rem;
     color: $hover-secondary;
+  padding-right: 5px;
+
 
   }
 }
@@ -123,10 +126,11 @@
   position: absolute;
   list-style-type: none;
   padding: 0;
-  width: 110px;
+  width: 70px;
   background-color: rgb(248, 249, 250);
   &-item{
-    width: 50px;
+    height: 100%;
+    padding-right: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,6 +141,10 @@
   margin: 0;
   z-index: 1;
   background-color: rgb(248, 249, 250);
+  border-bottom: 1px solid $hover-third;
+  &:last-child{
+    border-bottom: none;
+  }
 }
 .menu>li:hover {
   background-color: lightgray;
