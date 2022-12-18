@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../../compenents/Header/Header";
 import Footer from "../../compenents/Footer/Footer";
 import "../../sass/pages/_treatments.scss";
@@ -19,7 +19,7 @@ import { useTranslation } from 'react-i18next';
 const TITLE = 'Tedaviler | Dt. Mustafa Akyılmaz';
 
 export default function Treatments() {
-  const [selectedId, setSelectedId] = useState(1);
+  const [selectedId, setSelectedId] = useState(0);
   const { string } = useParams();
   const { t } = useTranslation();
   const changePage = () => {
@@ -35,6 +35,9 @@ export default function Treatments() {
 
   }
 
+  const url = window.location.href;
+  const partUrl = url.slice(22, url.length)
+
 
 
   const arr = [
@@ -48,8 +51,14 @@ export default function Treatments() {
     { id: 8, url: "laminat-kaplama", title: `${t('treatmentsPage.sideMenu.m8')}` },
   ];
 
-  const handleChangeBg = (id) => {
-    setSelectedId(id);
+  const HandleChangeBg = (id) => {
+    useEffect(() => {
+      if (partUrl.length === 10) {
+        setSelectedId(0)
+      } 
+      else { setSelectedId(id) };
+    });
+
   }
 
   return (
@@ -73,10 +82,10 @@ export default function Treatments() {
               {arr.map(el => {
                 return (
                   <Link
-                    onClick={() => handleChangeBg(el.id)}
+                    onClick={() => HandleChangeBg(el.id)}
                     className="list-items"
                     to={'/treatments/' + el.url}
-                    style={{ backgroundColor: selectedId === el.id ? "#a4be7b" : "" }}
+                    style={{ backgroundColor: ((selectedId === el.id || string === el.url) ? "#a4be7b" : "") }}
                   >
                     {el.title}
                   </Link>
