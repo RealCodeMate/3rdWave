@@ -166,7 +166,7 @@ export default function Home() {
           </Link>
           <div className="sss-animation">
             <section>
-              <div className="leaf">
+              <div className="toothBrush">
                 <div>
                   <div>
                     <img src={toothBrush} className="brush"></img>

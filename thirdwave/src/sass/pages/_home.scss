@@ -4,6 +4,8 @@
 #parent {
   font-family: "Alexandria", sans-serif;
 
+
+
   .home-container {
     height: 100vh;
     display: flex;
@@ -31,10 +33,7 @@
     .main-info {
       height: 100%;
       background: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center;
+      @include flexBox(column, center, flex-start);
       padding-left: 3rem;
       color: #000;
 
@@ -49,42 +48,35 @@
       @include respond(phone) {
         padding-left: 1rem;
       }
+
       @include respond(miniphone) {
         padding-left: .7rem;
       }
 
 
 
-      .firstWord, .thirdWord, .secondWord {
+      .firstWord,
+      .thirdWord,
+      .secondWord {
 
         @include respond(tab-land) {
-          font-size: 2.5rem;
-          line-height: 3.5rem;
-          margin-bottom: 0;
-          animation: moveInLeftPhones 1s ease-out;
+          @include responsiveRightBg(2.5rem, 3.5rem, 0);
         }
 
         @include respond(tab-port) {
-          font-size: 3rem;
-          line-height: 3.5rem;
-          margin-bottom: 0;
-          animation: moveInLeftPhones 1s ease-out;
+          @include responsiveRightBg(3rem, 3.5rem, 0);
         }
 
         @include respond(phone) {
-          font-size: 2rem;
-          line-height: normal;
-          animation: moveInLeftPhones 1s ease-out;
+          @include responsiveRightBg(2rem, normal, 0);
         }
+
         @include respond(miniphone) {
-          font-size: 1.5rem;
-          line-height: normal;
-          animation: moveInLeftPhones 1s ease-out;
+          @include responsiveRightBg(1.5rem, normal, 0);
         }
+
         @include respond(smallphone) {
-          font-size: 1.2rem;
-          line-height: normal;
-          animation: moveInLeftPhones 1s ease-out;
+          @include responsiveRightBg(1.2rem, normal, 0);
         }
 
         font-size: 5rem;
@@ -94,18 +86,23 @@
 
       .secondWord {
         animation: moveInRight 1s ease-out;
+
         @include respond(tab-land) {
           animation: moveToTopPhones 1s ease-out;
         }
+
         @include respond(tab-port) {
           animation: moveToTopPhones 1s ease-out;
         }
+
         @include respond(phone) {
           animation: moveInRightPhones 1s ease-out;
         }
+
         @include respond(miniphone) {
           animation: moveInRightPhones 1s ease-out;
         }
+
         @include respond(smallphone) {
           animation: moveInRightPhones 1s ease-out;
         }
@@ -129,41 +126,37 @@
         transition: all 1s ease-in;
         margin-left: 0.3rem;
         animation: moveToTop 1s ease-out;
+
         @include respond(tab-land) {
           animation: moveToTopPhones 1s ease-out;
         }
+
         @include respond(tab-port) {
           animation: moveToTopPhones 1s ease-out;
         }
 
         @include respond(phone) {
-          font-size: 1rem;
-          margin-left: 0.1rem;
-          padding: 0.5rem 2rem;
-          animation: moveToTopPhones 1s ease-out;
+          @include responsiveStartButton(1rem, .1rem, .5rem, 2rem);
         }
+
         @include respond(miniphone) {
-          font-size: .9rem;
-          margin-left: 0.1rem;
-          padding: 0.3rem 1.4rem;
-          animation: moveToTopPhones 1s ease-out;
+          @include responsiveStartButton(.9rem, .1rem, .3rem, 1.4rem);
         }
+
         @include respond(smallphone) {
-          font-size: .7rem;
-          margin-left: 0.1rem;
-          padding: 0.3rem 1.4rem;
-          animation: moveToTopPhones 1s ease-out;
+          @include responsiveStartButton(.7rem, .1rem, .3rem, 1.4rem);
         }
-        
+
 
         &:hover {
           padding-right: 4rem;
           background: linear-gradient(to right, $hover-secondary, $hover-third);
           color: #fff;
+
           @include respond(miniphone) {
             padding-right: 2rem;
-          background: linear-gradient(to right, $hover-secondary, $hover-third);
-          color: #fff;
+            background: linear-gradient(to right, $hover-secondary, $hover-third);
+            color: #fff;
           }
         }
       }
@@ -174,10 +167,7 @@
     color: #000;
     // background-color: #efefef;
     padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flexBox(column, center, center);
     text-align: center;
     line-height: 2.3;
     background-color: rgba(41, 109, 124);
@@ -196,10 +186,7 @@
       height: 100%;
       width: 100%;
       position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      @include flexBox(column, center, center);
       z-index: 1;
 
       .faq-button {
@@ -217,7 +204,7 @@
       // position:absolute ;
     }
 
-    .leaf {
+    .toothBrush {
       position: absolute;
       width: 100%;
       height: 80%;
@@ -225,51 +212,37 @@
       left: 0;
     }
 
-    .leaf div {
+    .toothBrush div {
       position: absolute;
       display: block;
     }
 
-    .leaf div:nth-child(1) {
-      left: 20%;
-      animation: fall 15s linear infinite;
-      animation-delay: -2s;
+    .toothBrush div:nth-child(1) {
+      @include toothBrushAnimation(20%, 15s, -2s);
     }
 
-    .leaf div:nth-child(2) {
-      left: 70%;
-      animation: fall 15s linear infinite;
-      animation-delay: -4s;
+    .toothBrush div:nth-child(2) {
+      @include toothBrushAnimation(70%, 15s, -4s);
     }
 
-    .leaf div:nth-child(3) {
-      left: 5%;
-      animation: fall 20s linear infinite;
-      animation-delay: -7s;
+    .toothBrush div:nth-child(3) {
+      @include toothBrushAnimation(5%, 20s, -7s);
     }
 
-    .leaf div:nth-child(4) {
-      left: 50%;
-      animation: fall 18s linear infinite;
-      animation-delay: -5s;
+    .toothBrush div:nth-child(4) {
+      @include toothBrushAnimation(50%, 18s, -5s);
     }
 
-    .leaf div:nth-child(5) {
-      left: 85%;
-      animation: fall 14s linear infinite;
-      animation-delay: -5s;
+    .toothBrush div:nth-child(5) {
+      @include toothBrushAnimation(85%, 14s, -5s);
     }
 
-    .leaf div:nth-child(6) {
-      left: 15%;
-      animation: fall 16s linear infinite;
-      animation-delay: -10s;
+    .toothBrush div:nth-child(6) {
+      @include toothBrushAnimation(15%, 16s, -10s);
     }
 
-    .leaf div:nth-child(7) {
-      left: 90%;
-      animation: fall 15s linear infinite;
-      animation-delay: -4s;
+    .toothBrush div:nth-child(7) {
+      @include toothBrushAnimation(90%, 15s, -4s);
     }
 
     @keyframes fall {
@@ -302,7 +275,7 @@
       }
     }
 
-    .leaf1 {
+    .toothBrush1 {
       transform: rotateX(180deg);
     }
 
@@ -314,6 +287,7 @@
       color: #fff;
       border-radius: 10px;
       transition: all 1s ease;
+
       @include respond(miniphone) {
         font-size: .9rem !important;
         padding: 0.4rem 2rem;
@@ -394,9 +368,7 @@
       max-width: 114rem;
       height: 100%;
       margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include flexBox(row, center, center);
 
       h1 {
         font-size: 3rem;
@@ -404,26 +376,19 @@
         text-align: center;
 
         @include respond(tab-land) {
-          font-size: 3rem;
-          margin-top: 1.3rem;
-          margin-bottom: 1.7rem;
+          @include responsiveTreatmentsHeader(3rem, 1.3rem, 1.7rem);
         }
 
         @include respond(tab-port) {
-          font-size: 3rem;
-          margin-top: 1.3rem;
-          margin-bottom: 1.7rem;
+          @include responsiveTreatmentsHeader(3rem, 1.3rem, 1.7rem);
         }
 
         @include respond(phone) {
-          font-size: 2.3rem;
-          margin-top: 2rem;
-          margin-bottom: 2rem;
+          @include responsiveTreatmentsHeader(2.3rem, 2rem, 2rem);
         }
+
         @include respond(smallphone) {
-          font-size: 1.5rem;
-          margin-top: 2rem;
-          margin-bottom: 2rem;
+          @include responsiveTreatmentsHeader(1.5rem, 2rem, 2rem);
         }
 
       }
@@ -436,18 +401,15 @@
         float: left;
 
         @include respond(tab-land) {
-          width: 40% !important;
-          margin: 0 !important;
+          @include responsiveTreatmentsCol(40%, 0);         
         }
 
         @include respond(tab-port) {
-          width: 40% !important;
-          margin: 0 !important;
+          @include responsiveTreatmentsCol(40%, 0);
         }
 
         @include respond(phone) {
-          width: 80% !important;
-          margin: 0 !important;
+          @include responsiveTreatmentsCol(80%, 0);
         }
 
       }
@@ -497,9 +459,7 @@
           // clip-path: polygon(20% 60%, 22% 66%, 24% 71%, 26% 76%, 27% 81%, 29% 86%, 32% 88%, 35% 85%, 36% 81%, 37% 77%, 38% 73%, 39% 69%, 40% 65%, 42% 62%, 43% 58%, 44% 61%, 48% 64%, 49% 67%, 50% 71%, 52% 75%, 52% 78%, 54% 82%, 55% 85%, 57% 88%, 59% 87%, 62% 88%, 62% 89%, 65% 89%, 65% 85%, 67% 81%, 68% 78%, 68% 75%, 70% 72%, 72% 67%, 73% 62%, 74% 57%, 76% 52%, 78% 46%, 83% 42%, 86% 38%, 89% 34%, 93% 30%, 96% 26%, 97% 20%, 95% 13%, 91% 9%, 86% 5%, 79% 2%, 73% 2%, 67% 3%, 62% 5%, 58% 9%, 52% 12%, 45% 13%, 39% 10%, 34% 7%, 30% 4%, 25% 2%, 20% 1%, 16% 1%, 11% 2%, 6% 4%, 3% 7%, 1% 12%, 1% 17%, 0 22%, 0 27%, 2% 32%, 3% 37%, 8% 41%, 13% 46%, 16% 51%, 18% 55%);
 
           &-side {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flexBox(row, center, center);
             height: 18rem;
             color: #fff;
             text-align: center;
@@ -573,9 +533,7 @@
                     font-size: 1rem;
                     padding: 0.5rem 2rem;
                     height: 100%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    @include flexBox(row, center, center);
                   }
                 }
               }
@@ -597,9 +555,7 @@
   .section-d {
     padding-bottom: 4rem;
     color: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexBox(row, center, center);
 
     &-slide {
       height: 100%;
@@ -622,6 +578,7 @@
         @include respond(tab-port) {
           font-size: 2rem;
         }
+
         @include respond(miniphone) {
           font-size: 1.7rem;
         }
@@ -646,6 +603,7 @@
         @include respond(phone) {
           font-size: 1rem;
         }
+
         @include respond(miniphone) {
           font-size: .9rem;
         }
@@ -664,48 +622,32 @@
   }
 
   .section-f {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    @include flexBox(row, center, flex-start);
     height: 100vh;
 
     @include respond(desktop) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      @include flexBox(column, center, center);
       height: 150vh;
     }
 
     @include respond(tab-land) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      @include flexBox(column, center, center);
       height: 150vh;
     }
 
     @include respond(tab-port) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      @include flexBox(column, center, center);
       height: 150vh;
     }
 
     @include respond(phone) {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      @include flexBox(column, center, center);
       height: 150vh;
     }
 
 
     .left-map {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include flexBox(row, center, center);
       height: 100%;
       width: 70%;
       z-index: 1;
@@ -729,9 +671,7 @@
     }
 
     .right-map {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include flexBox(row, center, center);
       height: 100%;
       width: 30%;
       z-index: 1;
@@ -754,24 +694,20 @@
       @include respond(phone) {
         width: 100%;
       }
+
       @include respond(smallphone) {
         width: 70%;
       }
 
 
       &-text {
-        display: flex;
         width: 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flexBox(column, center, center);
 
         .opening-hours-container {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          @include flexBox(row, center, center);
 
-          
+
         }
 
         .card {
@@ -795,6 +731,7 @@
             grid-template-columns: 7rem auto;
 
           }
+
           @include respond(phone) {
             width: 100%;
           }
@@ -838,93 +775,103 @@
   }
 
   .btn-display {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexBox(row, center, center);
   }
 }
 
 
-@keyframes moveInLeft{
-  0%{
-    opacity:0;
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
     transform: translateX(-100px);
   }
-  80%{
+
+  80% {
     transform: translateX(10px);
   }
-  100%{
-    opacity:1;
+
+  100% {
+    opacity: 1;
     transform: translate(0);
   }
 }
 
-@keyframes moveInLeftPhones{
-  0%{
-    opacity:0;
+@keyframes moveInLeftPhones {
+  0% {
+    opacity: 0;
     transform: translateX(-10px);
   }
-  80%{
+
+  80% {
     transform: translateX(5px);
   }
-  100%{
-    opacity:1;
+
+  100% {
+    opacity: 1;
     transform: translate(0);
   }
 }
 
-@keyframes moveInRight{
-  0%{
-    opacity:0;
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
     transform: translateX(100px);
   }
-  80%{
+
+  80% {
     transform: translateX(-10px);
   }
-  100%{
-    opacity:1;
+
+  100% {
+    opacity: 1;
     transform: translate(0);
   }
 }
 
-@keyframes moveInRightPhones{
-  0%{
-    opacity:0;
+@keyframes moveInRightPhones {
+  0% {
+    opacity: 0;
     transform: translateX(10px);
   }
-  80%{
+
+  80% {
     transform: translateX(-5px);
   }
-  100%{
-    opacity:1;
+
+  100% {
+    opacity: 1;
     transform: translate(0);
   }
 }
 
-@keyframes moveToTop{
-  0%{
-    opacity:0;
+@keyframes moveToTop {
+  0% {
+    opacity: 0;
     transform: translateY(10px);
   }
-  80%{
+
+  80% {
     transform: translateY(-10px);
   }
-  100%{
-    opacity:1;
+
+  100% {
+    opacity: 1;
     transform: translate(0);
   }
 }
 
-@keyframes moveToTopPhones{
-  0%{
-    opacity:0;
+@keyframes moveToTopPhones {
+  0% {
+    opacity: 0;
     transform: translateY(3px);
   }
-  80%{
+
+  80% {
     transform: translateY(-3px);
   }
-  100%{
-    opacity:1;
+
+  100% {
+    opacity: 1;
     transform: translate(0);
   }
 }
