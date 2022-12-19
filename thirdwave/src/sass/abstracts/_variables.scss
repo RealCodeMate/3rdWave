@@ -41,3 +41,8 @@ $hover-third: #a4be7b;
     width: ($val1) !important;
     margin: ($val2) !important;
 }
+
+@mixin responsiveRightMap($val1, $val2) {
+    width: ($val1) ;
+    margin-bottom: $val2;
+}

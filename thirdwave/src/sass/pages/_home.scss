@@ -401,7 +401,7 @@
         float: left;
 
         @include respond(tab-land) {
-          @include responsiveTreatmentsCol(40%, 0);         
+          @include responsiveTreatmentsCol(40%, 0);
         }
 
         @include respond(tab-port) {
@@ -677,26 +677,23 @@
       z-index: 1;
 
       @include respond(desktop) {
-        width: 100%;
-        margin-bottom: 2rem;
+        @include responsiveRightMap(100%, 2rem);
       }
 
       @include respond(tab-land) {
-        width: 100%;
-        margin-bottom: 2rem;
+        @include responsiveRightMap(100%, 2rem);
       }
 
       @include respond(tab-port) {
-        width: 100%;
-        margin-bottom: 2rem;
+        @include responsiveRightMap(100%, 2rem);
       }
 
       @include respond(phone) {
-        width: 100%;
+        @include responsiveRightMap(100%, 2rem);
       }
 
       @include respond(smallphone) {
-        width: 70%;
+        @include responsiveRightMap(70%, 2rem);
       }
 
 
