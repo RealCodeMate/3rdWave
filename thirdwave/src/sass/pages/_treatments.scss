@@ -10,14 +10,11 @@
 .section-header {
   height: 8%;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flexBox(row, center, center);
 
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   background: url("../../assets/home2.jpeg") center center/cover no-repeat;
-
 
   position: relative;
 
@@ -31,8 +28,7 @@
     background: linear-gradient(to bottom right, #000, $hover-primary);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    opacity: .9;
-
+    opacity: 0.9;
   }
 
   h1 {
@@ -59,32 +55,22 @@
       margin: 1rem auto !important;
     }
   }
-
 }
 
 .treatments-parent {
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
+  @include flexBox(row, flex-start, flex-start);
 
   @include respond(tab-land) {
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: flex-start;
+    @include flexBox(column-reverse, flex-start, center);
   }
 
   @include respond(tab-port) {
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: flex-start;
+    @include flexBox(column-reverse, flex-start, center);
   }
 
   @include respond(phone) {
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: flex-start;
+    @include flexBox(column-reverse, flex-start, center);
   }
 }
 
@@ -97,7 +83,6 @@
   background: linear-gradient(to bottom, #000, $hover-primary);
   border-radius: 20px;
 
-
   @include respond(tab-land) {
     width: 100%;
     margin-right: 0;
@@ -113,16 +98,10 @@
     margin-right: 0;
   }
 
-
   ul {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    @include flexBox(column, flex-start, flex-start);
     padding: 0;
     margin: 3rem auto;
-
-
   }
 
   a {
@@ -163,7 +142,6 @@
     &:hover {
       color: #fff;
     }
-
   }
 }
 
@@ -171,8 +149,6 @@
   height: 100%;
   width: 95%;
   padding: 2rem;
-
-  
 
   .middle-bg {
     width: 100%;
@@ -194,34 +170,23 @@
 
     &-icons {
       height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
+      @include flexBox(row, space-around, center);
 
       @include respond(tab-land) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: .7rem;
+        @include flexBox(column, center, center);
+        padding: 0.7rem;
       }
 
       @include respond(tab-port) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: .7rem;
+        @include flexBox(column, center, center);
+        padding: 0.7rem;
       }
       @include respond(phone) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: .7rem;
+        @include flexBox(column, center, center);
+        padding: 0.7rem;
       }
 
-      i{
+      i {
         @include respond(tab-port) {
           font-size: 2.5rem;
         }
@@ -232,10 +197,7 @@
 
       &-col {
         height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @include flexBox(column, center, center);
         z-index: 1;
         color: #fff;
 
@@ -246,15 +208,14 @@
             font-size: 1.3rem;
           }
           @include respond(phone) {
-          font-size: 1.2rem;
-        }
+            font-size: 1.2rem;
+          }
           @include respond(smallphone) {
-          font-size: 1rem;
+            font-size: 1rem;
           }
         }
       }
     }
-
 
     position: relative;
 
@@ -266,14 +227,14 @@
       height: 100%;
       width: 100%;
       background: linear-gradient(to bottom, black, $hover-primary);
-      opacity: .9;
+      opacity: 0.9;
       border-radius: 20px;
     }
   }
-  p,li{
+  p,
+  li {
     width: 100%;
-    font-size: .9rem;
-
+    font-size: 0.9rem;
   }
 
   @include respond(tab-land) {
@@ -298,4 +259,3 @@
     padding-top: 1rem;
   }
 }
-
