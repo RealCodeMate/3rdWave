@@ -11,33 +11,20 @@
   .row-1 {
     height: 65%;
     width: 100%;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    @include flexBox(row, center, center);
     margin-top: 2rem;
     @include respond(tab-land) {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      @include flexBox(column, center, center);
       margin-top: 2rem;
     }
 
     @include respond(tab-port) {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      @include flexBox(column, center, center);
       margin-top: 2rem;
     }
 
     @include respond(phone) {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      @include flexBox(column, center, center);
       margin-top: 2rem;
     }
 
@@ -58,17 +45,12 @@
 
       .contact-form {
         height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flexBox(row, center, center);
 
         form {
           width: 80%;
           height: 100%;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
+          @include flexBox(column, center, center);
 
           @include respond(tab-land) {
             width: 100%;
@@ -195,41 +177,26 @@
     .row-2-container {
       height: 100%;
       width: 100%;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
+      @include flexBox(row, center, center);
       padding: 2rem;
 
       @include respond(tab-land) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flexBox(column, center, center);
       }
 
       @include respond(tab-port) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flexBox(column, center, center);
       }
       @include respond(phone) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flexBox(column, center, center);
       }
     }
 
     .card-1 {
       height: 100%;
       width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      @include flexBox(column, center, center);
       text-align: center;
-      align-items: center;
       background-color: rgba(248, 249, 250, 1);
       border-radius: 15px;
       padding: 1rem;
@@ -258,10 +225,7 @@
     .card-2 {
       height: 100%;
       width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      @include flexBox(column, center, center);
       background-color: rgba(248, 249, 250, 1);
       margin-left: 2rem;
       margin-right: 2rem;
@@ -279,9 +243,7 @@
 
     .card-header {
       width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flexBox(row, center, center);
     }
   }
 }
