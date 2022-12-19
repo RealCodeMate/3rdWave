@@ -5,26 +5,16 @@
 }
 
 .about {
-  
   width: 100vw;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  @include flexBox(row, center, center);
   @include respond(tab-land) {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flexBox(column, center, center);
   }
   @include respond(tab-port) {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flexBox(column, center, center);
   }
   @include respond(phone) {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flexBox(column, center, center);
   }
 }
 
@@ -33,12 +23,9 @@
   height: 100%;
   padding: 2rem;
   margin-left: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  @include flexBox(column, center, flex-start);
 
-  h1{
+  h1 {
     animation: moveInLeft 1s ease-out;
 
     @include respond(tab-land) {
@@ -85,7 +72,6 @@
     text-align: center;
   }
 
-
   p {
     margin: 2rem auto;
     animation: moveInRight 1s ease-out;
@@ -110,22 +96,20 @@
 .right-about {
   width: 70%;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url('../../assets/about-bg.jpg') center center/cover no-repeat;
+  @include flexBox(row, center, center);
+  background: url("../../assets/about-bg.jpg") center center/cover no-repeat;
   clip-path: polygon(0 0, 100% 1%, 100% 100%, 41% 100%);
   @include respond(tab-land) {
     height: 100vh;
     width: 90%;
     margin-bottom: 2rem;
-    clip-path:none;
+    clip-path: none;
   }
   @include respond(tab-port) {
     height: 60vh;
     width: 90%;
     margin-bottom: 2rem;
-    clip-path:none;
+    clip-path: none;
   }
 
   @include respond(phone) {
@@ -136,58 +120,58 @@
   }
 }
 
-@keyframes moveInLeft{
-  0%{
-    opacity:0;
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
     transform: translateX(-100px);
   }
-  80%{
+  80% {
     transform: translateX(10px);
   }
-  100%{
-    opacity:1;
+  100% {
+    opacity: 1;
     transform: translate(0);
   }
 }
 
-@keyframes moveInLeftPhones{
-  0%{
-    opacity:0;
+@keyframes moveInLeftPhones {
+  0% {
+    opacity: 0;
     transform: translateX(-10px);
   }
-  80%{
+  80% {
     transform: translateX(5px);
   }
-  100%{
-    opacity:1;
+  100% {
+    opacity: 1;
     transform: translate(0);
   }
 }
 
-@keyframes moveInRight{
-  0%{
-    opacity:0;
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
     transform: translateX(100px);
   }
-  80%{
+  80% {
     transform: translateX(-10px);
   }
-  100%{
-    opacity:1;
+  100% {
+    opacity: 1;
     transform: translate(0);
   }
 }
 
-@keyframes moveInRightPhones{
-  0%{
-    opacity:0;
+@keyframes moveInRightPhones {
+  0% {
+    opacity: 0;
     transform: translateX(10px);
   }
-  80%{
+  80% {
     transform: translateX(-5px);
   }
-  100%{
-    opacity:1;
+  100% {
+    opacity: 1;
     transform: translate(0);
   }
 }
