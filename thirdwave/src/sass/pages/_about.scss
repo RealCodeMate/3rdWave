@@ -100,23 +100,14 @@
   background: url("../../assets/about-bg.jpg") center center/cover no-repeat;
   clip-path: polygon(0 0, 100% 1%, 100% 100%, 41% 100%);
   @include respond(tab-land) {
-    height: 100vh;
-    width: 90%;
-    margin-bottom: 2rem;
-    clip-path: none;
+    @include responsiveAboutPageImage(100vh);
   }
   @include respond(tab-port) {
-    height: 60vh;
-    width: 90%;
-    margin-bottom: 2rem;
-    clip-path: none;
+    @include responsiveAboutPageImage(60vh);
   }
 
   @include respond(phone) {
-    height: 50vh;
-    width: 90%;
-    margin-bottom: 2rem;
-    clip-path: none;
+    @include responsiveAboutPageImage(50vh);
   }
 }
 
