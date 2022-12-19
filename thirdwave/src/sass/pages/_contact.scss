@@ -103,10 +103,10 @@
           }
 
           @include respond(tab-port) {
-            @include responsiveContactPageSubmitButton(33%, 1.2rem);
+            @include responsiveContactPageSubmitButton(33%, 1rem);
           }
           @include respond(phone) {
-            @include responsiveContactPageSubmitButton(50%, 1.2rem);
+            @include responsiveContactPageSubmitButton(50%, 1rem);
           }
         }
 
