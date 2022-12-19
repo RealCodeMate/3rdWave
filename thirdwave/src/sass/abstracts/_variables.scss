@@ -60,3 +60,19 @@ $hover-third: #a4be7b;
   margin-bottom: 2rem;
   clip-path: none;
 }
+@mixin responsiveContactPageInfo() {
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 1px solid #222;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
