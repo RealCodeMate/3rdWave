@@ -99,20 +99,14 @@
           font-weight: 700;
 
           @include respond(tab-land) {
-            width: 30%;
-            font-size: 1.2rem;
-            margin-top: 0.8rem;
+            @include responsiveContactPageSubmitButton(30%, 1.2rem);
           }
 
           @include respond(tab-port) {
-            width: 33%;
-            font-size: 1rem;
-            margin-top: 0.8rem;
+            @include responsiveContactPageSubmitButton(33%, 1.2rem);
           }
           @include respond(phone) {
-            width: 50%;
-            font-size: 1rem;
-            margin-top: 0.8rem;
+            @include responsiveContactPageSubmitButton(50%, 1.2rem);
           }
         }
 

@@ -76,3 +76,8 @@ $hover-third: #a4be7b;
   box-sizing: border-box;
   outline: 0;
 }
+@mixin responsiveContactPageSubmitButton($val1, $val2) {
+  width: $val1;
+  font-size: $val2;
+  margin-top: 0.8rem;
+}
