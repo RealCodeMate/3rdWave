@@ -1,6 +1,6 @@
-import react from "react";
 import Banner from "../../../compenents/Banner/Banner";
 import { useTranslation } from "react-i18next";
+
 export default function ToothPulling() {
   const { t } = useTranslation();
   return (

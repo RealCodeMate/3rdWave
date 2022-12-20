@@ -1,5 +1,4 @@
-import react, { useState } from 'react'
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import { useState } from 'react'
 import { useTranslation } from 'react-i18next';
 import "../../sass/components/_header.scss";
 import trFlag from "../../assets/turkish.png";
@@ -15,11 +14,9 @@ export default function LngBtn() {
     const handleOpen = () => {
         setOpen(!open);
     }
-    
 
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);
-        console.log(language)
     };
 
     const handleLanguageTr = () => {

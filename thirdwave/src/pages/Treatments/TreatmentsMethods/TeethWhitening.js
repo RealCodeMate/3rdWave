@@ -1,4 +1,3 @@
-import react from 'react';
 import Banner from '../../../compenents/Banner/Banner';
 import "../../../sass/pages/_treatments.scss";
 import { useTranslation } from 'react-i18next';

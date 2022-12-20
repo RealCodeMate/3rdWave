@@ -2,7 +2,6 @@ import React from "react";
 import Header from "../../compenents/Header/Header";
 import Footer from "../../compenents/Footer/Footer";
 import "../../sass/pages/_gallery.scss";
-import image1 from "../../assets/tooth.jpg";
 import { Helmet } from 'react-helmet';
 import { useTranslation } from "react-i18next";
 

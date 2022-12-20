@@ -5,8 +5,6 @@ import Contact from "./pages/Contact/Contact";
 import Treatments from "./pages/Treatments/Treatments";
 import Gallery from "./pages/Gallery/Gallery";
 import Faq from "./pages/Faq/Faq";
-import "./App.css";
-import "./App.scss";
 
 function App() {
   return (

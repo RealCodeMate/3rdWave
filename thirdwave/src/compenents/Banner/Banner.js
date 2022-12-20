@@ -1,4 +1,3 @@
-import react from "react"
 import "../../sass/pages/_treatments.scss"
 import { useTranslation } from 'react-i18next';
 

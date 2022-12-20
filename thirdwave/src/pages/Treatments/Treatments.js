@@ -22,6 +22,7 @@ export default function Treatments() {
   const [selectedId, setSelectedId] = useState(0);
   const { string } = useParams();
   const { t } = useTranslation();
+  
   const changePage = () => {
     if (string === undefined) { return <TeethWhitening data={string} /> }
     if (string === 'dis-beyazlatma') { return <TeethWhitening data={string} /> }
@@ -37,8 +38,6 @@ export default function Treatments() {
 
   const url = window.location.href;
   const partUrl = url.slice(22, url.length)
-
-
 
   const arr = [
     { id: 1, url: "dis-beyazlatma", title: `${t('treatmentsPage.sideMenu.m1')}` },

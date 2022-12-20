@@ -1,10 +1,7 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { NavLink } from "react-router-dom";
 import "../../sass/components/_header.scss";
@@ -54,11 +51,6 @@ export default function Header() {
                 <Nav.Link as={NavLink} to="/contact">
                   <h5>{t('header.contact')}</h5>
                 </Nav.Link>
-                {/* {Object.keys(lngs).map((lng) => (
-                    <button key={lng} style={{ fontWeight: i18n.resolvedLanguage === lng ? 'bold' : 'normal' }} type="submit" onClick={() => i18n.changeLanguage(lng)}>
-                      {lngs[lng].nativeName}
-                    </button>
-                  ))} */}
                 <Nav.Link >
                   <LngBtn />
                 </Nav.Link>

@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Header from "../../compenents/Header/Header";
 import "../../sass/pages/_about.scss";
-import image from "../../assets/aboutMe.jpeg"
 import Footer from "../../compenents/Footer/Footer";
 import { Helmet } from 'react-helmet';
 import { useTranslation } from "react-i18next";

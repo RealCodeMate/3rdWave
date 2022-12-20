@@ -5,8 +5,6 @@ import Footer from "../../compenents/Footer/Footer";
 import emailjs from '@emailjs/browser';
 import "../../sass/pages/_contact.scss";
 import barcode from "../../assets/contact.svg";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { asd } from '@fortawesome/free-brands-svg-icons'
 import { useTranslation } from "react-i18next";
 
 const TITLE = 'İletişim | Dt. Mustafa Akyılmaz';
