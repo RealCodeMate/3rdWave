@@ -1,11 +1,10 @@
 import react, { useState } from 'react'
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import "../sass/components/_header.scss";
 import { useTranslation } from 'react-i18next';
-import "../sass/components/_header.scss";
-import trFlag from "../assets/turkish.png";
-import enFlag from "../assets/english.png";
-import ruFlag from "../assets/russia.png";
+import "../../sass/components/_header.scss";
+import trFlag from "../../assets/turkish.png";
+import enFlag from "../../assets/english.png";
+import ruFlag from "../../assets/russia.png";
 
 
 export default function LngBtn() {

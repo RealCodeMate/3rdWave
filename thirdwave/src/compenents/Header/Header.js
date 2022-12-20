@@ -8,7 +8,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { NavLink } from "react-router-dom";
 import "../../sass/components/_header.scss";
-import LngBtn from "../lngBtn";
+import LngBtn from "../Buttons/lngBtn";
 import { useTranslation } from 'react-i18next';
 
 
