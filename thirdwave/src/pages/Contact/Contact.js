@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import { Helmet } from 'react-helmet';
 import Header from "../../compenents/Header/Header";
 import Footer from "../../compenents/Footer/Footer";
-// import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 import "../../sass/pages/_contact.scss";
 import barcode from "../../assets/contact.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -32,42 +32,28 @@ export default function Contact() {
 
   const form = useRef();
 
-  // const handleChangeName = (e) => {
-  //   setInputs({
-  //     ...inputs,
-  //     name: e.target.value
-  //   });
-  // }
-
-  // const handleChangeEmail = (e) => {
-  //   setInputs({
-  //     ...inputs,
-  //     email: e.target.value
-  //   });
-  // }
-
-  // const handleChangeMessage = (e) => {
-  //   setInputs({
-  //     ...inputs,
-  //     message: e.target.value
-  //   });
-  // }
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Thank you " + inputs.displayName + " :)");
 
-    // emailjs.sendForm(
-    //   'gmail',
-    //   'template_0fcv719',
-    //   form.current,
-    //   'user_RimOnGyUfCEMCL9yCSP74'
-    // )
-    //   .then((result) => {
-    //    alert('Thank you ' + inputs.displayName + ' :)');
-    //   }, (error) => {
-    //     console.log(error.text);
-    //   });
+    emailjs.sendForm(
+      'gmail',
+      'template_0fcv719',
+      form.current,
+      'user_RimOnGyUfCEMCL9yCSP74'
+    )
+      .then((result) => {
+        alert('Thank you ' + inputs.displayName + '😊');
+      }, (error) => {
+        alert(error.text);
+      });
+
+    setInputs(
+      {
+        displayName: "",
+        email: "",
+        message: "",
+      }
+    )
   };
 
   const { displayName, email, message } = inputs;
@@ -77,7 +63,7 @@ export default function Contact() {
       <Helmet>
         <title>{TITLE}</title>
       </Helmet>
-      
+
       <Header />
       <div className="contact">
         <div className="row-1">
@@ -95,6 +81,7 @@ export default function Contact() {
                 <input
                   name="email"
                   type="text"
+                  required
                   className="feedback-input"
                   placeholder={t("contactPage.email")}
                   value={email}
