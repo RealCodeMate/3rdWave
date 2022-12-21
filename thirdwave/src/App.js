@@ -5,6 +5,7 @@ import Contact from "./pages/Contact/Contact";
 import Treatments from "./pages/Treatments/Treatments";
 import Gallery from "./pages/Gallery/Gallery";
 import Faq from "./pages/Faq/Faq";
+import NotFound from "./pages/NotFound/NotFound";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route element={<Treatments />} path="/treatments/:string" />
         <Route element={<Gallery />} path="/gallery" />
         <Route element={<Faq />} path="/faq" />
+        <Route element={<NotFound />} path="/*" />
       </Routes>
     </div>
   );
