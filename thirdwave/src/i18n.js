@@ -165,7 +165,7 @@ i18n
                         rootCanalTreatments: {
                             header1: "Kanal tedavisi nedir ?",
                             info1:
-                                "Dişin iç kısmında bulunan pulpa dokusunun hastalanmasıyla oluşan rahatsızlıkların çözümü için uygulanan tedavilere kanal tedavisi denmektedir. Dişin canlılığını koruduğu durumlarda uygulanan lokal anestezilerde tedavi öncesi hastamız kanal tedavisine hazır hale getirilir.Dişin içinde bulunan pulpa dokusu özel el aletleriyle çıkarılır. Çeşitli kimyasal solüsyonların yardımıyla dişin iç kısmı artıklardan ve bakterilerden arındırılmaya çalışılır. Dokuyla uyumlu malzemelerle kök kanalları sızdırmaz bir biçimde kapatılır. Dişin iç kısmında iltihabi durumların olduğu vakalarda kanallar doldurulmadan önce pansuman yapılabilinir.",
+                                "Dişin iç kısmında bulunan pulpa dokusunun hastalanmasıyla oluşan rahatsızlıkların çözümü için uygulanan tedavilere kanal tedavisi denmektedir. Dişin canlılığını koruduğu durumlarda uygulanan lokal anestezilerde tedavi öncesi hastamız kanal tedavisine hazır hale getirilir. Dişin içinde bulunan pulpa dokusu özel el aletleriyle çıkarılır. Çeşitli kimyasal solüsyonların yardımıyla dişin iç kısmı artıklardan ve bakterilerden arındırılmaya çalışılır. Dokuyla uyumlu malzemelerle kök kanalları sızdırmaz bir biçimde kapatılır. Dişin iç kısmında iltihabi durumların olduğu vakalarda kanallar doldurulmadan önce pansuman yapılabilinir.",
                             header2: "Kanal tedavisi yapılan dişlerin ömrü nedir?",
                             info2:
                                 "Kanal tedavisi sonrası herhangi bir dişinizden farklı bir ömrü olmayacaktır. Uygun tedaviler uygun dişlere yapıldıktan sonra ömür boyunca kullanabileceğinizi söyleyebiliriz.",
@@ -296,7 +296,7 @@ i18n
                         },
                         treatmentsSection: {
                             treHeader: "Treatments",
-                            tre1: "Teeth Whitening",
+                            tre1: "Bleaching",
                             tre2: "Teeth Fillings",
                             tre3: "Tooth Pulling",
                             tre4: "Implant Methods",
@@ -324,13 +324,13 @@ i18n
                             },
                             accordion: {
                                 questions: {
-                                    q1: "Is teeth whitening harmful to teeth?",
+                                    q1: "Is bleaching harmful to teeth?",
                                     q2: "Are laminates long-lasting? Is it durable?",
                                     q3: "How should teeth be brushed?",
                                     q4: "Will there be pain after root canal treatment?",
                                 },
                                 answers: {
-                                    a1: "For many individuals, it is important that the teeth appear white as well as the form and symmetry of the teeth and surrounding structures in perceiving the smile as beautiful. Teeth whitening is not harmful as long as it is under the control of the physician, but tooth sensitivity that does not last longer than 1 week at the end of the treatment can be seen and patients who have the potential to color the teeth for 2 weeks after the treatment; coffee, wine, cigarettes should be avoided as much as possible.",
+                                    a1: "For many individuals, it is important that the teeth appear white as well as the form and symmetry of the teeth and surrounding structures in perceiving the smile as beautiful. Bleaching is not harmful as long as it is under the control of the physician, but tooth sensitivity that does not last longer than 1 week at the end of the treatment can be seen and patients who have the potential to color the teeth for 2 weeks after the treatment; coffee, wine, cigarettes should be avoided as much as possible.",
                                     a2: "Laminates can be used for years without any problems with good oral care. Because they are made of porcelain with superior properties than other adhesive systems (bonding). They are more resistant to staining and abrasion. In order to prolong their life, it is necessary to pay attention to oral care. In addition, it is necessary to avoid bad habits such as biting very hard foods and biting nails.",
                                     a3: "The most effective way to protect our teeth is to brush regularly. Tooth brushing should take an average of 2 minutes, and each tooth should be brushed 8-10 times. When brushing teeth, especially the tooth-gingival junction should be brushed. The aim is to remove food residues and bacterial plaque on the tooth surface.",
                                     a4: "You may have mild pain for a few days after the treatment. However, this is not permanent.",
@@ -354,7 +354,7 @@ i18n
                             slogan3: "Comfortable Treatment",
                         },
                         sideMenu: {
-                            m1: "Teeth Whitening",
+                            m1: "Bleaching",
                             m2: "Teeth Fillings",
                             m3: "Tooth Pulling",
                             m4: "Implant Methods",
@@ -364,9 +364,9 @@ i18n
                             m8: "Laminate Coating",
                         },
                         teethWhitening: {
-                            header: "What is teeth whitening?",
+                            header: "What is bleaching?",
                             info1:
-                                "Teeth whitening in modern societies, individuals care about the appearance of their teeth, and even shape and color disorders in the teeth can cause problems up to psychological disorders. With the development of aesthetic and restorative materials in dentistry, many color, shape and position disorders can be easily resolved. Bleaching of discolored teeth is cheaper, more practical and harmless compared to other restorative methods. How is the teeth whitening process done? Whitening is the process of removing the discoloration that occurs in the structure of the teeth (enamel and dentin layer). There are two different whitening methods currently known. The first of these is a method that the patient can apply on his own, the stages are as follows:",
+                                "Bleaching in modern societies, individuals care about the appearance of their teeth, and even shape and color disorders in the teeth can cause problems up to psychological disorders. With the development of aesthetic and restorative materials in dentistry, many color, shape and position disorders can be easily resolved. Bleaching of discolored teeth is cheaper, more practical and harmless compared to other restorative methods. How is the bleaching process done? Whitening is the process of removing the discoloration that occurs in the structure of the teeth (enamel and dentin layer). There are two different whitening methods currently known. The first of these is a method that the patient can apply on his own, the stages are as follows:",
                             l1: "Having the dentist take measurements from the mouth and prepare thin rubber molds that you can put on your teeth,",
                             l2: "The patient places a medicine in a special mold prepared for him and wears this mold on the teeth to be whitened for at least 6 - 8 hours a day (preferably asleep),",
                             l3: "A happier social life with the recovery of self-confidence",
@@ -458,7 +458,7 @@ i18n
                             header2: "In which cases is laminate treatment applied?",
                             info2:
                                 "Laminate veneers can be made primarily for the purpose of removing color changes and correcting the shape to a certain extent. The main application areas can be summarized as follows:",
-                            l1: "In discoloration, advanced antibiotics, fluorine, etc., which do not produce results with methods such as bleaching (teeth whitening). in hereditary structure and color disorders in stains.",
+                            l1: "In discoloration, advanced antibiotics, fluorine, etc., which do not produce results with methods such as bleaching (teeth whitening) in hereditary structure and color disorders in stains.",
                             l2: "Conjoining split teeth (diastema closure).",
                             l3: "In the restoration of broken or worn teeth.",
                             l4: "In the correction of old fillings whose color and structure have deteriorated.",
