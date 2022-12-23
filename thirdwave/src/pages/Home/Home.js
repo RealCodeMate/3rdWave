@@ -22,9 +22,9 @@ import { useTranslation } from 'react-i18next';
 const TITLE = 'Anasayfa | Dt. Mustafa Akyılmaz';
 
 export default function Home() {
-  const [lng, setLng] = useState(34.313821201725084);
-  const [lat, setLat] = useState(36.602693172981596);
-
+  const [lng, setLng] = useState(34.314067010347740);
+  const [lat, setLat] = useState(36.6025892397235);
+   
   const { t } = useTranslation();
 
   const openInNewTab = (url) => {

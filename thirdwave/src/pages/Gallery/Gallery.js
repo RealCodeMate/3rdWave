@@ -4,6 +4,23 @@ import Footer from "../../compenents/Footer/Footer";
 import "../../sass/pages/_gallery.scss";
 import { Helmet } from 'react-helmet';
 import { useTranslation } from "react-i18next";
+import photo2 from "../../assets/2.jpeg";
+import photo3 from "../../assets/3.jpeg";
+import photo4 from "../../assets/4.jpeg";
+import photo9 from "../../assets/9.jpeg";
+import photo11 from "../../assets/11.jpeg";
+import photo12 from "../../assets/12.jpeg";
+import photo14 from "../../assets/14.jpeg";
+import photo16 from "../../assets/16.jpeg";
+import photo21 from "../../assets/21.jpeg";
+import photo23 from "../../assets/23.jpeg";
+import photo24 from "../../assets/24.jpeg";
+import photo25 from "../../assets/25.jpeg";
+import photo26 from "../../assets/26.jpeg";
+import photo27 from "../../assets/27.jpg";
+import photo28 from "../../assets/28.jpeg";
+import photo29 from "../../assets/29.jpeg";
+import photo30 from "../../assets/30.jpeg";
 
 const TITLE = 'Galeri | Dt. Mustafa Akyılmaz';
 
@@ -23,160 +40,137 @@ export default function Gallery() {
           <li>
             <figure>
               <img
-                src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22944_hires.jpg"
-                alt="Juno's Latest Flyby of Jupiter Captures Two Massive Storms"
+                src={photo21}
+                alt="2"
               />
             </figure>
           </li>
           <li>
             <figure>
               <img
-                src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA23021_hires.jpg"
-                alt="A first look at dunes"
+                src={photo23}
+                alt="2"
               />
             </figure>
           </li>
           <li>
             <figure>
               <img
-                src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA23004_hires.jpg"
-                alt="K2-138 6 Planets Artwork (Artist's Illustration) "
+                src={photo24}
+                alt="2"
               />
             </figure>
           </li>
           <li>
             <figure>
               <img
-                src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA21212_hires.jpg"
-                alt="Small Prominences"
+                src={photo25}
+                alt="2"
               />
             </figure>
           </li>
           <li>
             <figure>
               <img
-                src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22983_hires.jpg"
-                alt="Ezinu Crater"
+                src={photo2}
+                alt="2"
+              />
+            </figure>
+          </li>
+
+          <li>
+            <figure>
+              <img
+                src={photo9}
+                alt="2"
               />
             </figure>
           </li>
           <li>
             <figure>
               <img
-                src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22990_hires.jpg"
-                alt="Polar Ice"
+                src={photo11}
+                alt="2"
               />
             </figure>
           </li>
           <li>
             <figure>
               <img
-                src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22963_hires.jpg"
-                alt="Jupiter"
+                src={photo12}
+                alt="2"
               />
             </figure>
           </li>
           <li>
             <figure>
               <img
-                src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22918_hires.jpg"
-                alt="Star Gaia 17pbi Seen by Spitzer"
+                src={photo14}
+                alt="2"
               />
             </figure>
           </li>
           <li>
             <figure>
               <img
-                src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22900_hires.jpg"
-                alt="Another Cloudy Day"
+                src={photo16}
+                alt="2"
               />
             </figure>
           </li>
           <li>
             <figure>
               <img
-                src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22941_hires.jpg"
-                alt="South Equatorial Belt Brown Barge Close-up"
+                src={photo26}
+                alt="2"
               />
             </figure>
           </li>
           <li>
             <figure>
               <img
-                src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22936_hires.jpg"
-                alt="Earth-based Observation of Jupiter"
+                src={photo3}
+                alt="2"
               />
             </figure>
           </li>
           <li>
             <figure>
               <img
-                src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22937_hires.jpg"
-                alt="Jupiter's South Tropical Disturbance"
+                src={photo4}
+                alt="2"
               />
             </figure>
           </li>
           <li>
             <figure>
               <img
-                src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22933_hires.jpg"
-                alt="Jupiter's Southern Circumpolar Cyclones"
+                src={photo28}
+                alt="2"
               />
             </figure>
           </li>
           <li>
             <figure>
               <img
-                src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22906_hires.jpg"
-                alt=" Juno Flyby Movie "
+                src={photo29}
+                alt="2"
               />
             </figure>
           </li>
           <li>
             <figure>
               <img
-                src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22895_hires.jpg"
-                alt="Swiss Cheese on a Red Planet"
+                src={photo30}
+                alt="2"
               />
             </figure>
           </li>
           <li>
             <figure>
               <img
-                src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA21211_hires.jpg"
-                alt="Solar Active Region's Cameo Appearance"
-              />
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img
-                src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22914_hires.jpg"
-                alt="Bow Shock Around Young Star"
-              />
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img
-                src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22695_hires.jpg"
-                alt="Jupiter's North Equatorial Belt"
-              />
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img
-                src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA22770_hires.jpg"
-                alt="Titan Mosaic: The Surface Under the Haze"
-              />
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img
-                src="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA18144_hires.jpg"
-                alt="Reappearing Coronal Hole"
+                src={photo27}
+                alt="2"
               />
             </figure>
           </li>
