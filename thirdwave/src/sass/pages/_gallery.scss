@@ -30,8 +30,8 @@ main.gallery {
 
 .gallery>.gallery__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-template-rows: repeat(5, 400px);
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-rows: repeat(5, 600px);
   @include respond(phone) {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: repeat(1, 250px);
@@ -58,6 +58,21 @@ main.gallery {
 
   &:hover{
     transform: scale(1.1);
+    @include respond(tab-land) {
+      transform: scale(1);
+    }
+    @include respond(tab-port) {
+      transform: scale(1);
+    }
+    @include respond(phone) {
+      transform: scale(1);
+    }
+    @include respond(miniphone) {
+      transform: scale(1);
+    }
+    @include respond(smallphone) {
+      transform: scale(1);
+    }
   }
 
 }
