@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Roboto:wght@100;300&display=swap");
-
-
-
+@import "../abstracts/variables";
+@import "../abstracts/mediaquery";
 
 
 :root {
@@ -113,6 +112,25 @@
             color: #fff;
             width: 90%;
         }
+
+        a {
+            font-size: 1rem;
+            text-decoration: none;
+            padding: 0.6rem 1.3rem;
+            background: linear-gradient(to right, $hover-third, $hover-secondary);
+            color: #fff;
+            border-radius: 10px;
+            transition: all 1s ease;
+      
+            @include respond(miniphone) {
+              font-size: .9rem !important;
+              padding: 0.4rem 2rem;
+            }
+      
+            &:hover {
+              background: linear-gradient(to bottom, $hover-primary, $hover-third);
+            }
+          }
         
     }
 
