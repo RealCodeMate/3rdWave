@@ -12,7 +12,7 @@ import photo11 from "../../assets/11-min.jpeg";
 import photo12 from "../../assets/12-min.jpeg";
 import photo14 from "../../assets/14-min.jpeg";
 import photo16 from "../../assets/16-min.jpeg";
-import photo21 from "../../assets/21-min.jpeg";
+import photo21 from "../../assets/profile-1.jpg";
 import photo23 from "../../assets/23.jpeg";
 import photo24 from "../../assets/24.jpeg";
 import photo25 from "../../assets/25.jpeg";
@@ -21,6 +21,7 @@ import photo27 from "../../assets/27.jpg";
 import photo28 from "../../assets/28.jpeg";
 import photo29 from "../../assets/29.jpeg";
 import photo30 from "../../assets/30.jpeg";
+import certificates from "../../assets/certificates.jpg";
 
 const TITLE = 'Galeri | Dt. Mustafa Akyılmaz';
 
@@ -122,6 +123,14 @@ export default function Gallery() {
             <figure>
               <img
                 src={photo26}
+                alt="2"
+              />
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img
+                src={certificates}
                 alt="2"
               />
             </figure>
