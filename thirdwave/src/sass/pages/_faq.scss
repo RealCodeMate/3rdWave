@@ -8,7 +8,7 @@
 .faq {
   width: 100vw;
   @include flexBox(column, center, center);
-  background: url("../../assets/tooth2.jpg") center center/cover no-repeat;
+  background: url("../../assets/tooth2-min.jpg") center center/cover no-repeat;
   position: relative;
   &::after {
     content: "";
