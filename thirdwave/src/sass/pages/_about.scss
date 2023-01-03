@@ -98,7 +98,7 @@
   width: 70%;
   height: 100vh;
   @include flexBox(row, center, center);
-  background: url("https://raw.githubusercontent.com/RealCodeMate/3rdWave/main/thirdwave/src/assets/profile-5-min.jpg") center center/cover no-repeat;
+  background: url("https://raw.githubusercontent.com/RealCodeMate/3rdWave/main/thirdwave/src/assets/profile-5.jpg") center center/cover no-repeat;
   clip-path: polygon(0 0, 100% 1%, 100% 100%, 28% 100%);
   @include respond(tab-land) {
     @include responsiveAboutPageImage(100vh);
@@ -109,7 +109,7 @@
 
   @include respond(phone) {
     @include responsiveAboutPageImage(50vh);
-    background: url("https://raw.githubusercontent.com/RealCodeMate/3rdWave/main/thirdwave/src/assets/profile-5-min.jpg")  center/cover no-repeat;
+    background: url("https://raw.githubusercontent.com/RealCodeMate/3rdWave/main/thirdwave/src/assets/profile-5.jpg")  center/cover no-repeat;
     background-position: 70% 0% ;
   }
 }
