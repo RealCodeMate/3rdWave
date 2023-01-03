@@ -4,24 +4,7 @@ import Footer from "../../compenents/Footer/Footer";
 import "../../sass/pages/_gallery.scss";
 import { Helmet } from 'react-helmet';
 import { useTranslation } from "react-i18next";
-import photo2 from "../../assets/2-min.jpeg";
-import photo3 from "../../assets/3-min.jpeg";
-import photo4 from "../../assets/4-min.jpeg";
-import photo9 from "../../assets/9-min.jpeg";
-import photo11 from "../../assets/11-min.jpeg";
-import photo12 from "../../assets/12-min.jpeg";
-import photo14 from "../../assets/14-min.jpeg";
-import photo16 from "../../assets/16-min.jpeg";
-import photo21 from "../../assets/profile-1.jpg";
-import photo23 from "../../assets/23.jpeg";
-import photo24 from "../../assets/24.jpeg";
-import photo25 from "../../assets/25.jpeg";
-import photo26 from "../../assets/26.jpeg";
-import photo27 from "../../assets/27.jpg";
-import photo28 from "../../assets/28.jpeg";
-import photo29 from "../../assets/29.jpeg";
-import photo30 from "../../assets/30.jpeg";
-import certificates from "../../assets/certificates.jpg";
+
 
 const TITLE = 'Galeri | Dt. Mustafa Akyılmaz';
 
@@ -41,7 +24,7 @@ export default function Gallery() {
           <li>
             <figure>
               <img
-                src={photo21}
+                src="https://raw.githubusercontent.com/RealCodeMate/3rdWave/main/thirdwave/src/assets/profile-1.jpg"
                 alt="2"
               />
             </figure>
@@ -49,7 +32,7 @@ export default function Gallery() {
           <li>
             <figure>
               <img
-                src={photo23}
+                src="https://raw.githubusercontent.com/RealCodeMate/3rdWave/main/thirdwave/src/assets/23.jpeg"
                 alt="2"
               />
             </figure>
@@ -57,7 +40,7 @@ export default function Gallery() {
           <li>
             <figure>
               <img
-                src={photo24}
+                src="https://raw.githubusercontent.com/RealCodeMate/3rdWave/main/thirdwave/src/assets/24.jpeg"
                 alt="2"
               />
             </figure>
@@ -65,7 +48,7 @@ export default function Gallery() {
           <li>
             <figure>
               <img
-                src={photo25}
+                src="https://raw.githubusercontent.com/RealCodeMate/3rdWave/main/thirdwave/src/assets/25.jpeg"
                 alt="2"
               />
             </figure>
@@ -73,7 +56,7 @@ export default function Gallery() {
           <li>
             <figure>
               <img
-                src={photo2}
+                src="https://raw.githubusercontent.com/RealCodeMate/3rdWave/main/thirdwave/src/assets/2.jpeg"
                 alt="2"
               />
             </figure>
@@ -82,7 +65,7 @@ export default function Gallery() {
           <li>
             <figure>
               <img
-                src={photo9}
+                src="https://raw.githubusercontent.com/RealCodeMate/3rdWave/main/thirdwave/src/assets/9.jpeg"
                 alt="2"
               />
             </figure>
@@ -90,7 +73,7 @@ export default function Gallery() {
           <li>
             <figure>
               <img
-                src={photo11}
+                src="https://raw.githubusercontent.com/RealCodeMate/3rdWave/main/thirdwave/src/assets/11-min.jpeg"
                 alt="2"
               />
             </figure>
@@ -98,7 +81,7 @@ export default function Gallery() {
           <li>
             <figure>
               <img
-                src={photo12}
+                src="https://raw.githubusercontent.com/RealCodeMate/3rdWave/main/thirdwave/src/assets/12-min.jpeg"
                 alt="2"
               />
             </figure>
@@ -106,7 +89,7 @@ export default function Gallery() {
           <li>
             <figure>
               <img
-                src={photo14}
+                src="https://raw.githubusercontent.com/RealCodeMate/3rdWave/main/thirdwave/src/assets/14-min.jpeg"
                 alt="2"
               />
             </figure>
@@ -114,7 +97,7 @@ export default function Gallery() {
           <li>
             <figure>
               <img
-                src={photo16}
+                src="https://raw.githubusercontent.com/RealCodeMate/3rdWave/main/thirdwave/src/assets/16-min.jpeg"
                 alt="2"
               />
             </figure>
@@ -122,7 +105,7 @@ export default function Gallery() {
           <li>
             <figure>
               <img
-                src={photo26}
+                src="https://raw.githubusercontent.com/RealCodeMate/3rdWave/main/thirdwave/src/assets/26.jpeg"
                 alt="2"
               />
             </figure>
@@ -130,7 +113,7 @@ export default function Gallery() {
           <li>
             <figure>
               <img
-                src={certificates}
+                src="https://raw.githubusercontent.com/RealCodeMate/3rdWave/main/thirdwave/src/assets/certificates.jpg"
                 alt="2"
               />
             </figure>
@@ -138,7 +121,7 @@ export default function Gallery() {
           <li>
             <figure>
               <img
-                src={photo3}
+                src="https://raw.githubusercontent.com/RealCodeMate/3rdWave/main/thirdwave/src/assets/3-min.jpeg"
                 alt="2"
               />
             </figure>
@@ -146,7 +129,7 @@ export default function Gallery() {
           <li>
             <figure>
               <img
-                src={photo4}
+                src="https://raw.githubusercontent.com/RealCodeMate/3rdWave/main/thirdwave/src/assets/4-min.jpeg"
                 alt="2"
               />
             </figure>
@@ -154,7 +137,7 @@ export default function Gallery() {
           <li>
             <figure>
               <img
-                src={photo28}
+                src="https://raw.githubusercontent.com/RealCodeMate/3rdWave/main/thirdwave/src/assets/28.jpeg"
                 alt="2"
               />
             </figure>
@@ -162,7 +145,7 @@ export default function Gallery() {
           <li>
             <figure>
               <img
-                src={photo29}
+                src="https://raw.githubusercontent.com/RealCodeMate/3rdWave/main/thirdwave/src/assets/29.jpeg"
                 alt="2"
               />
             </figure>
@@ -170,7 +153,7 @@ export default function Gallery() {
           <li>
             <figure>
               <img
-                src={photo30}
+                src="https://raw.githubusercontent.com/RealCodeMate/3rdWave/main/thirdwave/src/assets/30.jpeg"
                 alt="2"
               />
             </figure>
@@ -178,7 +161,7 @@ export default function Gallery() {
           <li>
             <figure>
               <img
-                src={photo27}
+                src="https://raw.githubusercontent.com/RealCodeMate/3rdWave/main/thirdwave/src/assets/27.jpg"
                 alt="2"
               />
             </figure>
