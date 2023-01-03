@@ -4,6 +4,7 @@ import Footer from "../../compenents/Footer/Footer";
 import "../../sass/pages/_gallery.scss";
 import { Helmet } from 'react-helmet';
 import { useTranslation } from "react-i18next";
+import GoToTop from "../../utils/GoToTop";
 
 
 const TITLE = 'Galeri | Dt. Mustafa Akyılmaz';
@@ -169,6 +170,7 @@ export default function Gallery() {
         </ul>
       </main>
       <Footer />
+      <GoToTop />
     </div>
   );
 }
