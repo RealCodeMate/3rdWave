@@ -16,7 +16,7 @@ function IndividualIntervalsExample() {
         <img
           className="d-block"
           src="https://raw.githubusercontent.com/RealCodeMate/3rdWave/main/thirdwave/src/assets/15.jpeg"
-          alt="First slide"
+          alt="Second slide"
         />
         <Carousel.Caption className="carosuel-content"></Carousel.Caption>
       </Carousel.Item>
@@ -24,7 +24,7 @@ function IndividualIntervalsExample() {
         <img
           className="d-block"
           src="https://raw.githubusercontent.com/RealCodeMate/3rdWave/main/thirdwave/src/assets/7.jpg"
-          alt="First slide"
+          alt="Third slide"
         />
         <Carousel.Caption className="carosuel-content"></Carousel.Caption>
       </Carousel.Item>

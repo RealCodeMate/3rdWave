@@ -42,7 +42,7 @@ export default function LngBtn() {
             return (
                 <div className="menu-item">
                     <button>{t('header.language.tr')}</button>
-                    <img src={trFlag} style={{ marginLeft: '5px', height: '20px', width: '20px' }}></img>
+                    <img src={trFlag} alt="Turkish" style={{ marginLeft: '5px', height: '20px', width: '20px' }}></img>
                 </div>
             )
         }
@@ -50,7 +50,7 @@ export default function LngBtn() {
             return (
                 <div className="menu-item">
                     <button>{t('header.language.en')}</button>
-                    <img src={enFlag} style={{ marginLeft: '5px', height: '20px', width: '20px' }}></img>
+                    <img src={enFlag} alt="English" style={{ marginLeft: '5px', height: '20px', width: '20px' }}></img>
                 </div>
             )
         }
@@ -58,7 +58,7 @@ export default function LngBtn() {
             return (
                 <div className="menu-item">
                     <button>{t('header.language.ru')}</button>
-                    <img src={ruFlag} style={{ marginLeft: '5px', height: '20px', width: '20px' }}></img>
+                    <img src={ruFlag} alt="Russian" style={{ marginLeft: '5px', height: '20px', width: '20px' }}></img>
                 </div>
             )
         }
@@ -75,15 +75,15 @@ export default function LngBtn() {
                 <ul className="menu">
                     <li className="menu-item" onClick={handleLanguageTr} key='1'>
                         <button >{t('header.language.tr')}</button>
-                        <img src={trFlag} style={{ height: '20px', width: '20px' }}></img>
+                        <img src={trFlag} alt="Turkish" style={{ height: '20px', width: '20px' }}></img>
                     </li>
                     <li className="menu-item" onClick={handleLanguageEn} key='2'>
                         <button >{t('header.language.en')} </button>
-                        <img src={enFlag} style={{ height: '20px', width: '20px' }}></img>
+                        <img src={enFlag} alt="English" style={{ height: '20px', width: '20px' }}></img>
                     </li>
                     <li className="menu-item" onClick={handleLanguageRu} key='3'>
                         <button >{t('header.language.ru')} </button>
-                        <img src={ruFlag} style={{ height: '20px', width: '20px' }}></img>
+                        <img src={ruFlag} alt="Russian" style={{ height: '20px', width: '20px' }}></img>
                     </li>
                 </ul>
             ) : null}

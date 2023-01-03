@@ -169,32 +169,32 @@ export default function Home() {
               <div className="toothBrush">
                 <div>
                   <div>
-                    <img src={toothBrush} className="brush"></img>
+                    <img src={toothBrush} alt="toothBrush" className="brush"></img>
                   </div>
                 </div>
                 <div>
                   <div>
-                    <img src={toothBrush} className="brush"></img>
+                    <img src={toothBrush} alt="toothBrush" className="brush"></img>
                   </div>
                 </div>
                 <div>
                   <div>
-                    <img src={toothBrush} className="brush"></img>
+                    <img src={toothBrush} alt="toothBrush" className="brush"></img>
                   </div>
                 </div>
                 <div>
                   <div>
-                    <img src={toothBrush} className="brush"></img>
+                    <img src={toothBrush} alt="toothBrush" className="brush"></img>
                   </div>
                 </div>
                 <div>
-                  <img src={toothBrush} className="brush"></img>
+                  <img src={toothBrush} alt="toothBrush" className="brush"></img>
                 </div>
                 <div>
-                  <img src={toothBrush} className="brush"></img>
+                  <img src={toothBrush} alt="toothBrush" className="brush"></img>
                 </div>
                 <div>
-                  <img src={toothBrush} className="brush"></img>
+                  <img src={toothBrush} alt="toothBrush" className="brush"></img>
                 </div>
               </div>
             </section>

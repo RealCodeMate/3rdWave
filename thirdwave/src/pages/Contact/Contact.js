@@ -97,7 +97,7 @@ export default function Contact() {
             </div>
           </div>
           <div className="col-2">
-            <img src={barcode} className="col-2-img" />
+            <img src={barcode} alt="Whatsapp Qr Code"className="col-2-img" />
           </div>
         </div>
         <div className="row-2">
