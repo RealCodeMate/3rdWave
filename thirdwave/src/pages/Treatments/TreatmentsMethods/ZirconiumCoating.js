@@ -18,13 +18,13 @@ export default function ZirconiumCoating() {
           <h4>{t("treatmentsPage.zirconiumCoating.header3")}</h4>
           {t("treatmentsPage.zirconiumCoating.info3")}
           <ul>
-            <li>{t("treatmentsPage.zirconiumCoating.l1")}</li>
-            <li>{t("treatmentsPage.zirconiumCoating.l2")}</li>
-            <li>{t("treatmentsPage.zirconiumCoating.l3")}</li>
-            <li>{t("treatmentsPage.zirconiumCoating.l4")}</li>
-            <li>{t("treatmentsPage.zirconiumCoating.l5")}</li>
-            <li>{t("treatmentsPage.zirconiumCoating.l6")}</li>
-            <li>{t("treatmentsPage.zirconiumCoating.l7")}</li>
+            <li key="zirconium-el-1">{t("treatmentsPage.zirconiumCoating.l1")}</li>
+            <li key="zirconium-el-2">{t("treatmentsPage.zirconiumCoating.l2")}</li>
+            <li key="zirconium-el-3">{t("treatmentsPage.zirconiumCoating.l3")}</li>
+            <li key="zirconium-el-4">{t("treatmentsPage.zirconiumCoating.l4")}</li>
+            <li key="zirconium-el-5">{t("treatmentsPage.zirconiumCoating.l5")}</li>
+            <li key="zirconium-el-6">{t("treatmentsPage.zirconiumCoating.l6")}</li>
+            <li key="zirconium-el-7">{t("treatmentsPage.zirconiumCoating.l7")}</li>
           </ul>
         </p>
       </p>

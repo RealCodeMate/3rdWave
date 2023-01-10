@@ -5,10 +5,10 @@ function MyAccordion() {
   const { t } = useTranslation();
 
   const data = [
-    { key: '0', question: `${t("homePage.faqSection.accordion.questions.q1")}`, answer: `${t("homePage.faqSection.accordion.answers.a1")}` },
-    { key: '1', question: `${t("homePage.faqSection.accordion.questions.q2")}`, answer: `${t("homePage.faqSection.accordion.answers.a2")}` },
-    { key: '2', question: `${t("homePage.faqSection.accordion.questions.q3")}`, answer: `${t("homePage.faqSection.accordion.answers.a3")}` },
-    { key: '3', question: `${t("homePage.faqSection.accordion.questions.q4")}`, answer: `${t("homePage.faqSection.accordion.answers.a4")}` },
+    { key: 'question-el-1', question: `${t("homePage.faqSection.accordion.questions.q1")}`, answer: `${t("homePage.faqSection.accordion.answers.a1")}` },
+    { key: 'question-el-2', question: `${t("homePage.faqSection.accordion.questions.q2")}`, answer: `${t("homePage.faqSection.accordion.answers.a2")}` },
+    { key: 'question-el-3', question: `${t("homePage.faqSection.accordion.questions.q3")}`, answer: `${t("homePage.faqSection.accordion.answers.a3")}` },
+    { key: 'question-el-4', question: `${t("homePage.faqSection.accordion.questions.q4")}`, answer: `${t("homePage.faqSection.accordion.answers.a4")}` },
   ]
 
   return (

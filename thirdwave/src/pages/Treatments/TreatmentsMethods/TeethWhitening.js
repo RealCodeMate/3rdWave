@@ -13,26 +13,26 @@ export default function TeethWhitening() {
                 <Banner />
             </p>
             <ul>
-                <li>
+                <li key="bleaching-el-1">
                     {t('treatmentsPage.teethWhitening.l1')}
                 </li>
-                <li>
+                <li key="bleaching-el-2">
                     {t('treatmentsPage.teethWhitening.l2')}
                 </li>
-                <li>
+                <li key="bleaching-el-3">
                     {t('treatmentsPage.teethWhitening.l3')}
                 </li>
-                <li>
+                <li key="bleaching-el-4">
                     {t('treatmentsPage.teethWhitening.l4')}
                 </li>
                 <ol>
-                    <li>
+                    <li key="bleaching-el-5">
                         {t('treatmentsPage.teethWhitening.l5')}
                     </li>
-                    <li>
+                    <li key="bleaching-el-6">
                         {t('treatmentsPage.teethWhitening.l6')}
                     </li>
-                    <li>
+                    <li key="bleaching-el-7">
                         {t('treatmentsPage.teethWhitening.l7')}
                     </li>
                 </ol>
