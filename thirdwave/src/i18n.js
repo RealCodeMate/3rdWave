@@ -473,7 +473,7 @@ i18n
                     },
                     aboutPage: {
                         header: 'Who is dentist Mustafa Akyılmaz?',
-                        whoAmI: 'I was born in 1975 in Mersin. I had my primary and secondary education in Mersin. I graduated from Private Toros College in 1993 and won Gazi University Faculty of Dentistry. I finished my faculty in 1999 and did my military duty. I have been working actively in my clinic in Erdemli since 2000. I am married and have 3 daughters.'
+                        whoAmI: 'I was born in 1975 in Mersin. I had my primary and secondary education in Mersin. I graduated from Private Toros College in 1993 and started Gazi University Faculty of Dentistry. I successfully completed my faculty in 1999 and did my military duty. I have been working actively in my clinic in Erdemli since 2000. I am married and have 3 daughters.'
                     },
                     faqPage: {
                         header: "Frequently Asked Questions",
