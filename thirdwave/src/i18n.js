@@ -97,7 +97,7 @@ i18n
                     treatmentsPage: {
                         header: "Tedaviler",
                         banner: {
-                            slogan1: "Uzman Hekim",
+                            slogan1: "Tecrubeli Hekim",
                             slogan2: "Kaliteli Ekipmanlar",
                             slogan3: "Konforlu Tedavi",
                         },
@@ -349,7 +349,7 @@ i18n
                     treatmentsPage: {
                         header: "Treatments",
                         banner: {
-                            slogan1: "Specialist Dentist",
+                            slogan1: "Experienced Dentist",
                             slogan2: "Quality Equipments",
                             slogan3: "Comfortable Treatment",
                         },
@@ -598,7 +598,7 @@ i18n
                     treatmentsPage: {
                         header: "Лечение",
                         banner: {
-                            slogan1: "Стоматолог-специалист",
+                            slogan1: "Сопытный дантист",
                             slogan2: "Качественное оборудование",
                             slogan3: "Комфортное лечение",
                         },
