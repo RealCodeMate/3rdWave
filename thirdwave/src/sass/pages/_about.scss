@@ -6,7 +6,6 @@
 }
 
 .about {
-  width: 100vw;
   @include flexBox(row, center, center);
   @include respond(tab-land) {
     @include flexBox(column, center, center);
@@ -99,7 +98,7 @@
   height: 100vh;
   @include flexBox(row, center, center);
   background: url("https://raw.githubusercontent.com/RealCodeMate/3rdWave/main/thirdwave/src/assets/profile-5.jpg") center center/cover no-repeat;
-  clip-path: polygon(0 0, 100% 1%, 100% 100%, 28% 100%);
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 28% 100%);
   @include respond(tab-land) {
     @include responsiveAboutPageImage(100vh);
   }
